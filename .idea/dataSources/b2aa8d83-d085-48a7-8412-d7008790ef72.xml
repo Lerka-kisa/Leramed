@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="LeraMed@localhost">
+  <database-model serializer="dbm" dbms="MSSQL" family-id="MSSQL" format-version="4.23">
+    <root id="1">
+      <ServerVersion>15.0.2000</ServerVersion>
+      <PermissionsCheckSum>89382079190</PermissionsCheckSum>
+      <Grants>2|||2|connect|G
+3|||2|connect|G
+4|||2|connect|G
+5|||2|connect|G
+0|root||266|administer bulk operations|G
+0|root||264|alter any availability group|G
+0|root||266|alter any availability group|G
+0|root||266|alter any connection|G
+0|root||266|alter any credential|G
+0|root||266|alter any database|G
+0|root||266|alter any endpoint|G
+0|root||266|alter any event notification|G
+0|root||265|alter any event session|G
+0|root||266|alter any event session|G
+0|root||266|alter any linked server|G
+0|root||266|alter any login|G
+0|root||266|alter any server audit|G
+0|root||266|alter any server role|G
+0|root||266|alter resources|G
+0|root||266|alter server state|G
+0|root||266|alter settings|G
+0|root||266|alter trace|G
+0|root||102|authenticate server|G
+0|root||103|authenticate server|G
+0|root||266|authenticate server|G
+0|root||265|connect any database|G
+0|root||266|connect any database|G
+0|root||1|connect sql|G
+0|root||256|connect sql|G
+0|root||257|connect sql|G
+0|root||258|connect sql|G
+0|root||259|connect sql|G
+0|root||260|connect sql|G
+0|root||261|connect sql|G
+0|root||262|connect sql|G
+0|root||263|connect sql|G
+0|root||264|connect sql|G
+0|root||265|connect sql|G
+0|root||266|connect sql|G
+0|root||267|connect sql|G
+0|root||268|connect sql|G
+0|root||269|connect sql|G
+0|root||270|connect sql|G
+0|root||271|connect sql|G
+0|root||272|connect sql|G
+0|root||105|control server|G
+0|root||266|control server|G
+0|root||266|create any database|G
+0|root||266|create availability group|G
+0|root||266|create ddl event notification|G
+0|root||266|create endpoint|G
+0|root||266|create server role|G
+0|root||266|create trace event notification|G
+0|root||266|external access assembly|G
+0|root||266|impersonate any login|G
+0|root||266|select all user securables|G
+0|root||266|shutdown|G
+0|root||266|unsafe assembly|G
+0|root||2|view any database|G
+0|root||266|view any database|G
+0|root||101|view any definition|G
+0|root||102|view any definition|G
+0|root||105|view any definition|G
+0|root||106|view any definition|G
+0|root||257|view any definition|G
+0|root||265|view any definition|G
+0|root||266|view any definition|G
+0|root||102|view server state|G
+0|root||257|view server state|G
+0|root||264|view server state|G
+0|root||265|view server state|G
+0|root||266|view server state|G</Grants>
+    </root>
+    <database id="2" parent="1" name="ASP">
+      <ObjectId>20</ObjectId>
+    </database>
+    <database id="3" parent="1" name="ASP_Lab3">
+      <ObjectId>12</ObjectId>
+    </database>
+    <database id="4" parent="1" name="ASP_Lab8">
+      <ObjectId>18</ObjectId>
+    </database>
+    <database id="5" parent="1" name="DefaultConnection">
+      <ObjectId>19</ObjectId>
+    </database>
+    <database id="6" parent="1" name="Diabet.net">
+      <ObjectId>5</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="Eingeschriebener">
+      <ObjectId>14</ObjectId>
+    </database>
+    <database id="8" parent="1" name="JAVA_LABS">
+      <ObjectId>21</ObjectId>
+    </database>
+    <database id="9" parent="1" name="Lab_04">
+      <ObjectId>11</ObjectId>
+    </database>
+    <database id="10" parent="1" name="Lab_05">
+      <ObjectId>13</ObjectId>
+    </database>
+    <database id="11" parent="1" name="LeraMed">
+      <ObjectId>22</ObjectId>
+      <PermissionsCheckSum>4255254626</PermissionsCheckSum>
+      <Grants>22|database||1|connect|G
+22|database||5|connect|G
+22|database||0|view any column encryption key definition|G
+22|database||0|view any column master key definition|G</Grants>
+      <Current>1</Current>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+      <Fingerprint>22.44876/5780FEC2-3F54-4D92-B62C-0E94D614FE42@LAPTOP-F8O7KH0B\SQLE</Fingerprint>
+    </database>
+    <database id="12" parent="1" name="Noda_16">
+      <ObjectId>8</ObjectId>
+    </database>
+    <database id="13" parent="1" name="Node_Lab24">
+      <ObjectId>17</ObjectId>
+    </database>
+    <database id="14" parent="1" name="PhoneBook">
+      <ObjectId>15</ObjectId>
+    </database>
+    <database id="15" parent="1" name="TVN">
+      <ObjectId>6</ObjectId>
+    </database>
+    <database id="16" parent="1" name="Transfers">
+      <ObjectId>9</ObjectId>
+    </database>
+    <database id="17" parent="1" name="Transfers_for_node">
+      <ObjectId>10</ObjectId>
+    </database>
+    <database id="18" parent="1" name="igorLab24">
+      <ObjectId>16</ObjectId>
+    </database>
+    <database id="19" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="20" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="21" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="22" parent="1" name="node">
+      <ObjectId>7</ObjectId>
+    </database>
+    <database id="23" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <login id="24" parent="1" name="sa">
+      <ObjectId>1</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="25" parent="1" name="public">
+      <ObjectId>2</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="26" parent="1" name="sysadmin">
+      <ObjectId>3</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="27" parent="1" name="securityadmin">
+      <ObjectId>4</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="28" parent="1" name="serveradmin">
+      <ObjectId>5</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="29" parent="1" name="setupadmin">
+      <ObjectId>6</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="30" parent="1" name="processadmin">
+      <ObjectId>7</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="31" parent="1" name="diskadmin">
+      <ObjectId>8</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="32" parent="1" name="dbcreator">
+      <ObjectId>9</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="33" parent="1" name="bulkadmin">
+      <ObjectId>10</ObjectId>
+      <Type>server-role</Type>
+      <Enabled>1</Enabled>
+    </login>
+    <login id="34" parent="1" name="##MS_SQLResourceSigningCertificate##">
+      <ObjectId>101</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="35" parent="1" name="##MS_SQLReplicationSigningCertificate##">
+      <ObjectId>102</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="36" parent="1" name="##MS_SQLAuthenticatorCertificate##">
+      <ObjectId>103</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="37" parent="1" name="##MS_PolicySigningCertificate##">
+      <ObjectId>105</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="38" parent="1" name="##MS_SmoExtendedSigningCertificate##">
+      <ObjectId>106</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="39" parent="1" name="##MS_PolicyEventProcessingLogin##">
+      <ObjectId>256</ObjectId>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="40" parent="1" name="##MS_PolicyTsqlExecutionLogin##">
+      <ObjectId>257</ObjectId>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="41" parent="1" name="##MS_AgentSigningCertificate##">
+      <ObjectId>258</ObjectId>
+      <Type>certificate-mapped-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="42" parent="1" name="LAPTOP-F8O7KH0B\Lerka">
+      <ObjectId>259</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="43" parent="1" name="NT SERVICE\SQLWriter">
+      <ObjectId>260</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="44" parent="1" name="NT SERVICE\Winmgmt">
+      <ObjectId>261</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="45" parent="1" name="NT Service\MSSQL$SQLEXPRESS">
+      <ObjectId>262</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="46" parent="1" name="BUILTIN\Пользователи">
+      <ObjectId>263</ObjectId>
+      <Type>windows-group</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="47" parent="1" name="NT AUTHORITY\СИСТЕМА">
+      <ObjectId>264</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="48" parent="1" name="NT SERVICE\SQLTELEMETRY$SQLEXPRESS">
+      <ObjectId>265</ObjectId>
+      <Type>windows-login</Type>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="49" parent="1" name="LERA">
+      <ObjectId>266</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="50" parent="1" name="Node">
+      <ObjectId>267</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>node</DefaultDatabase>
+    </login>
+    <login id="51" parent="1" name="User">
+      <ObjectId>268</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>Diabet.net</DefaultDatabase>
+    </login>
+    <login id="52" parent="1" name="Admin">
+      <ObjectId>269</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>Diabet.net</DefaultDatabase>
+    </login>
+    <login id="53" parent="1" name="Unauthuser">
+      <ObjectId>270</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>Diabet.net</DefaultDatabase>
+    </login>
+    <login id="54" parent="1" name="Kolya">
+      <ObjectId>271</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <login id="55" parent="1" name="Sasha">
+      <ObjectId>272</ObjectId>
+      <Enabled>1</Enabled>
+      <DefaultDatabase>master</DefaultDatabase>
+    </login>
+    <linked-server id="56" parent="1" name="LAPTOP-F8O7KH0B\SQLEXPRESS">
+      <ProviderName>SQLNCLI</ProviderName>
+      <Product>SQL Server</Product>
+      <DataSource>LAPTOP-F8O7KH0B\SQLEXPRESS</DataSource>
+    </linked-server>
+    <schema id="57" parent="11" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="58" parent="11" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="59" parent="11" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="60" parent="11" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="61" parent="11" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="62" parent="11" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="63" parent="11" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="64" parent="11" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="65" parent="11" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="66" parent="11" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="67" parent="11" name="dbo">
+      <ObjectId>1</ObjectId>
+      <PermissionsCheckSum>16228498497</PermissionsCheckSum>
+      <Grants>1269579561|||0|execute|G
+1269579561|||2|execute|D
+1285579618|||0|execute|G
+1285579618|||2|execute|D
+1301579675|||0|execute|G
+1301579675|||2|execute|D
+1317579732|||0|execute|G
+1317579732|||2|execute|D
+1333579789|||0|execute|G
+1333579789|||2|execute|D
+1349579846|||0|execute|G
+1349579846|||2|execute|D
+1365579903|||0|execute|G
+1365579903|||2|execute|D</Grants>
+      <IntrospectionTimestamp>2022-11-25.04:38:53.150</IntrospectionTimestamp>
+      <Current>1</Current>
+      <DescriptionsCheckSum>13917099246</DescriptionsCheckSum>
+    </schema>
+    <schema id="68" parent="11" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="69" parent="11" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <role id="70" parent="11" name="public">
+      <ObjectId>0</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="71" parent="11" name="dbo">
+      <ObjectId>1</ObjectId>
+      <DefaultSchema>dbo</DefaultSchema>
+      <AuthType>instance</AuthType>
+    </role>
+    <role id="72" parent="11" name="guest">
+      <ObjectId>2</ObjectId>
+      <DefaultSchema>guest</DefaultSchema>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="73" parent="11" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="74" parent="11" name="sys">
+      <ObjectId>4</ObjectId>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="75" parent="11" name="LERA">
+      <ObjectId>5</ObjectId>
+      <DefaultSchema>dbo</DefaultSchema>
+      <AuthType>instance</AuthType>
+    </role>
+    <role id="76" parent="11" name="db_owner">
+      <ObjectId>16384</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="77" parent="11" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="78" parent="11" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="79" parent="11" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="80" parent="11" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="81" parent="11" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="82" parent="11" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="83" parent="11" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <role id="84" parent="11" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+      <OwnerId>1</OwnerId>
+      <Type>database-role</Type>
+      <AuthType>none</AuthType>
+    </role>
+    <table id="85" parent="67" name="Addresses">
+      <ObjectId>1323151759</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.763</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+    </table>
+    <table id="86" parent="67" name="Age_group">
+      <ObjectId>923150334</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.650</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+    </table>
+    <table id="87" parent="67" name="Analysis_norms">
+      <ObjectId>987150562</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.677</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.693</ModifiedTimestamp>
+    </table>
+    <table id="88" parent="67" name="Appointments">
+      <ObjectId>1659152956</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.857</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.857</ModifiedTimestamp>
+    </table>
+    <table id="89" parent="67" name="Authorization_info">
+      <ObjectId>1195151303</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.720</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+    </table>
+    <table id="90" parent="67" name="Card_status">
+      <ObjectId>811149935</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.557</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.620</ModifiedTimestamp>
+    </table>
+    <table id="91" parent="67" name="Doctors">
+      <ObjectId>1227151417</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.733</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.750</ModifiedTimestamp>
+    </table>
+    <table id="92" parent="67" name="House_calls">
+      <ObjectId>1579152671</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.820</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.820</ModifiedTimestamp>
+    </table>
+    <table id="93" parent="67" name="Medcards_records">
+      <ObjectId>1147151132</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.707</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.707</ModifiedTimestamp>
+    </table>
+    <table id="94" parent="67" name="Medical_cards">
+      <ObjectId>843150049</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.620</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+    </table>
+    <table id="95" parent="67" name="Norms_scores">
+      <ObjectId>955150448</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.663</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.680</ModifiedTimestamp>
+    </table>
+    <table id="96" parent="67" name="Patients">
+      <ObjectId>1467152272</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.803</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.857</ModifiedTimestamp>
+    </table>
+    <table id="97" parent="67" name="Sectors">
+      <ObjectId>1275151588</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.750</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.790</ModifiedTimestamp>
+    </table>
+    <table id="98" parent="67" name="Test_results">
+      <ObjectId>1067150847</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.690</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.690</ModifiedTimestamp>
+    </table>
+    <table id="99" parent="67" name="Timetable">
+      <ObjectId>1403152044</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.790</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.857</ModifiedTimestamp>
+    </table>
+    <table id="100" parent="67" name="Types_of_analyzes">
+      <ObjectId>891150220</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.633</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.693</ModifiedTimestamp>
+    </table>
+    <table id="101" parent="67" name="Types_of_appointments">
+      <ObjectId>1627152842</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.843</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.857</ModifiedTimestamp>
+    </table>
+    <table id="102" parent="67" name="Types_of_shifts">
+      <ObjectId>1371151930</ObjectId>
+      <CreatedTimestamp>2022-11-25.04:38:47.777</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.790</ModifiedTimestamp>
+    </table>
+    <table id="103" parent="67" name="sysdiagrams">
+      <ObjectId>1221579390</ObjectId>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01.003</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.003</ModifiedTimestamp>
+    </table>
+    <routine id="104" parent="67" name="fn_diagramobjects">
+      <ObjectId>1365579903</ObjectId>
+      <SourceTextLength>1647</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01.013</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.013</ModifiedTimestamp>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <routine id="105" parent="67" name="sp_alterdiagram">
+      <ObjectId>1333579789</ObjectId>
+      <SourceTextLength>1501</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01.010</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.010</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="106" parent="67" name="sp_creatediagram">
+      <ObjectId>1301579675</ObjectId>
+      <SourceTextLength>1223</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01.010</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.010</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="107" parent="67" name="sp_dropdiagram">
+      <ObjectId>1349579846</ObjectId>
+      <SourceTextLength>896</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01.013</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.013</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="108" parent="67" name="sp_helpdiagramdefinition">
+      <ObjectId>1285579618</ObjectId>
+      <SourceTextLength>921</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01.007</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.007</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="109" parent="67" name="sp_helpdiagrams">
+      <ObjectId>1269579561</ObjectId>
+      <SourceTextLength>658</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01.007</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.007</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="110" parent="67" name="sp_renamediagram">
+      <ObjectId>1317579732</ObjectId>
+      <SourceTextLength>1721</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01.010</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.010</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="111" parent="67" name="sp_upgraddiagrams">
+      <ObjectId>1205579333</ObjectId>
+      <SourceTextLength>1463</SourceTextLength>
+      <ExtendedProperties>microsoft_database_tools_support
+1
+int</ExtendedProperties>
+      <CreatedTimestamp>2022-11-13.00:28:01</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01</ModifiedTimestamp>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="112" parent="85" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="113" parent="85" name="city">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="114" parent="85" name="street">
+      <Position>3</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="115" parent="85" name="house">
+      <Position>4</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="116" parent="85" name="id_sector">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="117" parent="85" name="PK__Addresse__3213E83F1FECE922">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="118" parent="85" name="PK__Addresse__3213E83F1FECE922">
+      <ObjectId>1339151816</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.763</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.763</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Addresse__3213E83F1FECE922</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="119" parent="85" name="FK__Addresses__id_se__50C5FA01">
+      <ObjectId>1355151873</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.763</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.763</ModifiedTimestamp>
+      <ColNames>id_sector</ColNames>
+      <RefTableId>1275151588</RefTableId>
+      <RefTableName>Sectors</RefTableName>
+      <RefKeyName>PK__Sectors__3213E83F333EED67</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="120" parent="86" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="121" parent="86" name="group_name">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="122" parent="86" name="PK__Age_grou__3213E83F59D06869">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="123" parent="86" name="PK__Age_grou__3213E83F59D06869">
+      <ObjectId>939150391</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.650</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.650</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Age_grou__3213E83F59D06869</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="124" parent="87" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="87" name="min">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="126" parent="87" name="max">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="127" parent="87" name="id_analysis_type">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="128" parent="87" name="id_agegroup">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="129" parent="87" name="id_norm_score">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="130" parent="87" name="PK__Analysis__3213E83F40B90955">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="131" parent="87" name="PK__Analysis__3213E83F40B90955">
+      <ObjectId>1003150619</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.680</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.680</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Analysis__3213E83F40B90955</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="132" parent="87" name="FK__Analysis___id_an__3CBF0154">
+      <ObjectId>1019150676</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.680</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.680</ModifiedTimestamp>
+      <ColNames>id_analysis_type</ColNames>
+      <RefTableId>891150220</RefTableId>
+      <RefTableName>Types_of_analyzes</RefTableName>
+      <RefKeyName>PK__Types_of__3213E83FE7FDEADF</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="133" parent="87" name="FK__Analysis___id_ag__3DB3258D">
+      <ObjectId>1035150733</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.680</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.680</ModifiedTimestamp>
+      <ColNames>id_agegroup</ColNames>
+      <RefTableId>923150334</RefTableId>
+      <RefTableName>Age_group</RefTableName>
+      <RefKeyName>PK__Age_grou__3213E83F59D06869</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="134" parent="87" name="FK__Analysis___id_no__3EA749C6">
+      <ObjectId>1051150790</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.680</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.680</ModifiedTimestamp>
+      <ColNames>id_norm_score</ColNames>
+      <RefTableId>955150448</RefTableId>
+      <RefTableName>Norms_scores</RefTableName>
+      <RefKeyName>PK__Norms_sc__3213E83F36A62C3F</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="135" parent="88" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="136" parent="88" name="remark">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="137" parent="88" name="id_type_of_appointment">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="138" parent="88" name="id_shift">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="139" parent="88" name="id_patient">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="140" parent="88" name="PK__Appointm__3213E83F81D5896C">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="141" parent="88" name="PK__Appointm__3213E83F81D5896C">
+      <ObjectId>1675153013</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.857</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.857</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Appointm__3213E83F81D5896C</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="142" parent="88" name="FK__Appointme__id_ty__64CCF2AE">
+      <ObjectId>1691153070</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.857</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.857</ModifiedTimestamp>
+      <ColNames>id_type_of_appointment</ColNames>
+      <RefTableId>1627152842</RefTableId>
+      <RefTableName>Types_of_appointments</RefTableName>
+      <RefKeyName>PK__Types_of__3213E83F616CD729</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="143" parent="88" name="FK__Appointme__id_sh__65C116E7">
+      <ObjectId>1707153127</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.857</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.857</ModifiedTimestamp>
+      <ColNames>id_shift</ColNames>
+      <RefTableId>1403152044</RefTableId>
+      <RefTableName>Timetable</RefTableName>
+      <RefKeyName>PK__Timetabl__3213E83F286F22E7</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="144" parent="88" name="FK__Appointme__id_pa__66B53B20">
+      <ObjectId>1723153184</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.857</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.857</ModifiedTimestamp>
+      <ColNames>id_patient</ColNames>
+      <RefTableId>1467152272</RefTableId>
+      <RefTableName>Patients</RefTableName>
+      <RefKeyName>PK__Patients__3213E83F04AA3008</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="145" parent="89" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="146" parent="89" name="login">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="147" parent="89" name="password">
+      <Position>3</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="148" parent="89" name="mail">
+      <Position>4</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="149" parent="89" name="phone">
+      <Position>5</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="150" parent="89" name="role">
+      <Position>6</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="151" parent="89" name="PK__Authoriz__3213E83FC2BD7C52">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="152" parent="89" name="PK__Authoriz__3213E83FC2BD7C52">
+      <ObjectId>1211151360</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.720</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.720</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Authoriz__3213E83FC2BD7C52</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="153" parent="90" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="154" parent="90" name="status">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="155" parent="90" name="PK__Card_sta__3213E83FCA6AEB3A">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="156" parent="90" name="PK__Card_sta__3213E83FCA6AEB3A">
+      <ObjectId>827149992</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.557</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.557</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Card_sta__3213E83FCA6AEB3A</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="157" parent="91" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="158" parent="91" name="first_name">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="159" parent="91" name="last_name">
+      <Position>3</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="160" parent="91" name="middle_name">
+      <Position>4</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="161" parent="91" name="specialization">
+      <Position>5</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="162" parent="91" name="id_auth">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="163" parent="91" name="PK__Doctors__3213E83F452D6697">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="164" parent="91" name="PK__Doctors__3213E83F452D6697">
+      <ObjectId>1243151474</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.733</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.733</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Doctors__3213E83F452D6697</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="165" parent="91" name="FK__Doctors__id_auth__4B0D20AB">
+      <ObjectId>1259151531</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.733</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.733</ModifiedTimestamp>
+      <ColNames>id_auth</ColNames>
+      <RefTableId>1195151303</RefTableId>
+      <RefTableName>Authorization_info</RefTableName>
+      <RefKeyName>PK__Authoriz__3213E83FC2BD7C52</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="166" parent="92" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="167" parent="92" name="remark">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="168" parent="92" name="id_patient">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="169" parent="92" name="PK__House_ca__3213E83FC623236C">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="170" parent="92" name="PK__House_ca__3213E83FC623236C">
+      <ObjectId>1595152728</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.820</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.820</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__House_ca__3213E83FC623236C</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="171" parent="92" name="FK__House_cal__id_pa__60083D91">
+      <ObjectId>1611152785</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.820</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.820</ModifiedTimestamp>
+      <ColNames>id_patient</ColNames>
+      <RefTableId>1467152272</RefTableId>
+      <RefTableName>Patients</RefTableName>
+      <RefKeyName>PK__Patients__3213E83F04AA3008</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="172" parent="93" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="173" parent="93" name="date">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="174" parent="93" name="record">
+      <Position>3</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="175" parent="93" name="recommendation">
+      <Position>4</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="176" parent="93" name="id_medcard">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="177" parent="93" name="PK__Medcards__3213E83F447DDB93">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="178" parent="93" name="PK__Medcards__3213E83F447DDB93">
+      <ObjectId>1163151189</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.710</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.710</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Medcards__3213E83F447DDB93</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="179" parent="93" name="FK__Medcards___id_me__46486B8E">
+      <ObjectId>1179151246</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.710</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.710</ModifiedTimestamp>
+      <ColNames>id_medcard</ColNames>
+      <RefTableId>843150049</RefTableId>
+      <RefTableName>Medical_cards</RefTableName>
+      <RefKeyName>PK__Medical___3213E83FA9146596</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="180" parent="94" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="181" parent="94" name="card_number">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="182" parent="94" name="card_status">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="183" parent="94" name="PK__Medical___3213E83FA9146596">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="184" parent="94" name="PK__Medical___3213E83FA9146596">
+      <ObjectId>859150106</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.620</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.620</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Medical___3213E83FA9146596</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="185" parent="94" name="FK__Medical_c__card___3429BB53">
+      <ObjectId>875150163</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.620</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.620</ModifiedTimestamp>
+      <ColNames>card_status</ColNames>
+      <RefTableId>811149935</RefTableId>
+      <RefTableName>Card_status</RefTableName>
+      <RefKeyName>PK__Card_sta__3213E83FCA6AEB3A</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="186" parent="95" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="187" parent="95" name="norm_score">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="188" parent="95" name="PK__Norms_sc__3213E83F36A62C3F">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="189" parent="95" name="PK__Norms_sc__3213E83F36A62C3F">
+      <ObjectId>971150505</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.663</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.663</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Norms_sc__3213E83F36A62C3F</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="190" parent="96" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="191" parent="96" name="first_name">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="192" parent="96" name="last_name">
+      <Position>3</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="193" parent="96" name="middle_name">
+      <Position>4</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="194" parent="96" name="birthday">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="195" parent="96" name="phone">
+      <Position>6</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="196" parent="96" name="flat">
+      <Position>7</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="197" parent="96" name="place_of_work">
+      <Position>8</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="198" parent="96" name="id_parent">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="199" parent="96" name="id_auth">
+      <Position>10</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="200" parent="96" name="id_medcard">
+      <Position>11</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="201" parent="96" name="id_agegroup">
+      <Position>12</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="202" parent="96" name="id_address">
+      <Position>13</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="203" parent="96" name="PK__Patients__3213E83F04AA3008">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="204" parent="96" name="PK__Patients__3213E83F04AA3008">
+      <ObjectId>1483152329</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.807</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Patients__3213E83F04AA3008</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="205" parent="96" name="FK__Patients__id_par__595B4002">
+      <ObjectId>1499152386</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.807</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+      <ColNames>id_parent</ColNames>
+      <RefTableId>1467152272</RefTableId>
+      <RefTableName>Patients</RefTableName>
+      <RefKeyName>PK__Patients__3213E83F04AA3008</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="206" parent="96" name="FK__Patients__id_aut__5A4F643B">
+      <ObjectId>1515152443</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.807</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+      <ColNames>id_auth</ColNames>
+      <RefTableId>1195151303</RefTableId>
+      <RefTableName>Authorization_info</RefTableName>
+      <RefKeyName>PK__Authoriz__3213E83FC2BD7C52</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="207" parent="96" name="FK__Patients__id_med__5B438874">
+      <ObjectId>1531152500</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.807</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+      <ColNames>id_medcard</ColNames>
+      <RefTableId>843150049</RefTableId>
+      <RefTableName>Medical_cards</RefTableName>
+      <RefKeyName>PK__Medical___3213E83FA9146596</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="208" parent="96" name="FK__Patients__id_age__5C37ACAD">
+      <ObjectId>1547152557</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.807</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+      <ColNames>id_agegroup</ColNames>
+      <RefTableId>923150334</RefTableId>
+      <RefTableName>Age_group</RefTableName>
+      <RefKeyName>PK__Age_grou__3213E83F59D06869</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="209" parent="96" name="FK__Patients__id_add__5D2BD0E6">
+      <ObjectId>1563152614</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.807</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.807</ModifiedTimestamp>
+      <ColNames>id_address</ColNames>
+      <RefTableId>1323151759</RefTableId>
+      <RefTableName>Addresses</RefTableName>
+      <RefKeyName>PK__Addresse__3213E83F1FECE922</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="210" parent="97" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="211" parent="97" name="id_doctor">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="212" parent="97" name="PK__Sectors__3213E83F333EED67">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="213" parent="97" name="PK__Sectors__3213E83F333EED67">
+      <ObjectId>1291151645</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.750</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.750</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Sectors__3213E83F333EED67</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="214" parent="97" name="FK__Sectors__id_doct__4DE98D56">
+      <ObjectId>1307151702</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.750</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.750</ModifiedTimestamp>
+      <ColNames>id_doctor</ColNames>
+      <RefTableId>1227151417</RefTableId>
+      <RefTableName>Doctors</RefTableName>
+      <RefKeyName>PK__Doctors__3213E83F452D6697</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="215" parent="98" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="216" parent="98" name="result">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="217" parent="98" name="recommendation">
+      <Position>3</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+    </column>
+    <column id="218" parent="98" name="id_norm">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="219" parent="98" name="id_medcard">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="220" parent="98" name="id_analysis_type">
+      <Position>6</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="221" parent="98" name="PK__Test_res__3213E83FCF098230">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="222" parent="98" name="PK__Test_res__3213E83FCF098230">
+      <ObjectId>1083150904</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.693</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.693</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Test_res__3213E83FCF098230</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="223" parent="98" name="FK__Test_resu__id_no__4183B671">
+      <ObjectId>1099150961</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.693</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.693</ModifiedTimestamp>
+      <ColNames>id_norm</ColNames>
+      <RefTableId>987150562</RefTableId>
+      <RefTableName>Analysis_norms</RefTableName>
+      <RefKeyName>PK__Analysis__3213E83F40B90955</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="224" parent="98" name="FK__Test_resu__id_me__4277DAAA">
+      <ObjectId>1115151018</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.693</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.693</ModifiedTimestamp>
+      <ColNames>id_medcard</ColNames>
+      <RefTableId>843150049</RefTableId>
+      <RefTableName>Medical_cards</RefTableName>
+      <RefKeyName>PK__Medical___3213E83FA9146596</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="225" parent="98" name="FK__Test_resu__id_an__436BFEE3">
+      <ObjectId>1131151075</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.693</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.693</ModifiedTimestamp>
+      <ColNames>id_analysis_type</ColNames>
+      <RefTableId>891150220</RefTableId>
+      <RefTableName>Types_of_analyzes</RefTableName>
+      <RefKeyName>PK__Types_of__3213E83FE7FDEADF</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="226" parent="99" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="227" parent="99" name="date">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="228" parent="99" name="id_sector">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="229" parent="99" name="id_type_of_shift">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="230" parent="99" name="PK__Timetabl__3213E83F286F22E7">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="231" parent="99" name="PK__Timetabl__3213E83F286F22E7">
+      <ObjectId>1419152101</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.790</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.790</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Timetabl__3213E83F286F22E7</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="232" parent="99" name="FK__Timetable__id_se__558AAF1E">
+      <ObjectId>1435152158</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.790</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.790</ModifiedTimestamp>
+      <ColNames>id_sector</ColNames>
+      <RefTableId>1275151588</RefTableId>
+      <RefTableName>Sectors</RefTableName>
+      <RefKeyName>PK__Sectors__3213E83F333EED67</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <foreign-key id="233" parent="99" name="FK__Timetable__id_ty__567ED357">
+      <ObjectId>1451152215</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.790</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.790</ModifiedTimestamp>
+      <ColNames>id_type_of_shift</ColNames>
+      <RefTableId>1371151930</RefTableId>
+      <RefTableName>Types_of_shifts</RefTableName>
+      <RefKeyName>PK__Types_of__3213E83F5614A94D</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="234" parent="100" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="235" parent="100" name="name_analysis">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="236" parent="100" name="PK__Types_of__3213E83FE7FDEADF">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="237" parent="100" name="PK__Types_of__3213E83FE7FDEADF">
+      <ObjectId>907150277</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.637</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.637</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Types_of__3213E83FE7FDEADF</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="238" parent="101" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="239" parent="101" name="name">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="240" parent="101" name="PK__Types_of__3213E83F616CD729">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="241" parent="101" name="PK__Types_of__3213E83F616CD729">
+      <ObjectId>1643152899</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.843</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.843</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Types_of__3213E83F616CD729</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="242" parent="102" name="id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="243" parent="102" name="period_name">
+      <Position>2</Position>
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="244" parent="102" name="beginning_of_period">
+      <Position>3</Position>
+      <DataType>time|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="245" parent="102" name="end_of_period">
+      <Position>4</Position>
+      <DataType>time|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="246" parent="102" name="PK__Types_of__3213E83F5614A94D">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="247" parent="102" name="PK__Types_of__3213E83F5614A94D">
+      <ObjectId>1387151987</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-25.04:38:47.777</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-25.04:38:47.777</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__Types_of__3213E83F5614A94D</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="248" parent="103" name="name">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="249" parent="103" name="principal_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="250" parent="103" name="diagram_id">
+      <Position>3</Position>
+      <SequenceIdentity>1(3)</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="251" parent="103" name="version">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="252" parent="103" name="definition">
+      <Position>5</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </column>
+    <index id="253" parent="103" name="PK__sysdiagr__C2B05B6183E98A52">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>diagram_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="254" parent="103" name="UK_principal_name">
+      <Position>2</Position>
+      <ColNames>principal_id
+name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="255" parent="103" name="PK__sysdiagr__C2B05B6183E98A52">
+      <ObjectId>1237579447</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2022-11-13.00:28:01.003</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.003</ModifiedTimestamp>
+      <ColNames>diagram_id</ColNames>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B6183E98A52</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="256" parent="103" name="UK_principal_name">
+      <ObjectId>1253579504</ObjectId>
+      <CreatedTimestamp>2022-11-13.00:28:01.007</CreatedTimestamp>
+      <ModifiedTimestamp>2022-11-13.00:28:01.007</ModifiedTimestamp>
+      <ColNames>principal_id
+name</ColNames>
+      <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
+    </key>
+    <argument id="257" parent="104">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="258" parent="105" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="259" parent="105" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="260" parent="105" name="@version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="261" parent="105" name="@definition">
+      <Position>4</Position>
+      <DataType>varbinary(max)|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="262" parent="106" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="263" parent="106" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="264" parent="106" name="@version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="265" parent="106" name="@definition">
+      <Position>4</Position>
+      <DataType>varbinary(max)|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="266" parent="107" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="267" parent="107" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="268" parent="108" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="269" parent="108" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="270" parent="109" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="271" parent="109" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="272" parent="110" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="273" parent="110" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+    <argument id="274" parent="110" name="@new_diagramname">
+      <Position>3</Position>
+      <DataType>sysname|0s</DataType>
+      <Defaulted>1</Defaulted>
+    </argument>
+  </database-model>
+</dataSource>
