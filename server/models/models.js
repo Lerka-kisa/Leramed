@@ -15,7 +15,7 @@ class Doctors extends Model{}
 class Sectors extends Model{}
 class Addresses extends Model{}
 class Age_group extends Model{}
-class Pacients extends Model{}
+class Patients extends Model{}
 
 //Registry_info models
 class Types_of_appointments extends Model{}
@@ -202,7 +202,7 @@ Timetable.belongsTo(Sectors, {foreignKey: 'id_sector'});
 Types_of_shifts.hasMany(Timetable, {foreignKey: 'id_type_of_shift'});
 Timetable.belongsTo(Types_of_shifts, {foreignKey: 'id_type_of_shift'});
 
-Pacients.init(
+Patients.init(
     {
         id:             {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         first_name:     {type: DataTypes.STRING,  allowNull:false},
@@ -218,35 +218,35 @@ Pacients.init(
         // id_agegroup
         // id_address
     },
-    {sequelize, modelName:'Pacients', tableName:'Pacients', timestamps:false}
+    {sequelize, modelName:'Patients', tableName:'Patients', timestamps:false}
 );
 
-Pacients.hasMany(Pacients, {foreignKey: 'id_parent'});
-Pacients.belongsTo(Pacients, {foreignKey: 'id_parent'});
+Patients.hasMany(Patients, {foreignKey: 'id_parent'});
+Patients.belongsTo(Patients, {foreignKey: 'id_parent'});
 
-Authorization_info.hasOne(Pacients, {foreignKey: 'id_auth'});
-Pacients.belongsTo(Authorization_info, {foreignKey: 'id_auth'});
+Authorization_info.hasOne(Patients, {foreignKey: 'id_auth'});
+Patients.belongsTo(Authorization_info, {foreignKey: 'id_auth'});
 
-Medical_cards.hasOne(Pacients, {foreignKey: 'id_medcard'});
-Pacients.belongsTo(Medical_cards, {foreignKey: 'id_medcard'});
+Medical_cards.hasOne(Patients, {foreignKey: 'id_medcard'});
+Patients.belongsTo(Medical_cards, {foreignKey: 'id_medcard'});
 
-Age_group.hasMany(Pacients, {foreignKey: 'id_agegroup'});
-Pacients.belongsTo(Age_group, {foreignKey: 'id_agegroup'});
+Age_group.hasMany(Patients, {foreignKey: 'id_agegroup'});
+Patients.belongsTo(Age_group, {foreignKey: 'id_agegroup'});
 
-Addresses.hasMany(Pacients, {foreignKey: 'id_address'});
-Pacients.belongsTo(Addresses, {foreignKey: 'id_address'});
+Addresses.hasMany(Patients, {foreignKey: 'id_address'});
+Patients.belongsTo(Addresses, {foreignKey: 'id_address'});
 
 House_calls.init(
     {
         id:         {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         remark:     {type: DataTypes.STRING, allowNull:false}
-        // id_pacient
+        // id_patient
     },
     {sequelize, modelName:'House_calls', tableName:'House_calls', timestamps:false}
 );
 
-Pacients.hasMany(House_calls, {foreignKey: 'id_pacient'});
-House_calls.belongsTo(Pacients, {foreignKey: 'id_pacient'});
+Patients.hasMany(House_calls, {foreignKey: 'id_patient'});
+House_calls.belongsTo(Patients, {foreignKey: 'id_patient'});
 
 Types_of_appointments.init(
     {
@@ -262,7 +262,7 @@ Appointments.init(
         remark:                 {type: DataTypes.STRING, allowNull:false}
         // id_type_of_appointment
         // id_shift
-        // id_pacient
+        // id_patient
     },
     {sequelize, modelName:'Appointments', tableName:'Appointments', timestamps:false}
 )
@@ -273,13 +273,13 @@ Appointments.belongsTo(Types_of_appointments, {foreignKey: 'id_type_of_appointme
 Timetable.hasMany(Appointments, {foreignKey: 'id_shift'});
 Appointments.belongsTo(Timetable, {foreignKey: 'id_shift'});
 
-Pacients.hasMany(Appointments, {foreignKey: 'id_pacient'});
-Appointments.belongsTo(Pacients, {foreignKey: 'id_pacient'});
+Patients.hasMany(Appointments, {foreignKey: 'id_patient'});
+Appointments.belongsTo(Patients, {foreignKey: 'id_patient'});
 
 // sequelize.sync({alter:true});
 
 module.exports = {
     Types_of_analyzes, Card_status, Medical_cards, Test_results, Medcards_records, Analysis_norms,
-    Norms_scores, Authorization_info, Doctors, Sectors, Addresses, Age_group, Pacients,
+    Norms_scores, Authorization_info, Doctors, Sectors, Addresses, Age_group, Patients,
     Appointments, Timetable, House_calls, Types_of_shifts, Types_of_appointments
 };

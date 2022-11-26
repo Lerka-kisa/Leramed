@@ -1,7 +1,7 @@
 const {Sequelize, DataTypes} = require('sequelize');
 const Model = Sequelize.Model;
 
-const sequelize = new Sequelize('LeraMed', "sa", "Nata_5442488",
+const sequelize = new Sequelize('LeraMed', "LERA", "Nata_5442488",
     {host: 'localhost', dialect: 'mssql'}
 );
 // module.exports = new Sequelize(

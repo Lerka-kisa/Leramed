@@ -1,2 +1,4 @@
 # Project exclude paths
 /server/node_modules/
+/server/sequrity(https)/
+/DB.js
