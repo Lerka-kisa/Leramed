@@ -1,35 +1,21 @@
 const { AbilityBuilder, Ability } = require("@casl/ability");
-const {Admin, Enrollee} = require("./roles")
-
-const {admin, enrollee, guest, rule} = require("./defines");
+const {Admin, Doctor, Patient} = require("./roles")
+const {rule} = require("./defines");
 
 exports.GetAbilityFor = (req) => {
-    const {rules, can, cannot} = new AbilityBuilder(Ability);
+    const {rules, can} = new AbilityBuilder(Ability);
     switch (req.payload.role) {
         case Admin:
-            can(rule.admin)
-            //can(admin.manage, admin.all);
+            can(rule.admin);
             break;
-        case Enrollee:
-            can(rule.enrol)
-            //can(enrollee.manage, enrollee.all);
-
-            //labs
-            // can(
-            //     [access.read, access.create, access.update],
-            //     [entity.repos, entity.commits],
-            //     {authorid: req.payload.id}
-            // );
+        case Doctor:
+            can(rule.doctor);
+            break;
+        case Patient:
+            can(rule.patient);
             break;
         default:
-            can(rule.guests)
-            //can(guest.manage, guest.all);
-
-            //Labs
-            // can(
-            //     access.read,
-            //     [entity.repos, entity.commits]
-            // );
+            can(rule.guests);
             break;
     }
     req.rules = rules;

@@ -1,6 +1,6 @@
 module.exports = {
-    Receptionist:
-        "RECEPTIONIST",
+    Admin:
+        "ADMIN",
     Doctor:
         "DOCTOR",
     Patient:
