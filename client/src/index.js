@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import UserStore from "./store/UserStore";
 import AnalysisStore from "./store/AnalysisStore";
+import DoctorsStore from "./store/DoctorsStore";
 
 export const Context = createContext(null)
 
@@ -10,7 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Context.Provider value={{
         user: new UserStore(),
-        analysis: new AnalysisStore()
+        analysis: new AnalysisStore(),
+        doctors: new DoctorsStore()
     }}>
         <App />
     </Context.Provider>,

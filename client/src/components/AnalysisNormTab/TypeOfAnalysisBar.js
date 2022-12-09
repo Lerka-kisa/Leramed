@@ -11,7 +11,7 @@ const TypeOfAnalysisBar = observer(() => {
             {analysis.types.map(type =>
                 <ListGroup.Item
                     active = {type.id === analysis.selectedType.id}
-                    onClick = {() => analysis.setSelectedType(type)}
+                    onClick = {() => {analysis.setSelectedType(type)}}
                     key={type.id}>
                     {type.name_analysis}
                 </ListGroup.Item>

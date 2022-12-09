@@ -6,6 +6,7 @@ import AnalysisNormItem from "./AnalysisNormItem";
 
 const AnalysisNormList = observer(() => {
     const {analysis} = useContext(Context)
+    console.log(analysis.analysisnorm)
     return (
         <Row className="d-flex">
             {analysis.analysisnorm.map(analysisnorm =>

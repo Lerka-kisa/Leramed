@@ -9,16 +9,14 @@ import {fetchAgegroups, fetchAnalysisNorms, fetchGenders, fetchTypes} from "../.
 
 const AnalysisNorms = () => {
     const {analysis} = useContext(Context);
-    const someContext = useContext(Context);
-
     useEffect(()=>{
         fetchTypes().then(data => analysis.setTypes(data))
         fetchGenders().then(data => analysis.setGender(data))
         fetchAgegroups().then(data => analysis.setAgegroup(data))
-    })
+    },[analysis])
     useEffect(()=>{
         fetchAnalysisNorms(analysis.selectedType.id).then(data => analysis.setAnalysisnorm(data))
-    },[someContext.analysis])
+    },[analysis])
 
     return (
         <Container>

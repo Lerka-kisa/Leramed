@@ -8,8 +8,8 @@ const AnalysisNormItem = ({analysisnorm}) => {
             <Card border={"active"} >
                 <h5 className={"m-2"}>Возрастная группа: {analysisnorm.id_agegroup}</h5>
                 <h5 className={"m-2"}>Пол: {analysisnorm.id_gender}</h5>
-                <h5 className={"m-2"}>Нижний порог: {analysisnorm.min} {analysisnorm.si_unit}</h5>
-                <h5 className={"m-2"}>Верхний порог: {analysisnorm.max} {analysisnorm.si_unit}</h5>
+                <h5 className={"m-2"}>Нижний порог: {analysisnorm.min.toFixed(1)} {analysisnorm.SI_unit}</h5>
+                <h5 className={"m-2"}>Верхний порог: {analysisnorm.max.toFixed(1)} {analysisnorm.SI_unit}</h5>
             </Card>
         </Col>
     );

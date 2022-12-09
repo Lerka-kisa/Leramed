@@ -102,6 +102,7 @@ Analysis_norms.belongsTo(Gender, {foreignKey: 'id_gender'})
 
 Analysis_results.init(
     {
+        //TODO 8)may be drop id_norm??
         id:             {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         result:         {type: DataTypes.STRING, allowNull:false},
         recommendation: {type: DataTypes.STRING, allowNull:true}
@@ -128,8 +129,8 @@ Analysis_results.belongsTo(Norms_scores, {foreignKey: 'id_norm_score'})
 Medcards_records.init(
     {
         id:             {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
-        date:           {type: DataTypes.DATEONLY, allowNull:false},
-        record:         {type: DataTypes.STRING, allowNull:false},
+        date:           {type: DataTypes.DATEONLY, allowNull:true},
+        record:         {type: DataTypes.STRING, allowNull:true},
         recommendation: {type: DataTypes.STRING, allowNull: true}
         //id_medcard
     },
@@ -147,18 +148,20 @@ Authorization_info.init(
         mail:       {type: DataTypes.STRING, allowNull:false},
         phone:      {type: DataTypes.STRING, allowNull:false},
         role:       {type: DataTypes.STRING, allowNull:false}
+        //id_account
     },
     {sequelize, modelName:'Authorization_info', tableName:'Authorization_info', timestamps:false}
 );
 
 Doctors.init(
     {
+        //TODO think about photo
         id:             {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
-        first_name:     {type: DataTypes.STRING,  allowNull:false},
-        last_name:      {type: DataTypes.STRING,  allowNull:false},
-        middle_name:    {type: DataTypes.STRING,  allowNull:false},
-        specialization: {type: DataTypes.STRING,  allowNull:false},
-        photo:          {type: DataTypes.STRING,  allowNull: false}
+        first_name:     {type: DataTypes.STRING,  allowNull:true},
+        last_name:      {type: DataTypes.STRING,  allowNull:true},
+        middle_name:    {type: DataTypes.STRING,  allowNull:true},
+        specialization: {type: DataTypes.STRING,  allowNull:true},
+        photo:          {type: DataTypes.STRING,  allowNull:true}
         // id_auth
     },
     {sequelize, modelName:'Doctors', tableName:'Doctors', timestamps:false}
@@ -169,7 +172,7 @@ Doctors.belongsTo(Authorization_info, {foreignKey: 'id_auth'});
 
 Sectors.init(
     {
-        id:         {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
+        id: {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         // id_doctor
     },
     {sequelize, modelName:'Sectors', tableName:'Sectors', timestamps:false}
@@ -207,13 +210,13 @@ Timetable.init(
         id:                 {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         date:               {type: DataTypes.DATEONLY, allowNull:false}
         // id_type_of_shifts
-        // id_sector
+        // id_doctor
     },
     {sequelize, modelName:'Timetable', tableName:'Timetable', timestamps:false}
 );
 
-Sectors.hasMany(Timetable, {foreignKey: 'id_sector'});
-Timetable.belongsTo(Sectors, {foreignKey: 'id_sector'});
+Doctors.hasMany(Timetable, {foreignKey: 'id_doctor'});
+Timetable.belongsTo(Doctors, {foreignKey: 'id_doctor'});
 
 Types_of_shifts.hasMany(Timetable, {foreignKey: 'id_type_of_shift'});
 Timetable.belongsTo(Types_of_shifts, {foreignKey: 'id_type_of_shift'});
@@ -221,11 +224,10 @@ Timetable.belongsTo(Types_of_shifts, {foreignKey: 'id_type_of_shift'});
 Patients.init(
     {
         id:             {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
-        first_name:     {type: DataTypes.STRING,  allowNull:false},
-        last_name:      {type: DataTypes.STRING,  allowNull:false},
-        middle_name:    {type: DataTypes.STRING,  allowNull:false},
-        birthday:       {type: DataTypes.DATEONLY, allowNull:false},
-        phone:          {type: DataTypes.STRING, allowNull:true},
+        first_name:     {type: DataTypes.STRING,  allowNull:true},
+        last_name:      {type: DataTypes.STRING,  allowNull:true},
+        middle_name:    {type: DataTypes.STRING,  allowNull:true},
+        birthday:       {type: DataTypes.DATEONLY, allowNull:true},
         flat:           {type: DataTypes.STRING, allowNull:true},
         place_of_work:  {type: DataTypes.STRING, allowNull:true}
         // id_parent
@@ -281,10 +283,10 @@ Types_of_appointments.init(
 
 Appointments.init(
     {
+        //TODO 1) check for null
         id:     {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         talon_number: {type: DataTypes.INTEGER, allowNull:false},
-        time:   {type: DataTypes.TIME, allowNull:false},
-        //remark: {type: DataTypes.STRING, allowNull:false}
+        time:   {type: DataTypes.TIME, allowNull:false}
         // id_record
         // id_type_of_appointment
         // id_shift

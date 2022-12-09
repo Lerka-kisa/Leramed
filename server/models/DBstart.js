@@ -1,6 +1,8 @@
 const  {Sequelize, Model, sequelize} = require('../DB')
 const {createGender, createCardStatus, createTypeOfAnalysis, createAgeGroup, createNormScore, createTypeOfShifts,
-    createTypeOfAppointment, createAnalysisNorm
+    createTypeOfAppointment, createAnalysisNorm, createMedicalCard, createAnalysisResult, createMedicalRecord,
+    createAutorizationInfo, createDoctors, createSectors, createAddress, createTimetable, createPatient,
+    createHouseCalls, createAppointments
 } = require("./funcDBstart");
 
 
@@ -34,6 +36,14 @@ sequelize.authenticate()
         createNormScore("Норма");
         createNormScore("Выше нормы");
 
+        //10. Autorization_info
+        createAutorizationInfo("Admin", "12345", "mail1", "phone1", "ADMIN")
+        createAutorizationInfo("Doctor1", "12345", "mail2", "phone2", "DOCTOR")
+        createAutorizationInfo("Doctor2", "12345", "mail3", "phone3", "DOCTOR")
+        createAutorizationInfo("User1", "12345", "mail4", "phone4", "PATIENT")
+        createAutorizationInfo("User2", "12345", "mail5", "phone5", "PATIENT")
+        createAutorizationInfo("User3", "12345", "mail6", "phone6", "PATIENT")
+
         //14.Types_of_shifts
         createTypeOfShifts("1 смена (8-12)","08:00", "12:00" );
         createTypeOfShifts("2 смена (12-16)","12:00", "16:00" );
@@ -46,6 +56,11 @@ sequelize.authenticate()
         createTypeOfAppointment("день здорового ребёнка");
     })
     .then(()=>{
+        //2. Medical_cards
+        createMedicalCard("U-1", "1")
+        createMedicalCard("U-2", "1")
+        createMedicalCard("U-3", "1")
+
         //7.Analysis_norms
             //Сахар у мальчиков
         createAnalysisNorm("1","1","1", 2.8, 5.6, "ммоль/л")
@@ -96,5 +111,56 @@ sequelize.authenticate()
         createAnalysisNorm("4","2","4", 90, 95, "ударов")
         createAnalysisNorm("4","2","5", 72, 80, "ударов")
 
+        //11. Doctors
+        createDoctors("2", "Раиса", "Игрунова", "Эмуальдовна", "терапевт", "Гы, фотка")
+        createDoctors("3", "Наталья", "Царь", "Викторовна", "терапевт", "Га, фотка")
+    })
+    .then(()=> {
+        //8. Analysis_result
+        createAnalysisResult("1", "1", "4", 4.2, "2", "HELP ME")
+        createAnalysisResult("1", "1", "3", 107, "2", "Hello")
+        createAnalysisResult("2", "2", "17", 168, "3", "HELP ME")
+
+        //9. Medical_records
+        createMedicalRecord("1", "2022-01-02", "record ....", "kill me!")
+        createMedicalRecord("1", "2022-04-08", "record22 ....", "2kill me!")
+        createMedicalRecord("2", "2018-10-12", "record33 ....", "3kill me!")
+        createMedicalRecord("2", "2022-01-02", "record44 ....", "4kill me!")
+        createMedicalRecord("1", "2022-01-02", "record55 ....", "5kill me!")
+        createMedicalRecord("1", "2022-12-10", "record66 ....", "6kill me!")
+
+        //12. Sectors
+        createSectors("1")
+        createSectors("2")
+        createSectors("1")
+        createSectors("1")
+    })
+    .then(() => {
+        //13. Addresses
+        createAddress("1", "Брест","Советская", "33")
+        createAddress("2", "Витебск","Студенецкая", "123")
+        createAddress("3", "Гомель","50 лет СССР", "123")
+
+        //15. Timetable
+        createTimetable("2", "2", "2022-12-09")
+        createTimetable("3", "1", "2022-01-09")
+        createTimetable("2", "1", "2022-12-09")
+    })
+    .then(() => {
+        //16. Patients
+        createPatient("4", "1", "3", "Анна", "Трошко", "Николаевна", "2004-07-07", "2", "2", "43", "ОАО Белгорхимпром")
+        createPatient("5", "2", "1", "Владимир", "Трошко", "Николаевич", "2011-07-14", "1", "3", "44", "ОАО БелгорхимпромГаз")
+        createPatient("6", "3", "4", "Валерия", "Трошко", "Николаевна", "2002-01-20", "2", "2", "43", "ОАО БелгорхимпромПлюс")
+    })
+    .then(() => {
+        //17. House_calls
+        createHouseCalls("1", "1")
+        createHouseCalls("2", "3")
+        createHouseCalls("2", "4")
+        createHouseCalls("1", "5")
+
+        //19.Appointments
+        createAppointments("1","1","2","2","1", "12:15")
+        createAppointments("2","1","3","6","3", "16:15")
     })
     .catch(err => {console.log('Error!!!!DB is not connect(((:',err.message);});

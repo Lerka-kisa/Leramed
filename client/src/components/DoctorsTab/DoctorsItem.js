@@ -1,15 +1,12 @@
 import React from 'react';
 import {Card, Col} from "react-bootstrap";
 
-const DoctorsItem = ({analysisnorm}) => {
-    //const history = useHistory()
+const DoctorsItem = ({doctor}) => {
     return (
-        <Col md={4} className={"mt-3"}>
+        <Col className={"mt-3"}>
             <Card border={"active"} >
-                <h5 className={"m-2"}>Возрастная группа: {analysisnorm.id_agegroup}</h5>
-                <h5 className={"m-2"}>Пол: {analysisnorm.id_gender}</h5>
-                <h5 className={"m-2"}>Нижний порог: {analysisnorm.min} {analysisnorm.si_unit}</h5>
-                <h5 className={"m-2"}>Верхний порог: {analysisnorm.max} {analysisnorm.si_unit}</h5>
+                <h3 className={"mt-2 mx-3"}>{doctor.last_name} {doctor.first_name} {doctor.middle_name}</h3>
+                <h5 className={"mt-0 mx-4"}>{doctor.specialization}</h5>
             </Card>
         </Col>
     );
