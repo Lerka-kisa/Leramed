@@ -128,13 +128,13 @@ exports.createSectors = (id_doctor) => {
         })
 }
 
-exports.createAddress = (id_sector, city, street, house) => {
-    model.Addresses.create({id_sector:id_sector, city:city, street:street, house:house})
-        .then(() =>  console.log("ok"))
-        .catch(err => {
-            console.log("not ok")
-        })
-}
+// exports.createAddress = (id_sector, city, street, house) => {
+//     model.Addresses.create({id_sector:id_sector, city:city, street:street, house:house})
+//         .then(() =>  console.log("ok"))
+//         .catch(err => {
+//             console.log("not ok")
+//         })
+// }
 
 exports.createTypeOfShifts = (type_of_shift, start, end) => {
     model.Types_of_shifts.create({period_name: type_of_shift, beginning_of_period: start, end_of_period: end})
@@ -153,7 +153,7 @@ exports.createTimetable = (id_type_of_shift,id_doctor, date) => {
         })
 }
 
-exports.createPatient = (id_auth, id_medcard, id_agegroup, first_name, last_name, middle_name, birthday, id_gender, id_address, flat, place_of_work) => {
+exports.createPatient = (id_auth, id_medcard, id_agegroup, first_name, last_name, middle_name, birthday, id_gender, id_sector, address, place_of_work) => {
     model.Patients.create(
         {
             id_auth:id_auth,
@@ -164,8 +164,10 @@ exports.createPatient = (id_auth, id_medcard, id_agegroup, first_name, last_name
             middle_name:middle_name,
             birthday:birthday,
             id_gender:id_gender,
-            id_address:id_address,
-            flat:flat,
+            //id_address:id_address,
+            id_sector:id_sector,
+            //flat:flat,
+            address:address,
             place_of_work:place_of_work
         })
         .then(() =>  console.log("ok"))

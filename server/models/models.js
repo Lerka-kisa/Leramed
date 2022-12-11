@@ -102,7 +102,6 @@ Analysis_norms.belongsTo(Gender, {foreignKey: 'id_gender'})
 
 Analysis_results.init(
     {
-        //TODO 8)may be drop id_norm??
         id:             {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         result:         {type: DataTypes.STRING, allowNull:false},
         recommendation: {type: DataTypes.STRING, allowNull:true}
@@ -161,7 +160,7 @@ Doctors.init(
         last_name:      {type: DataTypes.STRING,  allowNull:true},
         middle_name:    {type: DataTypes.STRING,  allowNull:true},
         specialization: {type: DataTypes.STRING,  allowNull:true},
-        photo:          {type: DataTypes.STRING,  allowNull:true}
+        //photo:          {type: DataTypes.STRING,  allowNull:true}
         // id_auth
     },
     {sequelize, modelName:'Doctors', tableName:'Doctors', timestamps:false}
@@ -181,19 +180,20 @@ Sectors.init(
 Doctors.hasMany(Sectors,{foreignKey: 'id_doctor'});
 Sectors.belongsTo(Doctors,{foreignKey: 'id_doctor'});
 
-Addresses.init(
-    {
-        id:    {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
-        city: {type: DataTypes.STRING, allowNull:false},
-        street: {type: DataTypes.STRING, allowNull:false},
-        house: {type: DataTypes.STRING, allowNull:false}
-        // id_sector
-    },
-    {sequelize, modelName:'Addresses', tableName:'Addresses', timestamps:false}
-);
+//TODO table address
 
-Sectors.hasMany(Addresses, {foreignKey: 'id_sector'});
-Addresses.belongsTo(Sectors, {foreignKey: 'id_sector'});
+// Addresses.init(
+//     {
+//         id:    {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
+//         city: {type: DataTypes.STRING, allowNull:false},
+//         street: {type: DataTypes.STRING, allowNull:false},
+//         house: {type: DataTypes.STRING, allowNull:false}
+//         // id_sector
+//     },
+//     {sequelize, modelName:'Addresses', tableName:'Addresses', timestamps:false}
+// );
+// Sectors.hasMany(Addresses, {foreignKey: 'id_sector'});
+// Addresses.belongsTo(Sectors, {foreignKey: 'id_sector'});
 
 Types_of_shifts.init(
     {
@@ -223,24 +223,27 @@ Timetable.belongsTo(Types_of_shifts, {foreignKey: 'id_type_of_shift'});
 
 Patients.init(
     {
+        //TODO think about id_parent
         id:             {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         first_name:     {type: DataTypes.STRING,  allowNull:true},
         last_name:      {type: DataTypes.STRING,  allowNull:true},
         middle_name:    {type: DataTypes.STRING,  allowNull:true},
         birthday:       {type: DataTypes.DATEONLY, allowNull:true},
-        flat:           {type: DataTypes.STRING, allowNull:true},
-        place_of_work:  {type: DataTypes.STRING, allowNull:true}
-        // id_parent
+        place_of_work:  {type: DataTypes.STRING, allowNull:true},
+        address:        {type: DataTypes.STRING, allowNull:true}
+        //// id_parent
+        //// id_address
+        //// flat:           {type: DataTypes.STRING, allowNull:true},
         // id_auth
         // id_medcard
         // id_agegroup
-        // id_address
+        // id_sector
     },
     {sequelize, modelName:'Patients', tableName:'Patients', timestamps:false}
 );
 
-Patients.hasMany(Patients, {foreignKey: 'id_parent'});
-Patients.belongsTo(Patients, {foreignKey: 'id_parent'});
+// Patients.hasMany(Patients, {foreignKey: 'id_parent'});
+// Patients.belongsTo(Patients, {foreignKey: 'id_parent'});
 
 Authorization_info.hasOne(Patients, {foreignKey: 'id_auth'});
 Patients.belongsTo(Authorization_info, {foreignKey: 'id_auth'});
@@ -254,8 +257,11 @@ Patients.belongsTo(Age_group, {foreignKey: 'id_agegroup'});
 Gender.hasMany(Patients, {foreignKey: 'id_gender'});
 Patients.belongsTo(Gender, {foreignKey: 'id_gender'})
 
-Addresses.hasMany(Patients, {foreignKey: 'id_address'});
-Patients.belongsTo(Addresses, {foreignKey: 'id_address'});
+// Addresses.hasMany(Patients, {foreignKey: 'id_address'});
+// Patients.belongsTo(Addresses, {foreignKey: 'id_address'});
+
+Sectors.hasMany(Patients, {foreignKey: 'id_sector'});
+Patients.belongsTo(Sectors, {foreignKey: 'id_sector'});
 
 House_calls.init(
     {

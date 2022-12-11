@@ -6,17 +6,18 @@ import AgegroupeBar from "../../components/AnalysisNormTab/AgegroupeBar";
 import AnalysisNormList from "../../components/AnalysisNormTab/AnalysisNormList";
 import {Context} from "../../index";
 import {fetchAgegroups, fetchAnalysisNorms, fetchGenders, fetchTypes} from "../../http/analysisAPI";
+import {observer} from "mobx-react-lite";
 
-const AnalysisNorms = () => {
+const AnalysisNorms = observer(() => {
     const {analysis} = useContext(Context);
     useEffect(()=>{
         fetchTypes().then(data => analysis.setTypes(data))
         fetchGenders().then(data => analysis.setGender(data))
         fetchAgegroups().then(data => analysis.setAgegroup(data))
-    },[analysis])
+    })
     useEffect(()=>{
         fetchAnalysisNorms(analysis.selectedType.id).then(data => analysis.setAnalysisnorm(data))
-    },[analysis])
+    },[analysis.selectedType])
 
     return (
         <Container>
@@ -32,6 +33,6 @@ const AnalysisNorms = () => {
             </Row>
         </Container>
     );
-};
+});
 
 export default AnalysisNorms;

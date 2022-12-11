@@ -7,7 +7,7 @@ import {observer} from "mobx-react-lite";
 import {Context} from "../index";
 
 const Auth = observer(() => {
-    const {user} = useContext(Context)
+    const {auth} = useContext(Context)
     const location = useLocation()
     const navigate = useNavigate()
     const isLogin = location.pathname === LOGIN_ROUTE
@@ -21,13 +21,12 @@ const Auth = observer(() => {
         try{
             if (isLogin) {
                 await login(llogin,password)
-                user.check()
-                //console.log(data.role)
+                auth.check()
             }
             else {
                 if(password === password2){
                     await registration(llogin, mail, phone, password)
-                    user.check()
+                    auth.check()
                 }
                 else {
                     alert("Debil, passwords raznie")
@@ -37,8 +36,6 @@ const Auth = observer(() => {
         } catch (e) {
             alert(e.response.data.message)
         }
-
-
     }
 
     return (

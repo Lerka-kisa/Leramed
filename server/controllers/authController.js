@@ -9,7 +9,8 @@ const generateAccessJWT = (auth) => {
     return jwt.sign({
         id: auth.id,
         login: auth.login,
-        role: auth.role
+        role: auth.role,
+        id_acc: auth.id_acc
     }, accessKey, {expiresIn: 3600});
 }
 
@@ -35,7 +36,8 @@ module.exports = {
         if(!auth) {
             return next(ApiError.internal('Данные говно'))
         }
-
+        if(!auth.id_acc)
+            auth.id_acc = 0
         const accessToken = generateAccessJWT(auth);
         const refreshToken = generateRefreshJWT(auth);
 

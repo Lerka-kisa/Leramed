@@ -17,8 +17,20 @@ sequelize.authenticate()
     .then(() => {console.log('Hurray!!! You are connected)))');})
     .then(() => {
 
-        model.Analysis_norms.create({id_analysis_type: "1", id_gender: "1", id_agegroup: "1", min: 2.8, max: 5.6, SI_unit: "si_unit"  })
-            .then(() =>  console.log("ok"))
+        model.Medcards_records.findAll({
+                include:[{
+                    model: model.Medical_cards,
+                    required: true,
+                    include:[{
+                        model: model.Patients,
+                        required: true,
+                        where:{id:1}
+                    }
+                    ]
+                }]
+            }
+        )
+            .then((data) =>  console.log(data))
             .catch(err => {
                 console.log("not ok")
             })

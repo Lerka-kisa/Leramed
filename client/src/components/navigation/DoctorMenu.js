@@ -11,13 +11,13 @@ import {useNavigate} from "react-router-dom";
 import {Context} from "../../index";
 import DropdownItem from "react-bootstrap/DropdownItem";
 const DoctorMenu = () => {
-    const {user} = useContext(Context)
+    const {auth} = useContext(Context)
     const navigate = useNavigate()
 
     const logout = async () => {
         //await logout()
         localStorage.clear()
-        user.check()
+        auth.check()
         navigate(LOGIN_ROUTE)
     }
     return (

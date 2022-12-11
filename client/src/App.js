@@ -9,13 +9,13 @@ import {check} from "./http/authAPI";
 import {Spinner} from "react-bootstrap";
 
 const App = observer(() => {
-    const {user} = useContext(Context)
+    const {auth} = useContext(Context)
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
         check().then(data => {
-            user.setUser(true)
-            user.setIsAuth(true)
+            auth.setUser(true)
+            auth.setIsAuth(true)
         }).finally(() => setLoading(false))
     })
 

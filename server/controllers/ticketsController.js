@@ -15,16 +15,11 @@ module.exports = {
     getDoctorShifts: async (req, res, next) => {
         let id = parseInt(req.params.id)
 
-
-        const result = await TicketsService.getDoctorShifts(id)
-        if(!result) {
-            return next(ApiError.internal('Некая ошибка(((((('))
+        const doctors = await TicketsService.getDoctorShifts(id)
+        if(!doctors) {
+            return next(ApiError.internal('Что-то пошло не так'))
         }
-        //const data = await AuthService.login(req.body.login, hashPassword)
-        // const accessToken = generateAccessJWT(data);
-        // const refreshToken = generateRefreshJWT(data);
-        //
-        // return res.status(200).json({token: accessToken})
-        // //return res.json(data);
+
+        return res.status(200).json(doctors)
     }
 };

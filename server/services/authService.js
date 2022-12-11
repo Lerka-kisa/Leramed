@@ -23,6 +23,20 @@ class AuthService {
             }
         })
         if(!res) return null;//throw ApiError.NotFound()
+        if(res.role === "PATIENT"){
+            const pat = await model.Patients.findOne({
+                attributes:["id"],
+                where:{id_auth:res.id}
+            })
+            res.id_acc = pat.id
+        }
+        if(res.role === "DOCTOR"){
+            const pat = await model.Doctors.findOne({
+                attributes:["id"],
+                where:{id_auth:res.id}
+            })
+            res.id_acc = pat.id
+        }
         return res
     }
 

@@ -3,7 +3,7 @@ import React from 'react';
 const HouseCalls = () => {
     return (
         <div>
-            Вызовы на дом
+            А вот тут у нас страничка с вызовами на дом
         </div>
     );
 };

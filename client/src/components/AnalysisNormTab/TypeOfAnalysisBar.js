@@ -5,7 +5,7 @@ import {Context} from "../../index";
 
 const TypeOfAnalysisBar = observer(() => {
     const {analysis} = useContext(Context)
-
+    //console.log(analysis.types)
     return (
         <ListGroup>
             {analysis.types.map(type =>

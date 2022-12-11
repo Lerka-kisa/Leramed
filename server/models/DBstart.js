@@ -10,9 +10,9 @@ sequelize.authenticate()
     .then(() => {console.log('Hurray!!! You are connected)))');})
     .then(() => {
         //1. Card_status
-        createCardStatus("В регистратуре");
-        createCardStatus("У врача");
-        createCardStatus("У пациента");
+        createCardStatus("в регистратуре");
+        createCardStatus("у врача");
+        createCardStatus("у пациента");
 
         //3. Type_of_analyzes
         createTypeOfAnalysis("Сахар в крови");
@@ -28,8 +28,9 @@ sequelize.authenticate()
         createAgeGroup("от 14 до 18 лет");
 
         //5. Gender
-        createGender("Мужчина");
-        createGender("Женщина");
+        createGender("мужской");
+        createGender("женский");
+        createGender("не решил(а)");
 
         //6.Norms_scores
         createNormScore("Ниже нормы");
@@ -122,12 +123,12 @@ sequelize.authenticate()
         createAnalysisResult("2", "2", "17", 168, "3", "HELP ME")
 
         //9. Medical_records
-        createMedicalRecord("1", "2022-01-02", "record ....", "kill me!")
-        createMedicalRecord("1", "2022-04-08", "record22 ....", "2kill me!")
-        createMedicalRecord("2", "2018-10-12", "record33 ....", "3kill me!")
-        createMedicalRecord("2", "2022-01-02", "record44 ....", "4kill me!")
-        createMedicalRecord("1", "2022-01-02", "record55 ....", "5kill me!")
-        createMedicalRecord("1", "2022-12-10", "record66 ....", "6kill me!")
+        createMedicalRecord("1", "2022-01-02", "Болит горло и температура вонючая", "Попей таблетосы")
+        createMedicalRecord("1", "2022-04-08", "Голова болит сильно сильно", "Таблетки для лохов, пей пиво!")
+        createMedicalRecord("2", "2018-10-12", "Месячные", "Либо вырезаем матку, либо меняй пол, либо беременность")
+        createMedicalRecord("2", "2022-01-02", "Болит нога", "Иди ко мне, отрежу")
+        createMedicalRecord("1", "2022-01-02", "Болят глазки", "Меньше сиди в компике")
+        createMedicalRecord("1", "2022-12-10", "Слишком часто кровь идёт из носа", "Не ковыряй в носу)")
 
         //12. Sectors
         createSectors("1")
@@ -136,10 +137,10 @@ sequelize.authenticate()
         createSectors("1")
     })
     .then(() => {
-        //13. Addresses
-        createAddress("1", "Брест","Советская", "33")
-        createAddress("2", "Витебск","Студенецкая", "123")
-        createAddress("3", "Гомель","50 лет СССР", "123")
+        // //13. Addresses
+        // createAddress("1", "Брест","Советская", "33")
+        // createAddress("2", "Витебск","Студенецкая", "123")
+        // createAddress("3", "Гомель","50 лет СССР", "123")
 
         //15. Timetable
         createTimetable("2", "2", "2022-12-09")
@@ -148,9 +149,9 @@ sequelize.authenticate()
     })
     .then(() => {
         //16. Patients
-        createPatient("4", "1", "3", "Анна", "Трошко", "Николаевна", "2004-07-07", "2", "2", "43", "ОАО Белгорхимпром")
-        createPatient("5", "2", "1", "Владимир", "Трошко", "Николаевич", "2011-07-14", "1", "3", "44", "ОАО БелгорхимпромГаз")
-        createPatient("6", "3", "4", "Валерия", "Трошко", "Николаевна", "2002-01-20", "2", "2", "43", "ОАО БелгорхимпромПлюс")
+        createPatient("4", "1", "3", "Анна", "Трошко", "Николаевна", "2004-07-07", "2", "2", "г.Заславль, ул.Советская, д.94, кв.34", "ОАО Белгорхимпром")
+        createPatient("5", "2", "1", "Владимир", "Трошко", "Николаевич", "2011-07-14", "1", "3", "г.Заславль, ул.Студенецкая, д.8А, кв.100", "ОАО БелгорхимпромГаз")
+        createPatient("6", "3", "4", "Валерия", "Трошко", "Николаевна", "2002-01-20", "2", "2", "г.Заславль, ул.Путейко, д.60", "ОАО БелгорхимпромПлюс")
     })
     .then(() => {
         //17. House_calls

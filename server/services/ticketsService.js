@@ -10,9 +10,17 @@ class TicketsService {
     }
     async getDoctorShifts(id_doctor){
         const res = await model.Appointments.findAll({
-            where:{id_doctor:id_doctor}
+            required: true,
+            include:[{
+                model: model.Timetable,
+                required: true,
+                where:{id_doctor:id_doctor}
+            },{
+                model: model.Patients,
+                required: true
+            }]
         })
-        if(!res) return null;//throw ApiError.NotFound()
+        if(!res) throw ApiError.BadRequest()
         return res
     }
 

@@ -12,13 +12,13 @@ import {useNavigate} from "react-router-dom";
 
 
 const PatientMenu = () => {
-    const {user} = useContext(Context)
+    const {auth} = useContext(Context)
     const navigate = useNavigate()
 
     const logout = async () => {
         //await logout()
         localStorage.clear()
-        user.check()
+        auth.check()
         navigate(LOGIN_ROUTE)
     }
 
@@ -36,7 +36,6 @@ const PatientMenu = () => {
             </Nav>
         </>)
 };
-//onClick={()=> user.setRole(4)}
 
 
 export default PatientMenu;

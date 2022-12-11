@@ -15,7 +15,7 @@ module.exports = {
         return res.json(list)
     },
     getAnalysisNorms: async (req, res, next) => {
-        let {typeId}  = req.query;
+        let {typeId, genderId, agegroupId}  = req.query;
 
         let analysis_norm;
         if (typeId){
@@ -24,30 +24,30 @@ module.exports = {
         if (!typeId) {
             analysis_norm = await AnalysisService.getAllAnalysisNorms()
         }
-        // if (!typeId && !genderId && !agegroupId) {
-        //     analysis_norm = await AnalysisService.getAllAnalysisNorms()
-        // }
-        // if (typeId && !genderId && !agegroupId) {
-        //     analysis_norm = await AnalysisService.getAnalysisNormsT(typeId)
-        // }
-        // if (!typeId && genderId && !agegroupId) {
-        //     analysis_norm = await AnalysisService.getAnalysisNormsG(genderId)
-        // }
-        // if (!typeId && !genderId && agegroupId) {
-        //     analysis_norm = await AnalysisService.getAnalysisNormsA(agegroupId)
-        // }
-        // if (typeId && genderId && !agegroupId) {
-        //     analysis_norm = await AnalysisService.getAnalysisNormsTG(typeId, genderId)
-        // }
-        // if (typeId && !genderId && agegroupId) {
-        //     analysis_norm = await AnalysisService.getAnalysisNormsTA(typeId, agegroupId)
-        // }
-        // if (!typeId && genderId && agegroupId) {
-        //     analysis_norm = await AnalysisService.getAnalysisNormsGA(genderId, agegroupId)
-        // }
-        // if (typeId && genderId && agegroupId) {
-        //     analysis_norm = await AnalysisService.getAnalysisNormsTGA(typeId, genderId, agegroupId)
-        // }
+        if (!typeId && !genderId && !agegroupId) {
+            analysis_norm = await AnalysisService.getAllAnalysisNorms()
+        }
+        if (typeId && !genderId && !agegroupId) {
+            analysis_norm = await AnalysisService.getAnalysisNormsT(typeId)
+        }
+        if (!typeId && genderId && !agegroupId) {
+            analysis_norm = await AnalysisService.getAnalysisNormsG(genderId)
+        }
+        if (!typeId && !genderId && agegroupId) {
+            analysis_norm = await AnalysisService.getAnalysisNormsA(agegroupId)
+        }
+        if (typeId && genderId && !agegroupId) {
+            analysis_norm = await AnalysisService.getAnalysisNormsTG(typeId, genderId)
+        }
+        if (typeId && !genderId && agegroupId) {
+            analysis_norm = await AnalysisService.getAnalysisNormsTA(typeId, agegroupId)
+        }
+        if (!typeId && genderId && agegroupId) {
+            analysis_norm = await AnalysisService.getAnalysisNormsGA(genderId, agegroupId)
+        }
+        if (typeId && genderId && agegroupId) {
+            analysis_norm = await AnalysisService.getAnalysisNormsTGA(typeId, genderId, agegroupId)
+        }
 
         return res.json(analysis_norm)
     },

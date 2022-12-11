@@ -10,9 +10,9 @@ import AdminMenu from "./navigation/AdminMenu";
 import GuestMenu from "./navigation/GuestMenu";
 
 const NavBar = observer(() => {
-    const {user} = useContext(Context)
+    const {auth} = useContext(Context)
     let Menu = <></>
-    switch (user.role) {
+    switch (auth.role) {
         case "ADMIN":
             Menu = <AdminMenu></AdminMenu>
             break

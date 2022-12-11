@@ -5,21 +5,21 @@ import {Context} from "../index";
 import Main from "../pages/Main";
 
 const AppRouter = () => {
-    const {user} = useContext(Context)
-    //console.log(user)
+    const {auth} = useContext(Context)
+    //console.log(auth)
 
     return (
         <Routes>
-            {user.role === "ADMIN" && adminRoutes.map(({path, Component}) =>
+            {auth.role === "ADMIN" && adminRoutes.map(({path, Component}) =>
                 <Route key = {path} path = {path} element = {<Component/>} exact/>
             )}
-            {user.role === "DOCTOR" && doctorRoutes.map(({path, Component}) =>
+            {auth.role === "DOCTOR" && doctorRoutes.map(({path, Component}) =>
                 <Route key = {path} path = {path} element = {<Component/>} exact/>
             )}
-            {user.role === "PATIENT" && patientRoutes.map(({path, Component}) =>
+            {auth.role === "PATIENT" && patientRoutes.map(({path, Component}) =>
                 <Route key = {path} path = {path} element = {<Component/>} exact/>
             )}
-            {user.role === "GUEST" && publicRoutes.map(({path, Component}) =>
+            {auth.role === "GUEST" && publicRoutes.map(({path, Component}) =>
                 <Route key = {path} path = {path} element = {<Component/>} exact/>
             )}
             <Route path="*" element = {<Main></Main>}/>
