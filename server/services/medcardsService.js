@@ -24,6 +24,17 @@ class MedcardsService {
         if(!res) throw ApiError.BadRequest()
         return res
     }
+
+    async addRecord(id_medcard, date, record, recommendation){
+        const res = await model.Medcards_records.create({
+            id_medcard: id_medcard,
+            date: date,
+            record: record,
+            recommendation: recommendation
+        })
+        if(!res) throw ApiError.BadRequest()
+        return res
+    }
 }
 
 module.exports = new MedcardsService()

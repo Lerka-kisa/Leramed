@@ -16,7 +16,7 @@ const validateAccessToken = (token) => {
 };
 
 module.exports = {
-    getOneMedcard: async (req, res, next) => {
+    getMedcard: async (req, res, next) => {
         const token = req.headers.authorization.split(' ')[1]
         if(!token)
             return next(ApiError.UnauthorizedError())
@@ -32,6 +32,22 @@ module.exports = {
         }
         return res.status(200).json(info)
     },
+    getMedcardById: async (req, res, next) => {
+        const token = req.headers.authorization.split(' ')[1]
+        if(!token)
+            return next(ApiError.UnauthorizedError())
+        const userData = validateAccessToken(token)
+        if (!userData)
+            return next(ApiError.UnauthorizedError())
+
+        const {id} =req.query;
+        const info = await MedcardsService.getMedcard(id)
+
+        if(!info) {
+            return next(ApiError.internal('Что-то пошло не так'))
+        }
+        return res.status(200).json(info)
+    },
     getOneRecord: async (req, res, next) => {
         const info = await MedcardsService.getOneRecord(req.body.id)
         if(!info) {
@@ -39,5 +55,20 @@ module.exports = {
         }
 
         return res.status(200).json(info)
-    }
+    },
+    addRecord: async (req, res, next) => {
+        const token = req.headers.authorization.split(' ')[1]
+        if(!token)
+            return next(ApiError.UnauthorizedError())
+        const userData = validateAccessToken(token)
+        if (!userData)
+            return next(ApiError.UnauthorizedError())
+
+        const info = await MedcardsService.addRecord(req.body.id_medcard, req.body.date, req.body.record, req.body.recommendation)
+
+        if(!info) {
+            return next(ApiError.internal('Что-то пошло не так'))
+        }
+        return res.status(200).json(info)
+    },
 };

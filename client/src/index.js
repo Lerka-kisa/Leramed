@@ -7,6 +7,8 @@ import DoctorsStore from "./store/DoctorsStore";
 import UserStore from "./store/UserStore";
 import MedicalRecordStore from "./store/MedicalRecordStore";
 
+import "https://kit.fontawesome.com/6d49599fad.js"
+
 export const Context = createContext(null)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -17,6 +17,14 @@ const AgegroupeBar = observer(() => {
                     {agegroup.group_name}
                 </Card>
             )}
+            <Card
+                key={0}
+                className="p-2 w-auto m-1"
+                onClick = {() => analysis.setSelectedAgegroup("")}
+                border = 'light'
+            >
+                <i className="fa fa-times m-1" aria-hidden="true"></i>
+            </Card>
         </Row>
     );
 });

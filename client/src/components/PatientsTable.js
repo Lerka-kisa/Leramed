@@ -1,23 +1,15 @@
-import React, {useContext, useEffect} from 'react';
+import React from 'react';
 import Table from "react-bootstrap/Table";
-import RecordModal from "./MedcardsTab/Modals/RecordModal";
-import {Context} from "../index";
-import {fetchGetPatients} from "../http/doctorsAPI";
 import {observer} from "mobx-react-lite";
+import {DOCTOR_PATIENTS_ROUTE} from "../utils/consts";
 
-const PatientsTable = observer(() => {
-    const {doctors} = useContext(Context)
-    //const {auth} = useContext(Context)
-    // const {records} = useContext(Context)
+const PatientsTable = observer(({patients}) => {
 
-    useEffect(()=>{
-        fetchGetPatients().then(data => doctors.setPatients(data))
-    }, [doctors.patients])
     return (
         <>
             <Table striped bordered hover size="sm">
                 <thead>
-                <tr>
+                <tr >
                     <th>ФИО</th>
                     <th>Дата рождения</th>
                     <th>Адрес</th>
@@ -26,8 +18,8 @@ const PatientsTable = observer(() => {
                 </tr>
                 </thead>
                 <tbody>
-                {doctors.patients.map(patient =>
-                    <tr>
+                {patients.map(patient =>
+                    <tr onClick={() => {setIsCard(true); setIdCard(patient.id)}}>
                         <td>{patient.FIO}</td>
                         <td>{patient.birthday}</td>
                         <td>{patient.address}</td>

@@ -1,4 +1,4 @@
-const  {Sequelize, Model, sequelize} = require('../DB')
+const  {Model, sequelize} = require('../DB')
 const {log} = require("nodemon/lib/utils");
 const Console = require("console");
 const model = require("../models/models");
@@ -6,6 +6,8 @@ const json = require("body-parser/lib/types/json");
 const {where} = require("sequelize");
 const {Authorization_info} = require("./models");
 const {createGender} = require("./funcDBstart");
+
+const Sequelize = require("sequelize");
 
 const print = (p) => {
     let k = 0;
@@ -17,19 +19,18 @@ sequelize.authenticate()
     .then(() => {console.log('Hurray!!! You are connected)))');})
     .then(() => {
 
-        model.Medcards_records.findAll({
-                include:[{
-                    model: model.Medical_cards,
-                    required: true,
-                    include:[{
-                        model: model.Patients,
-                        required: true,
-                        where:{id:1}
-                    }
-                    ]
-                }]
-            }
-        )
+        model.Patients.findAll({
+            where: {  [Sequelize.Op.and]: [{ last_name: {  [Sequelize.Op.substring]: "шко" }}, {middle_name: { [Sequelize.Op.substring]: "вна" }}]},
+            include:[
+
+                { model: model.Authorization_info, required: true },
+                { model: model.Medical_cards, required: true,
+                    include:[{ model: model.Card_status, required: true }]
+                },
+                { model: model.Gender, required: true },
+                { model: model.Age_group, required: true}
+            ]
+        })
             .then((data) =>  console.log(data))
             .catch(err => {
                 console.log("not ok")

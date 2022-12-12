@@ -45,7 +45,8 @@ export const adminRoutes = [
     { path: ADMIN_ANALYSIS_ROUTE, Component: Analysis },
     { path: ADMIN_ANALYSIS_NORM_ROUTE, Component: AnalysisNorms },
     { path: ADMIN_PATIENTS_ROUTE, Component: Patients },
-    { path: ADMIN_MEDCARDS_ROUTE, Component: TableMedCards }
+    { path: ADMIN_PATIENTS_ROUTE + "/:id",
+        Component: MedCard }
 ]
 
 export const doctorRoutes = [
@@ -55,7 +56,9 @@ export const doctorRoutes = [
     { path: DOCTOR_HOUSECALL_ROUTE, Component: HouseCalls },
     { path: DOCTOR_ANALYSIS_ROUTE, Component: Analysis },
     { path: DOCTOR_ANALYSIS_NORM_ROUTE, Component: AnalysisNorms },
-    { path: DOCTOR_PATIENTS_ROUTE, Component: Patients }
+    { path: DOCTOR_PATIENTS_ROUTE, Component: Patients },
+    { path: DOCTOR_PATIENTS_ROUTE + "/:id",
+        Component: MedCard  }
 ]
 
 export const patientRoutes = [

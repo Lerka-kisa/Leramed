@@ -6,13 +6,6 @@ import {Context} from "../../../index";
 
 const RecordModal = ({show, onHide, role, record}) => {
 
-    // const [address, setAddress] = useState('')
-    // const updAddressL = () => {
-    //     //console.log(address)
-    //     updAddress(address).then(data => onHide());
-    //     //updateAddress(name)
-    //     //createDevice(formData).then(data => onHide())
-    // }
     return (
         <Modal
             show={show}

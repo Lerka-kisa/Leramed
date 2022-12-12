@@ -27,7 +27,6 @@ const MedicalRecordsTable = ({records, auth}) => {
                             <td>{record.record}</td>
                             <td>{record.recommendation}</td>
                         </tr>
-
                     </>
                 )}
                 </tbody>

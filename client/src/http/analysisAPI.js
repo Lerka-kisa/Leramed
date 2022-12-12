@@ -15,7 +15,9 @@ export const fetchAgegroups = async () => {
     return data;
 }
 
-export const fetchAnalysisNorms = async (typeId) => {
-    const {data} = await $authHost.get("api/analysis/getAnalysisNorms", {params: {typeId}})
+export const fetchAnalysisNorms = async (typeId, genderId, agegroupId) => {
+    const {data} = await $authHost.get("api/analysis/getAnalysisNorms", {params: {
+        typeId, genderId, agegroupId
+    }})
     return data;
 }

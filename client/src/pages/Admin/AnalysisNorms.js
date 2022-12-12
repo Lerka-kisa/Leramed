@@ -16,8 +16,9 @@ const AnalysisNorms = observer(() => {
         fetchAgegroups().then(data => analysis.setAgegroup(data))
     })
     useEffect(()=>{
-        fetchAnalysisNorms(analysis.selectedType.id).then(data => analysis.setAnalysisnorm(data))
-    },[analysis.selectedType])
+        fetchAnalysisNorms(analysis.selectedType.id, analysis.selectedGender.id, analysis.selectedAgegroup.id)
+            .then(data => analysis.setAnalysisnorm(data))
+    },[analysis.selectedType,analysis.selectedGender,analysis.selectedAgegroup])
 
     return (
         <Container>

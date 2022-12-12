@@ -18,12 +18,12 @@ module.exports = {
         let {typeId, genderId, agegroupId}  = req.query;
 
         let analysis_norm;
-        if (typeId){
-            analysis_norm = await AnalysisService.getAnalysisNormsT(typeId)
-        }
-        if (!typeId) {
-            analysis_norm = await AnalysisService.getAllAnalysisNorms()
-        }
+        // if (typeId){
+        //     analysis_norm = await AnalysisService.getAnalysisNormsT(typeId)
+        // }
+        // if (!typeId) {
+        //     analysis_norm = await AnalysisService.getAllAnalysisNorms()
+        // }
         if (!typeId && !genderId && !agegroupId) {
             analysis_norm = await AnalysisService.getAllAnalysisNorms()
         }

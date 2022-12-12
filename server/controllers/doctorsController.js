@@ -23,8 +23,53 @@ module.exports = {
         const userData = validateAccessToken(token)
         if (!userData)
             return next(ApiError.UnauthorizedError())
+        let {type, search, searchName, searchSurname, searchMiddle}  = req.query;
 
-        const info = await DoctorsService.getPatients()
+        let info;
+        if(!search && (!searchName && !searchSurname && !searchMiddle))
+            info = await DoctorsService.getPatients()
+
+        if(search){
+            switch(type) {
+                case '2':
+                    info = await DoctorsService.getPatientsA(search)
+                    break
+                case '3':
+                    info = await DoctorsService.getPatientsC(search)
+                    break
+                default:
+                    break
+            }
+        }
+
+        if(searchName && !searchSurname && !searchMiddle){
+            info = await DoctorsService.getPatientsI(searchName)
+        }
+
+        if(!searchName && searchSurname && !searchMiddle){
+            info = await DoctorsService.getPatientsF(searchSurname)
+        }
+
+        if(!searchName && !searchSurname && searchMiddle){
+            info = await DoctorsService.getPatientsO(searchMiddle)
+        }
+
+        if(searchName && searchSurname && !searchMiddle){
+            info = await DoctorsService.getPatientsFI(searchSurname, searchName)
+        }
+
+        if(!searchName && searchSurname && searchMiddle){
+            info = await DoctorsService.getPatientsFO(searchSurname, searchMiddle)
+        }
+
+        if(searchName && !searchSurname && searchMiddle){
+            info = await DoctorsService.getPatientsIO(searchName, searchMiddle)
+        }
+
+        if(searchName && searchSurname && searchMiddle){
+            info = await DoctorsService.getPatientsFIO(searchSurname, searchName, searchMiddle)
+        }
+
 
         if(!info) {
             return next(ApiError.internal('Что-то пошло не так'))
