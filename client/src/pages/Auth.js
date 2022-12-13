@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 import {Button, Card, Container, Form, Row} from "react-bootstrap";
 import {NavLink, useLocation,useNavigate} from "react-router-dom";
-import {CLINIK_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE} from "../utils/consts";
+import {CLINIK_ROUTE, LOGIN_ROUTE, PATIENT_ADDINFO_ROUTE, REGISTRATION_ROUTE} from "../utils/consts";
 import {registration, login} from "../http/authAPI";
 import {observer} from "mobx-react-lite";
 import {Context} from "../index";
@@ -22,17 +22,18 @@ const Auth = observer(() => {
             if (isLogin) {
                 await login(llogin,password)
                 auth.check()
+                navigate(CLINIK_ROUTE)
             }
             else {
                 if(password === password2){
                     await registration(llogin, mail, phone, password)
-                    auth.check()
+                    //auth.check()
+                    navigate(PATIENT_ADDINFO_ROUTE)
                 }
                 else {
                     alert("Debil, passwords raznie")
                 }
             }
-            navigate(CLINIK_ROUTE)
         } catch (e) {
             alert(e.response.data.message)
         }

@@ -19,24 +19,25 @@ sequelize.authenticate()
     .then(() => {console.log('Hurray!!! You are connected)))');})
     .then(() => {
 
-        model.Patients.findAll({
-            where: {  [Sequelize.Op.and]: [{ last_name: {  [Sequelize.Op.substring]: "шко" }}, {middle_name: { [Sequelize.Op.substring]: "вна" }}]},
-            include:[
-
-                { model: model.Authorization_info, required: true },
-                { model: model.Medical_cards, required: true,
-                    include:[{ model: model.Card_status, required: true }]
-                },
-                { model: model.Gender, required: true },
-                { model: model.Age_group, required: true}
-            ]
-        })
+        const ll = model.Patients.update({
+                last_name:"last_name",
+                first_name:"first_name",
+                middle_name:"middle_name",
+                id_gender:1,
+                birthday:"2002-01-15",
+                id_agegroup:5,
+                address:"address",
+                place_of_work:"place_of_work"
+            },{
+            where:{id:11}
+        }
+        )
             .then((data) =>  console.log(data))
             .catch(err => {
                 console.log("not ok")
             })
 
-
+        console.log(ll)
 
         //------------------------------------
         //Faculty.findAll({raw:true}).then(faculties => console.log(faculties));

@@ -2,7 +2,7 @@ import {$authHost} from "./index";
 
 export const fetchGetinfo = async () => {
     const {data} = await $authHost.get("api/userinfo/getinfo")
-    console.log(data.id)
+    //console.log(data.id)
     let user = {id:data.id};
     user.first_name = data.first_name;
     user.last_name = data.last_name;
@@ -10,9 +10,6 @@ export const fetchGetinfo = async () => {
     user.birthday = data.birthday;
     user.place_of_work = data.place_of_work;
     user.address = data.address;
-    // user.city = data.Address.city;
-    // user.street = data.Address.street;
-    // user.house = data.Address.house;
     user.gender = data.Gender.gender;
     user.genderid = data.id_gender;
     user.flat = data.flat;
@@ -23,6 +20,11 @@ export const fetchGetinfo = async () => {
     user.card_status = data.Medical_card.Card_status.status;
 
     return user;
+}
+export const AddUserinfo = async (last_name, first_name, middle_name, birthday, id_gender, address, place_of_work, age) => {
+    console.log(last_name, first_name, middle_name, birthday, id_gender, address, place_of_work, age)
+    const {data} = await $authHost.post("api/userinfo/addinfo", {last_name, first_name, middle_name, birthday, id_gender, address, place_of_work, age})
+    return data;
 }
 
 // agegroup:"От 3 до 8",

@@ -30,7 +30,7 @@ const NavBar = observer(() => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-                <NavLink style={{color:'white'}} to={CLINIK_ROUTE}>LeraMed</NavLink>
+                <NavLink style={{color:'white'}} className='display-6 mb-2' to={CLINIK_ROUTE}>LeraMed</NavLink>
                 {Menu}
             </Container>
         </Navbar>

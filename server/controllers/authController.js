@@ -11,7 +11,7 @@ const generateAccessJWT = (auth) => {
         login: auth.login,
         role: auth.role,
         id_acc: auth.id_acc
-    }, accessKey, {expiresIn: 3600});
+    }, accessKey, {expiresIn: "1h"});
 }
 
 const generateRefreshJWT = (auth) => {
@@ -19,7 +19,7 @@ const generateRefreshJWT = (auth) => {
         id: auth.id,
         login: auth.login,
         role: auth.role
-    }, refreshKey, {expiresIn: 24 * 3600});
+    }, refreshKey, {expiresIn: "30d"});
 }
 
 module.exports = {
@@ -59,6 +59,9 @@ module.exports = {
             return next(ApiError.internal('Некая ошибка(((((('))
         }
         const data = await AuthService.login(req.body.login, hashPassword)
+        if(!data) {
+            return next(ApiError.internal('Данные говно'))
+        }
         const accessToken = generateAccessJWT(data);
         const refreshToken = generateRefreshJWT(data);
 

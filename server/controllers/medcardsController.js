@@ -70,5 +70,5 @@ module.exports = {
             return next(ApiError.internal('Что-то пошло не так'))
         }
         return res.status(200).json(info)
-    },
+    }
 };

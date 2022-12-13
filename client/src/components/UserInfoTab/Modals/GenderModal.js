@@ -31,19 +31,12 @@ const GenderModal = ({show, onHide}) => {
             </Modal.Header>
             <Modal.Body>
                 <Form>
-                    <Dropdown className="mt-2 mb-2">
-                        <Dropdown.Toggle>{analysis.selectedGender.gender || "Выберите тип"}</Dropdown.Toggle>
-                        <Dropdown.Menu>
-                            {analysis.gender.map(type =>
-                                <Dropdown.Item
-                                    onClick={() => setGender(type.id)}
-                                    key={type.id}
-                                >
-                                    {type.gender}
-                                </Dropdown.Item>
-                            )}
-                        </Dropdown.Menu>
-                    </Dropdown>
+                    <Form.Select aria-label="Default select example" onChange={e => setGender(e.target.value)}>
+                        <option>Выберите пол</option>
+                        {analysis.gender.map(type =>
+                            <option value={type.id}>{type.gender}</option>
+                        )}
+                    </Form.Select>
                 </Form>
             </Modal.Body>
             <Modal.Footer>

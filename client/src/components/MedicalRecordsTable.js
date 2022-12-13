@@ -27,6 +27,7 @@ const MedicalRecordsTable = ({records, auth}) => {
                             <td>{record.record}</td>
                             <td>{record.recommendation}</td>
                         </tr>
+
                     </>
                 )}
                 </tbody>
@@ -37,6 +38,7 @@ const MedicalRecordsTable = ({records, auth}) => {
                 record = {obj}
                 onHide={() => setRecordVisible(false)}
             />
+
         </>
     );
 };

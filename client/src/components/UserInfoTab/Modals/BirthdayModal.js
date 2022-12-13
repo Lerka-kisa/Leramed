@@ -6,6 +6,7 @@ import {updBirthday} from "../../../http/userinfoAPI";
 
 const BirthdayModal = ({show, onHide}) => {
     const [birthday, setBirthday] = useState('')
+    let today  = new Date().toISOString().split('T')[0]
     const updDate = () => {
         console.log(birthday)
         updBirthday(birthday).then(data => onHide());
@@ -24,6 +25,7 @@ const BirthdayModal = ({show, onHide}) => {
                 <Form>
                     <Form.Control
                         type = "date"
+                        max={today}
                         value={birthday}
                         onChange={e => setBirthday(e.target.value)}
                         className="mt-3"

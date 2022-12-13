@@ -30,6 +30,10 @@ export default class AnalysisStore{
         this._analysisnorm = norm
     }
 
+    setAnalysis(anal){
+        this._analysis= anal
+    }
+
     get types(){ return this._types }
     get gender(){ return this._gender }
     get agegroup(){ return this._agegroup }
@@ -37,6 +41,7 @@ export default class AnalysisStore{
     get selectedGender(){ return this._selectedGender}
     get selectedAgegroup(){ return this._selectedAgegroup}
     get analysisnorm(){ return this._analysisnorm }
+    get analysis(){ return this._analysis }
 
     check = async () => {
         this._types = []
@@ -47,5 +52,6 @@ export default class AnalysisStore{
         this._selectedAgegroup = {}
 
         this._analysisnorm =[]
+        this._analysis = []
     }
 }

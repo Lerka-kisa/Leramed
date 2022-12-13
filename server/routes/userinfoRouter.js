@@ -3,6 +3,7 @@ const userinfoController= require("../controllers/userinfoController");
 const userinfoRouter = new express.Router();
 
 userinfoRouter.get("/getinfo", userinfoController.getInfo)
+userinfoRouter.post("/addinfo", userinfoController.addInfo)
 userinfoRouter.post("/updbirthday", userinfoController.updBirthday)
 userinfoRouter.post("/updgender", userinfoController.updGender)
 userinfoRouter.post("/updaddress", userinfoController.updAddress)

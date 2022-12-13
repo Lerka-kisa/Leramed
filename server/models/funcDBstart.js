@@ -27,8 +27,12 @@ exports.createTypeOfAnalysis = (type_of_analyze) => {
         })
 }
 
-exports.createAgeGroup = (age_group) => {
-    model.Age_group.create({group_name: age_group})
+exports.createAgeGroup = (age_group, min, max) => {
+    model.Age_group.create({
+        group_name: age_group,
+        min: min,
+        max: max
+    })
         .then(() =>  console.log("ok"))
         .catch(err => {
             console.log("not ok")
@@ -59,7 +63,7 @@ exports.createAnalysisNorm = (type, gender, agegroup, min, max, si_unit) => {
         })
 }
 
-exports.createAnalysisResult = (id_medcard, id_analysis_type, id_norm, result, norm_score, recommendation) => {
+exports.createAnalysisResult = (id_medcard, id_analysis_type, id_norm, result, norm_score, recommendation, date) => {
     model.Analysis_results.create(
         {
             id_medcard:id_medcard,
@@ -67,6 +71,7 @@ exports.createAnalysisResult = (id_medcard, id_analysis_type, id_norm, result, n
             id_norm:id_norm,
             result:result,
             id_norm_score:norm_score,
+            date: date,
             recommendation:recommendation})
         .then(() =>  console.log("ok"))
         .catch(err => {

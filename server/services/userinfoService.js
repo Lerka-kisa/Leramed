@@ -19,6 +19,35 @@ class UserinfoService {
         return res
     }
 
+    async addUserinfo(id, last_name, first_name, middle_name, birthday, id_gender, address, place_of_work, age){
+        const res = await model.Patients.update({
+                last_name:last_name,
+                first_name:first_name,
+                middle_name:middle_name,
+                id_gender:id_gender,
+                birthday:birthday,
+                id_agegroup:age,
+                address:address,
+                place_of_work:place_of_work
+            }, {
+                where:{id:id}
+            }
+        )
+        if(!res) throw ApiError.BadRequest()
+        return res
+    }
+
+    async getIdAgegroup(age){
+        const age_group = await model.Age_group.findAll(
+            {where:{
+                    max:{[Sequelize.Op.gt]:age},
+                    min:{[Sequelize.Op.lte]:age}}
+            }
+        )
+        if(!age_group) throw ApiError.BadRequest()
+        return age_group[0].id
+    }
+
     async updBirthday(date, id){
         const res = await model.Patients.update({
             birthday:date},

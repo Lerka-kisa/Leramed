@@ -16,7 +16,7 @@ import {
     Select,
 } from "@mui/material";
 
-const UserInfoForm = observer(({user}) => {
+const AddUserInfoForm = observer(({user}) => {
     const {analysis} = useContext(Context);
     const [birthday, setBirthday] = useState('')
     const [flat, setFlat] = useState('')
@@ -138,4 +138,4 @@ const UserInfoForm = observer(({user}) => {
 });
 
 
-export default UserInfoForm;
+export default AddUserInfoForm;

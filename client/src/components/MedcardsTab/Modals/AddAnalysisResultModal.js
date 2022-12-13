@@ -1,20 +1,27 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import Modal from "react-bootstrap/Modal";
 import {Button, Form} from "react-bootstrap";
 import {Table} from "@mui/material";
 import {Context} from "../../../index";
 import {addRecord} from "../../../http/medcardsAPI";
+import {addResult, fetchTypes} from "../../../http/analysisAPI";
 
-const AddRecordModal = ({show, onHide, id_medcard}) => {
+const AddAnalysisResultModal = ({show, onHide, id_medcard}) => {
     let today  = new Date().toISOString().split('T')[0]
+    const {analysis} = useContext(Context)
     const [date, setDate] = useState('')
-    const [record, setRecord] = useState('')
+    const [result, setResult] = useState('')
     const [recommendation, setRecommendation] = useState('')
-    const addRecordL = () => {
-        addRecord(id_medcard, date, record, recommendation).then(data => onHide());
-        setRecommendation('')
-        setRecord('')
+    const [analysis_type, setAnalysisType] = useState('')
+
+    useEffect(()=>{
+        fetchTypes().then(data => analysis.setTypes(data))
+    })
+    const addResultL = () => {
+        addResult(id_medcard, date, analysis_type, result, recommendation).then(data => onHide());
         setDate('')
+        setResult('')
+        setRecommendation('')
     }
     return (
         <Modal
@@ -24,7 +31,7 @@ const AddRecordModal = ({show, onHide, id_medcard}) => {
             centered
         >
             <Modal.Header closeButton>
-                <Modal.Title>Запись приёма</Modal.Title>
+                <Modal.Title>Результаты анализа</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <Form>
@@ -32,7 +39,7 @@ const AddRecordModal = ({show, onHide, id_medcard}) => {
                         <tbody>
                         <tr>
                             <th scope="row">
-                                Дата приёма
+                                Дата взятия анализа
                             </th>
                             <td>
                                 <Form.Control
@@ -46,27 +53,40 @@ const AddRecordModal = ({show, onHide, id_medcard}) => {
                         </tr>
                         <tr>
                             <th scope="row">
-                                Ход приёма и жалобы пациента
+                                Тип анализа
+                            </th>
+                            <td>
+                                <Form.Select aria-label="Default select example" onChange={e => setAnalysisType(e.target.value)}>
+                                    <option>Выберите тип анализа</option>
+                                    {analysis.types.map(type =>
+                                        <option value={type.id}>{type.name_analysis}</option>
+                                    )}
+                                </Form.Select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                Результат
                             </th>
                             <td>
                                 <Form.Control
-                                    value={record}
-                                    onChange={e => setRecord(e.target.value)}
+                                    value={result}
+                                    onChange={e => setResult(e.target.value)}
                                     className="mt-3"
-                                    placeholder="Введите данные..."
+                                    placeholder="Результаты..."
                                 />
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">
-                                Рекомендации по лечению
+                                Рекомендация врача
                             </th>
                             <td>
                                 <Form.Control
                                     value={recommendation}
                                     onChange={e => setRecommendation(e.target.value)}
                                     className="mt-3"
-                                    placeholder="Введите рекоммендацию..."
+                                    placeholder="Введите реккомендацию..."
                                 />
                             </td>
                         </tr>
@@ -77,14 +97,14 @@ const AddRecordModal = ({show, onHide, id_medcard}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Отмена</Button>
-                <Button variant="primary" onClick={addRecordL}>Сохранить</Button>
+                <Button variant="primary" onClick={addResultL}>Сохранить</Button>
             </Modal.Footer>
 
         </Modal>
     );
 };
 
-export default AddRecordModal;
+export default AddAnalysisResultModal;
 
 
 

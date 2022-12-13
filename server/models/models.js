@@ -56,7 +56,9 @@ Types_of_analysis.init(
 Age_group.init(
     {
         id:         {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
-        group_name: {type: DataTypes.STRING, allowNull:false}
+        group_name: {type: DataTypes.STRING, allowNull:false},
+        min:        {type: DataTypes.INTEGER, allowNull:false},
+        max:        {type: DataTypes.INTEGER, allowNull:false}
     },
     {sequelize, modelName:'Age_group', tableName:'Age_group', timestamps:false}
 );
@@ -103,6 +105,7 @@ Analysis_norms.belongsTo(Gender, {foreignKey: 'id_gender'})
 Analysis_results.init(
     {
         id:             {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
+        date:           {type: DataTypes.DATEONLY, allowNull:true},
         result:         {type: DataTypes.STRING, allowNull:false},
         recommendation: {type: DataTypes.STRING, allowNull:true}
         // id_medcard

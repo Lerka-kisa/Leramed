@@ -21,11 +21,11 @@ sequelize.authenticate()
         createTypeOfAnalysis("Пульс");
 
         //4. Age_group
-        createAgeGroup("от 0 до 1 года");
-        createAgeGroup("от 1 до 3 лет");
-        createAgeGroup("от 3 до 6 лет");
-        createAgeGroup("от 6 до 14 лет");
-        createAgeGroup("от 14 до 18 лет");
+        createAgeGroup("от 0 до 1 года", 0, 1);
+        createAgeGroup("от 1 до 3 лет",1, 3);
+        createAgeGroup("от 3 до 6 лет",3, 6);
+        createAgeGroup("от 6 до 14 лет",6,14);
+        createAgeGroup("от 14 до 18 лет",14, 18);
 
         //5. Gender
         createGender("мужской");
@@ -118,9 +118,9 @@ sequelize.authenticate()
     })
     .then(()=> {
         //8. Analysis_result
-        createAnalysisResult("1", "1", "4", 4.2, "2", "HELP ME")
-        createAnalysisResult("1", "1", "3", 107, "2", "Hello")
-        createAnalysisResult("2", "2", "17", 168, "3", "HELP ME")
+        createAnalysisResult("1", "1", "4", 4.2, "2", "HELP ME",  "2022-01-02" )
+        createAnalysisResult("1", "1", "3", 107, "2", "Hello",  "2022-01-02")
+        createAnalysisResult("2", "2", "17", 168, "3", "HELP ME",  "2022-01-02")
 
         //9. Medical_records
         createMedicalRecord("1", "2022-01-02", "Болит горло и температура вонючая", "Попей таблетосы")

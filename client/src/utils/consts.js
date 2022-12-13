@@ -31,6 +31,7 @@ export const DOCTOR_PATIENTS_ROUTE = DOCTOR_ROUTE + `/patients`
 //Patients
 export const PATIENT_ROUTE = "/patient"
 export const PATIENT_INFO_ROUTE = PATIENT_ROUTE + "/info"
+export const PATIENT_ADDINFO_ROUTE = PATIENT_ROUTE + "/addinfo"
 export const PATIENT_ANALYSIS_NORM_ROUTE = PATIENT_ROUTE + `/analysisnorm`
 export const PATIENT_TICKET_ROUTE = PATIENT_ROUTE + "/tickets"
 export const PATIENT_HOUSECALL_ROUTE = PATIENT_ROUTE + `/housecalls`

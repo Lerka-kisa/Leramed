@@ -1,7 +1,6 @@
 import {
     ADMIN_DOCTOR_ROUTE,
     ADMIN_HOUSECALL_ROUTE,
-    ADMIN_MEDCARDS_ROUTE,
     ADMIN_PATIENTS_ROUTE,
     ADMIN_TICKET_ROUTE,
     ADMIN_TIMETABLE_ROUTE,
@@ -20,7 +19,7 @@ import {
     PATIENT_ANALYSIS_ROUTE,
     ADMIN_ANALYSIS_ROUTE,
     DOCTOR_ANALYSIS_ROUTE,
-    ADMIN_ANALYSIS_NORM_ROUTE, DOCTOR_ANALYSIS_NORM_ROUTE, PATIENT_ANALYSIS_NORM_ROUTE
+    ADMIN_ANALYSIS_NORM_ROUTE, DOCTOR_ANALYSIS_NORM_ROUTE, PATIENT_ANALYSIS_NORM_ROUTE, PATIENT_ADDINFO_ROUTE
 } from "./utils/consts";
 import Auth from "./pages/Auth";
 import Main from "./pages/Main";
@@ -28,14 +27,14 @@ import Tickets from "./pages/Tickets";
 import HouseCalls from "./pages/HouseCalls";
 import TimeTable from "./pages/Admin/TimeTable";
 import InfoDoctors from "./pages/Admin/InfoDoctors";
-import Analysis from "./pages/Analysis";
+import Analysis from "./pages/Patient/Analysis";
 import Patients from "./pages/Admin/Patients";
-import TableMedCards from "./pages/Admin/TableMedCards";
 import InfoD from "./pages/Doctor/Info";
 import InfoP from "./pages/Patient/Info";
 import Appointments from "./pages/Doctor/Appointments";
 import MedCard from "./pages/Patient/MedCard";
 import AnalysisNorms from "./pages/Admin/AnalysisNorms";
+import AddInfo from "./pages/Patient/AddInfo";
 
 export const adminRoutes = [
     { path: ADMIN_TICKET_ROUTE, Component: Tickets },
@@ -67,11 +66,13 @@ export const patientRoutes = [
     { path: PATIENT_HOUSECALL_ROUTE, Component: HouseCalls },
     { path: PATIENT_ANALYSIS_ROUTE, Component: Analysis },
     { path: PATIENT_ANALYSIS_NORM_ROUTE, Component: AnalysisNorms },
+    { path: PATIENT_ADDINFO_ROUTE, Component: AddInfo },
     { path: PATIENT_MEDCARDS_ROUTE, Component: MedCard }
 ]
 
 export const publicRoutes = [
     { path: CLINIK_ROUTE, Component: Main },
+    { path: PATIENT_ADDINFO_ROUTE, Component: AddInfo },
     { path: LOGIN_ROUTE, Component: Auth },
     { path: REGISTRATION_ROUTE, Component: Auth},
 ]

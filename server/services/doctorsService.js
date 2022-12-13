@@ -130,6 +130,8 @@ class DoctorsService {
         return res
     }
 
+
+
     async getPatientsA(address){
         const res = await model.Patients.findAll({
             where: { address: { [Sequelize.Op.substring]: address } },
@@ -146,7 +148,6 @@ class DoctorsService {
         if(!res) throw ApiError.BadRequest()
         return res
     }
-
     async getPatientsC(card_number){
         const res = await model.Patients.findAll({
             include:[

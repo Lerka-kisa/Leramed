@@ -4,7 +4,7 @@ import {Button} from "react-bootstrap";
 import {Table} from "@mui/material";
 import {Context} from "../../../index";
 
-const RecordModal = ({show, onHide, role, record}) => {
+const AnalysisResultModal = ({show, onHide, role, analysis}) => {
 
     return (
         <Modal
@@ -14,33 +14,49 @@ const RecordModal = ({show, onHide, role, record}) => {
             centered
         >
             <Modal.Header closeButton>
-                <Modal.Title>Запись приёма</Modal.Title>
+                <Modal.Title>Результат анализа</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <Table className="table" >
                     <tbody>
                     <tr>
                         <th scope="row">
-                            Дата приёма
+                            Дата взятия анализа
                         </th>
                         <td>
-                            {record.date}
+                            {analysis.date}
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            Ход приёма и жалобы пациента
+                            Тип анализа
                         </th>
                         <td>
-                            {record.record}
+                            {analysis.name_analysis}
                         </td>
                     </tr>
                     <tr>
                         <th scope="row">
-                            Рекомендации по лечению
+                            Результат анализа
                         </th>
                         <td>
-                            {record.recommendation}
+                            {analysis.result}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Относительно нормы
+                        </th>
+                        <td>
+                            {analysis.norm}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Рекомендация врача
+                        </th>
+                        <td>
+                            {analysis.recommendation}
                         </td>
                     </tr>
                     </tbody>
@@ -65,5 +81,5 @@ const RecordModal = ({show, onHide, role, record}) => {
     );
 };
 
-export default RecordModal;
+export default AnalysisResultModal;
 

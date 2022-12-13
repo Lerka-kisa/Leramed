@@ -32,6 +32,24 @@ module.exports = {
 
         return res.status(200).json(info)
     },
+    addInfo: async (req, res, next) => {
+        const token = req.headers.authorization.split(' ')[1]
+        if(!token)
+            return next(ApiError.UnauthorizedError())
+        const userData = validateAccessToken(token)
+        if (!userData)
+            return next(ApiError.UnauthorizedError())
+
+        let id = userData.id_acc
+
+        const age = await UserinfoService.getIdAgegroup(req.body.age)
+        const info = await UserinfoService.addUserinfo(id, req.body.last_name, req.body.first_name, req.body.middle_name, req.body.birthday, req.body.id_gender, req.body.address, req.body.place_of_work, age)
+        if(!info) {
+            return next(ApiError.internal('Что-то пошло не так'))
+        }
+
+        return res.status(200).json(info)
+    },
     updBirthday: async (req, res, next) => {
         const token = req.headers.authorization.split(' ')[1]
         if(!token)
