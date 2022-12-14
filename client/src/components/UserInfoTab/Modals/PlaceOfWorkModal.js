@@ -10,6 +10,7 @@ const PlaceOfWorkModal = ({show, onHide}) => {
     const updPlace = () => {
         console.log(place)
         updPlaceOfWork(place).then(data => onHide());
+        setPlace('')
         //updateAddress(name)
         //createDevice(formData).then(data => onHide())
     }

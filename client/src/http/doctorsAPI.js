@@ -1,5 +1,10 @@
 import {$authHost} from "./index";
 
+export const fetchDoctors = async () => {
+    const {data} = await $authHost.get("api/doctors/doctors")
+    return data;
+}
+
 export const fetchGetPatients = async (type, search, searchName, searchSurname, searchMiddle) => {
     console.log(type)
     const {data} = await $authHost.get("api/doctors/patients", {params:{type, search, searchName, searchSurname, searchMiddle}})

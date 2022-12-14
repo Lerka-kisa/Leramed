@@ -7,12 +7,12 @@ import GenderModal from "./Modals/GenderModal";
 import AddressModal from "./Modals/AddressModal";
 import PlaceOfWorkModal from "./Modals/PlaceOfWorkModal";
 
-const UserInfoForm = observer(({user}) => {
+const UserInfoForm = observer(({user, user_data}) => {
     const {analysis} = useContext(Context);
-    const [updBirthdayVisible, setBirthdayVisible] = useState(false)
-    const [updGenderVisible, setGenderVisible] = useState(false)
-    const [updAddressVisible, setAddressVisible] = useState(false)
-    const [updPlaceOfWorkVisible, setPlaceOfWorkVisible] = useState(false)
+    // const [updBirthdayVisible, setBirthdayVisible] = useState(false)
+    // const [updGenderVisible, setGenderVisible] = useState(false)
+    // const [updAddressVisible, setAddressVisible] = useState(false)
+    // const [updPlaceOfWorkVisible, setPlaceOfWorkVisible] = useState(false)
     return (
         <>
             <h1 className="display-5 mb-3">Персональные данные</h1>
@@ -29,7 +29,7 @@ const UserInfoForm = observer(({user}) => {
                     <td>
                         <Button
                             className="btn btn-primary float-end mt-2"
-                            onClick={()=> setBirthdayVisible(true)}
+                            onClick={()=> user_data.setBirthdayVisible(true)}
                         >Изменить</Button>
                     </td>
                 </tr>
@@ -43,7 +43,7 @@ const UserInfoForm = observer(({user}) => {
                     <td>
                         <Button
                             className="btn btn-primary float-end mt-2"
-                            onClick={()=> setGenderVisible(true)}
+                            onClick={()=> user_data.setGenderVisible(true)}
                         >Изменить</Button>
                     </td>
                 </tr>
@@ -57,7 +57,7 @@ const UserInfoForm = observer(({user}) => {
                     <td>
                         <Button
                             className="btn btn-primary float-end mt-2"
-                            onClick={()=> setAddressVisible(true)}
+                            onClick={()=> user_data.setAddressVisible(true)}
                         >Изменить</Button>
                     </td>
                 </tr>
@@ -72,7 +72,7 @@ const UserInfoForm = observer(({user}) => {
                     <td>
                         <Button
                             className="btn btn-primary float-end mt-2"
-                            onClick={()=> setPlaceOfWorkVisible(true)}
+                            onClick={()=> user_data.setPlaceOfWorkVisible(true)}
                         >Изменить</Button>
                     </td>
                 </tr>
@@ -94,10 +94,10 @@ const UserInfoForm = observer(({user}) => {
                 </tr>
                 </tbody>
             </table>
-            <BirthdayModal show={updBirthdayVisible} onHide={() => setBirthdayVisible(false)}/>
-            <GenderModal show={updGenderVisible} onHide={() => setGenderVisible(false)}/>
-            <AddressModal show={updAddressVisible} onHide={() => setAddressVisible(false)}/>
-            <PlaceOfWorkModal show={updPlaceOfWorkVisible} onHide={() => setPlaceOfWorkVisible(false)}/>
+            <BirthdayModal show={user_data.updBirthdayVisible} onHide={() => user_data.setBirthdayVisible(false)}/>
+            <GenderModal show={user_data.updGenderVisible} onHide={() => user_data.setGenderVisible(false)}/>
+            <AddressModal show={user_data.updAddressVisible} onHide={() => user_data.setAddressVisible(false)}/>
+            <PlaceOfWorkModal show={user_data.updPlaceOfWorkVisible} onHide={() => user_data.setPlaceOfWorkVisible(false)}/>
         </>
     );
 });

@@ -8,6 +8,7 @@ const {Authorization_info} = require("./models");
 const {createGender} = require("./funcDBstart");
 
 const Sequelize = require("sequelize");
+const ApiError = require("../APIerror");
 
 const print = (p) => {
     let k = 0;
@@ -19,26 +20,13 @@ sequelize.authenticate()
     .then(() => {console.log('Hurray!!! You are connected)))');})
     .then(() => {
 
-        const ll = model.Patients.update({
-                last_name:"last_name",
-                first_name:"first_name",
-                middle_name:"middle_name",
-                id_gender:1,
-                birthday:"2002-01-15",
-                id_agegroup:5,
-                address:"address",
-                place_of_work:"place_of_work"
-            },{
-            where:{id:11}
-        }
-        )
-            .then((data) =>  console.log(data))
-            .catch(err => {
-                console.log("not ok")
-            })
-
-        console.log(ll)
-
+        model.Appointments.findAll({
+            where:{id_patient:null, id_shift:5}
+        })
+        .then(data => {
+            console.log(data)
+        })
+        .catch(e=>console.log('not ok'))
         //------------------------------------
         //Faculty.findAll({raw:true}).then(faculties => console.log(faculties));
         //Faculty.findAll().then(faculties => print(faculties));

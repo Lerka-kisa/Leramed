@@ -27,12 +27,12 @@ const Patients = observer(() => {
         fetchGetMedcardId(idCard).then(data => {
             records.setRecord(data)
         })
-    })
+    },[idCard,addRecordVisible])
     useEffect(()=>{
         fetchGetAnalysisId(idCard).then(data => {
             analysis.setAnalysis(data)
         })
-    })
+    },[idCard,addResultVisible])
 
     let patients = doctors.patients
     return (
@@ -71,29 +71,28 @@ const Patients = observer(() => {
                     <div>
                         <h1 className="display-5 mt-5 mb-4">Медицинская карта номер {patient.card_number} находится {patient.card_status}</h1>
                         <MedicalRecordsTable records={records.record} className="mt-3" auth ={auth}/>
+                        {(auth.role === "DOCTOR")?
                         <Button
                             className="btn btn-primary float-start mt-2 mb-3"
                             onClick={()=> setAddRecordVisible(true)}
-                        >Добавить запись</Button>
+                        >Добавить запись</Button>:<></>}
                         <br/><br/>
                     </div>
                     <div>
                         <h3 className="display-6 mt-3 mb-4">Результаты анализов пациента</h3>
                         <AnalysisTable analysis={analysis.analysis} className="mt-4" auth ={auth}/>
+                        {(auth.role === "DOCTOR")?
                         <Button
                             className="btn btn-primary float-start mt-2 mb-3"
                             onClick={()=> setAddResultVisible(true)}
-                        >Добавить результат</Button>
+                        >Добавить результат</Button>:<></>}
                         <br/><br/>
                     </div>
 
-
-                    <AddRecordModal id_medcard={patient.id_medcard} show={addRecordVisible} onHide={() => setAddRecordVisible(false)}/>
+                    <AddRecordModal id_medcard={patient.id_medcard} records={records} show={addRecordVisible} onHide={() => setAddRecordVisible(false)}/>
                     <AddAnalysisResultModal id_medcard={patient.id_medcard} show={addResultVisible} onHide={() => setAddResultVisible(false)}/>
                 </>
             }
-
-
         </Container>
     );
 });

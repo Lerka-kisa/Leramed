@@ -28,15 +28,8 @@ const AdminMenu = () => {
               <Nav.Link href= {ADMIN_HOUSECALL_ROUTE} >Вызовы на дом</Nav.Link>
               <Nav.Link href= {ADMIN_TIMETABLE_ROUTE} >Расписание</Nav.Link>
               <Nav.Link href= {ADMIN_DOCTOR_ROUTE} >Врачи</Nav.Link>
-              <Dropdown>
-                  <Dropdown.Toggle>Анализы</Dropdown.Toggle>
-                  <Dropdown.Menu>
-                      <DropdownItem href= {ADMIN_ANALYSIS_ROUTE}>Анализы пациентов</DropdownItem>
-                      <DropdownItem href= {ADMIN_ANALYSIS_NORM_ROUTE}>База анализов и норм</DropdownItem>
-                  </Dropdown.Menu>
-              </Dropdown>
+              <Nav.Link href= {ADMIN_ANALYSIS_NORM_ROUTE} >Нормы анализов</Nav.Link>
               <Nav.Link href= {ADMIN_PATIENTS_ROUTE} >Пациенты</Nav.Link>
-              <Nav.Link href= {ADMIN_MEDCARDS_ROUTE} >Карточки</Nav.Link>
           </Nav>
           <Nav className="me-auto" style={{color: "white"}}>
               <Nav.Link onClick={()=> logout()}>Выйти</Nav.Link>

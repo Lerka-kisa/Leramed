@@ -189,16 +189,16 @@ exports.createHouseCalls = (id_patient, id_record) => {
         })
 }
 
-exports.createTypeOfAppointment = (type_of_appointment) => {
-    model.Types_of_appointments.create({name: type_of_appointment})
-        .then(() =>  console.log("ok"))
-        .catch(err => {
-            console.log("not ok")
-        })
-}
+// exports.createTypeOfAppointment = (type_of_appointment) => {
+//     model.Types_of_appointments.create({name: type_of_appointment})
+//         .then(() =>  console.log("ok"))
+//         .catch(err => {
+//             console.log("not ok")
+//         })
+// }
 
-exports.createAppointments = (id_shift, id_patient, id_type_of_appointment, id_record, talon_number, time) => {
-    model.Appointments.create({id_shift:id_shift, id_patient:id_patient, id_type_of_appointment:id_type_of_appointment, id_record:id_record, talon_number:talon_number, time:time})
+exports.createAppointments = (id_shift, id_patient, id_record, talon_number, time) => {
+    model.Appointments.create({id_shift:id_shift, id_patient:id_patient, id_record:id_record, talon_number:talon_number, time:time})
         .then(() =>  console.log("ok"))
         .catch(err => {
             console.log("not ok")

@@ -50,11 +50,11 @@ sequelize.authenticate()
         createTypeOfShifts("2 смена (12-16)","12:00", "16:00" );
         createTypeOfShifts("3 смена (16-20)","16:00", "20:00" );
 
-        //18.Types_of_appointments
-        createTypeOfAppointment("первичный");
-        createTypeOfAppointment("вторичный");
-        createTypeOfAppointment("медосмотр");
-        createTypeOfAppointment("день здорового ребёнка");
+        // //18.Types_of_appointments
+        // createTypeOfAppointment("первичный");
+        // createTypeOfAppointment("вторичный");
+        // createTypeOfAppointment("медосмотр");
+        // createTypeOfAppointment("день здорового ребёнка");
     })
     .then(()=>{
         //2. Medical_cards
@@ -161,7 +161,7 @@ sequelize.authenticate()
         createHouseCalls("1", "5")
 
         //19.Appointments
-        createAppointments("1","1","2","2","1", "12:15")
-        createAppointments("2","1","3","6","3", "16:15")
+        createAppointments("1","1"/*,"2"*/,"2","1", "12:15")
+        createAppointments("2","1"/*,"3"*/,"6","3", "16:15")
     })
     .catch(err => {console.log('Error!!!!DB is not connect(((:',err.message);});

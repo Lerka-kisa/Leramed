@@ -16,6 +16,7 @@ const GenderModal = ({show, onHide}) => {
     const updGenderL = () => {
         //console.log(gender)
         updGender(gender).then(data => onHide());
+        setGender('')
         //updateAddress(name)
         //createDevice(formData).then(data => onHide())
     }

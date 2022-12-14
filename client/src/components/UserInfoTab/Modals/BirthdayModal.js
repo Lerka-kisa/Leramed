@@ -8,8 +8,8 @@ const BirthdayModal = ({show, onHide}) => {
     const [birthday, setBirthday] = useState('')
     let today  = new Date().toISOString().split('T')[0]
     const updDate = () => {
-        console.log(birthday)
         updBirthday(birthday).then(data => onHide());
+        setBirthday('')
     }
     return (
         <Modal

@@ -15,7 +15,7 @@ const SearchPatientsForm = ({doctors}) => {
     useEffect(()=>{
         fetchGetPatients(type.id, search, searchName, searchSurname, searchMiddle)
             .then(data => doctors.setPatients(data))
-    }, [doctors.patients, doctors.searchtypes])
+    }, [search, searchName, searchSurname, searchMiddle])
 
     function selector(type) {
         setType(type)

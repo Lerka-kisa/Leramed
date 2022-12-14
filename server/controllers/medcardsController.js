@@ -1,6 +1,7 @@
 const fs = require('fs')
 const crypto = require('crypto')
 const MedcardsService = require("../services/medcardsService")
+const TokenService = require("../services/tokenService")
 const ApiError = require("../APIerror");
 const jwt = require("jsonwebtoken");
 const {accessKey} = require("../security/jwtKeys");
@@ -20,6 +21,7 @@ module.exports = {
         const token = req.headers.authorization.split(' ')[1]
         if(!token)
             return next(ApiError.UnauthorizedError())
+        //const userData = TokenService.validateAccessToken(token)
         const userData = validateAccessToken(token)
         if (!userData)
             return next(ApiError.UnauthorizedError())
@@ -70,5 +72,5 @@ module.exports = {
             return next(ApiError.internal('Что-то пошло не так'))
         }
         return res.status(200).json(info)
-    }
+    },
 };

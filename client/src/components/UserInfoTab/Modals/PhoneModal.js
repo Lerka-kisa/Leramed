@@ -7,10 +7,8 @@ const PhoneModal =  ({show, onHide}) => {
 
     const [phone, setPhone] = useState('')
     const updPhoneL = () => {
-        console.log(phone)
         updPhone(phone).then(data => onHide());
-        //updateAddress(name)
-        //createDevice(formData).then(data => onHide())
+        setPhone('')
     }
     return (
         <Modal

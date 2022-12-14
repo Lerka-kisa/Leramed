@@ -3,7 +3,8 @@ const doctorsController = require("../controllers/doctorsController");
 const doctorsRouter = new express.Router();
 
 doctorsRouter.get("/patients", doctorsController.getPatients)
-//medcardsRouter.get("/records", medcardsController.getMedicalRecords)
-//medcardsRouter.get("/onerecord", medcardsController.getOneRecord)
+doctorsRouter.get("/doctors/:id", doctorsController.getDoctorShifts)
+doctorsRouter.get("/doctors", doctorsController.getDoctors)
+
 
 module.exports = doctorsRouter;

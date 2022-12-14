@@ -43,3 +43,21 @@
 // </td>
 
 ////    console.log(toJS(doctors.patients))
+
+
+// //Выборка секторов в модале
+// fetchSectors().then(data => timetable.setSectors(data))
+// <tr>
+// <th scope="row">
+//     Участок
+//     </th>
+// <td>
+//     <Form.Select aria-label="Default select example" onChange={e => setSector(e.target.value)}>
+//         <option>Выберите участок</option>
+//         {timetable.sectors.map(type =>
+//             <option value={type.id}>{type.id}</option>
+//         )}
+//     </Form.Select>
+// </td>
+// </tr>
+

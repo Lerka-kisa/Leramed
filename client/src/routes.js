@@ -17,8 +17,6 @@ import {
     PATIENT_HOUSECALL_ROUTE,
     PATIENT_MEDCARDS_ROUTE,
     PATIENT_ANALYSIS_ROUTE,
-    ADMIN_ANALYSIS_ROUTE,
-    DOCTOR_ANALYSIS_ROUTE,
     ADMIN_ANALYSIS_NORM_ROUTE, DOCTOR_ANALYSIS_NORM_ROUTE, PATIENT_ANALYSIS_NORM_ROUTE, PATIENT_ADDINFO_ROUTE
 } from "./utils/consts";
 import Auth from "./pages/Auth";
@@ -41,7 +39,6 @@ export const adminRoutes = [
     { path: ADMIN_HOUSECALL_ROUTE, Component: HouseCalls },
     { path: ADMIN_TIMETABLE_ROUTE, Component: TimeTable },
     { path: ADMIN_DOCTOR_ROUTE, Component: InfoDoctors },
-    { path: ADMIN_ANALYSIS_ROUTE, Component: Analysis },
     { path: ADMIN_ANALYSIS_NORM_ROUTE, Component: AnalysisNorms },
     { path: ADMIN_PATIENTS_ROUTE, Component: Patients },
     { path: ADMIN_PATIENTS_ROUTE + "/:id",
@@ -53,11 +50,9 @@ export const doctorRoutes = [
     { path: DOCTOR_APPOINTMENTS_ROUTE, Component: Appointments },
     { path: DOCTOR_TICKET_ROUTE, Component: Tickets },
     { path: DOCTOR_HOUSECALL_ROUTE, Component: HouseCalls },
-    { path: DOCTOR_ANALYSIS_ROUTE, Component: Analysis },
     { path: DOCTOR_ANALYSIS_NORM_ROUTE, Component: AnalysisNorms },
     { path: DOCTOR_PATIENTS_ROUTE, Component: Patients },
-    { path: DOCTOR_PATIENTS_ROUTE + "/:id",
-        Component: MedCard  }
+    { path: DOCTOR_PATIENTS_ROUTE + "/:id", Component: MedCard  }
 ]
 
 export const patientRoutes = [

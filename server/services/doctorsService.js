@@ -130,8 +130,6 @@ class DoctorsService {
         return res
     }
 
-
-
     async getPatientsA(address){
         const res = await model.Patients.findAll({
             where: { address: { [Sequelize.Op.substring]: address } },
@@ -160,6 +158,27 @@ class DoctorsService {
                 { model: model.Gender, required: true },
                 { model: model.Age_group, required: true}
             ]
+        })
+        if(!res) throw ApiError.BadRequest()
+        return res
+    }
+
+    async getDoctors(){
+        const res = await model.Doctors.findAll()
+        if(!res) throw ApiError.BadRequest()
+        return res
+    }
+    async getDoctorShifts(id_doctor){
+        const res = await model.Appointments.findAll({
+            required: true,
+            include:[{
+                model: model.Timetable,
+                required: true,
+                where:{id_doctor:id_doctor}
+            },{
+                model: model.Patients,
+                required: true
+            }]
         })
         if(!res) throw ApiError.BadRequest()
         return res

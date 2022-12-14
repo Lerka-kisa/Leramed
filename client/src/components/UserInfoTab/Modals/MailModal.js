@@ -7,10 +7,8 @@ const MailModal =  ({show, onHide}) => {
 
     const [mail, setMail] = useState('')
     const updMailL = () => {
-        //console.log(mail)
+        setMail('')
         updMail(mail).then(data => onHide());
-        //updateAddress(name)
-        //createDevice(formData).then(data => onHide())
     }
     return (
         <Modal

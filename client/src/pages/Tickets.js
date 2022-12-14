@@ -3,7 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import DoctorsList from "../components/DoctorsTab/DoctorsList";
 import {Context} from "../index";
-import {fetchDoctors} from "../http/ticketsAPI";
+import {fetchDoctors} from "../http/doctorsAPI";
 
 const Tickets = observer(() => {
     const {doctors} = useContext(Context)

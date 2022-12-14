@@ -75,13 +75,24 @@ module.exports = {
             return next(ApiError.internal('Что-то пошло не так'))
         }
         return res.status(200).json(info)
+    },
+    getDoctors: async (req, res, next) => {
+        const doctors = await DoctorsService.getDoctors()
+        if(!doctors) {
+            return next(ApiError.internal('Что-то пошло не так'))
+        }
+
+        return res.status(200).json(doctors)
+    },
+    getDoctorShifts: async (req, res, next) => {
+        let id = parseInt(req.params.id)
+
+        const doctors = await DoctorsService.getDoctorShifts(id)
+        if(!doctors) {
+            return next(ApiError.internal('Что-то пошло не так'))
+        }
+
+        return res.status(200).json(doctors)
     }
-    // getOneRecord: async (req, res, next) => {
-    //     const info = await MedcardsService.getOneRecord(req.body.id)
-    //     if(!info) {
-    //         return next(ApiError.internal('Что-то пошло не так'))
-    //     }
-    //
-    //     return res.status(200).json(info)
-    // }
+
 };

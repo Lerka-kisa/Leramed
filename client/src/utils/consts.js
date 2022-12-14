@@ -2,10 +2,8 @@
 export const CLINIK_ROUTE = `/`
 export const LOGIN_ROUTE = `/login`
 export const LOGOUT_ROUTE = `/logout`
-export const REGISTRATION_ROUTE = `/register`
+export const REGISTRATION_ROUTE = `register`
 export const TICKET_ROUTE = `/tickets`
-//////////export const DOCTORS_ROUTE = `/doctors`
-//////////export const BLOG_ROUTE = `/blog`
 
 //Admin
 export const ADMIN_ROUTE = `/admin`
@@ -15,7 +13,6 @@ export const ADMIN_ANALYSIS_ROUTE = ADMIN_ROUTE + `/analysis`
 export const ADMIN_ANALYSIS_NORM_ROUTE = ADMIN_ROUTE + `/analysisnorm`
 export const ADMIN_DOCTOR_ROUTE = ADMIN_ROUTE + `/doctors`
 export const ADMIN_PATIENTS_ROUTE = ADMIN_ROUTE + `/patients`
-export const ADMIN_MEDCARDS_ROUTE = ADMIN_ROUTE + `/medcards`
 export const ADMIN_TIMETABLE_ROUTE = ADMIN_ROUTE + `/timetable`
 
 //Doctors

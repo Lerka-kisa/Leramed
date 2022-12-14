@@ -7,10 +7,8 @@ const LoginModal =  ({show, onHide}) => {
 
     const [login, setLogin] = useState('')
     const updLoginL = () => {
-        console.log(login)
         updLogin(login).then(data => onHide());
-        //updateAddress(name)
-        //createDevice(formData).then(data => onHide())
+        setLogin('')
     }
     return (
         <Modal

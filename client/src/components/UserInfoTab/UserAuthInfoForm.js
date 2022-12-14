@@ -6,10 +6,7 @@ import MailModal from "./Modals/MailModal";
 import {Button} from "react-bootstrap";
 import {Table} from "@mui/material";
 
-const UserAuthInfoForm = observer(({user}) => {
-    const [updLoginVisible, setLoginVisible] = useState(false)
-    const [updPhoneVisible, setPhoneVisible] = useState(false)
-    const [updMailVisible, setMailVisible] = useState(false)
+const UserAuthInfoForm = observer(({user, auth_data}) => {
     return (
         <>
             <h1 className="display-5">Данные для авторизации</h1>
@@ -27,7 +24,7 @@ const UserAuthInfoForm = observer(({user}) => {
                     <td>
                         <Button
                             className="btn btn-primary float-end mt-2"
-                            onClick={()=> setLoginVisible(true)}
+                            onClick={()=> auth_data.setLoginVisible(true)}
                         >Изменить</Button>
                     </td>
                 </tr>
@@ -42,7 +39,7 @@ const UserAuthInfoForm = observer(({user}) => {
                     <td>
                         <Button
                             className="btn btn-primary float-end mt-2"
-                            onClick={()=> setPhoneVisible(true)}
+                            onClick={()=> auth_data.setPhoneVisible(true)}
                         >Изменить</Button>
                     </td>
                 </tr>
@@ -57,16 +54,16 @@ const UserAuthInfoForm = observer(({user}) => {
                     <td>
                         <Button
                             className="btn btn-primary float-end mt-2"
-                            onClick={()=> setMailVisible(true)}
+                            onClick={()=> auth_data.setMailVisible(true)}
                         >Изменить</Button>
                     </td>
                 </tr>
 
                 </tbody>
             </Table>
-            <LoginModal show={updLoginVisible} onHide={() => setLoginVisible(false)}/>
-            <PhoneModal show={updPhoneVisible} onHide={() => setPhoneVisible(false)}/>
-            <MailModal show={updMailVisible} onHide={() => setMailVisible(false)}/>
+            <LoginModal show={auth_data.updLoginVisible} onHide={() => auth_data.setLoginVisible(false)}/>
+            <PhoneModal show={auth_data.updPhoneVisible} onHide={() => auth_data.setPhoneVisible(false)}/>
+            <MailModal show={auth_data.updMailVisible} onHide={() => auth_data.setMailVisible(false)}/>
         </>
     );
 });

@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Context} from "../../index";
 import {Container} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
@@ -7,13 +7,26 @@ import UserAuthInfoForm from "../../components/UserInfoTab/UserAuthInfoForm";
 import {fetchGetinfo} from "../../http/userinfoAPI";
 
 const PatientOffice = observer(() => {
+    const [updLoginVisible, setLoginVisible] = useState(false)
+    const [updPhoneVisible, setPhoneVisible] = useState(false)
+    const [updMailVisible, setMailVisible] = useState(false)
+    const AuthUpdData = {
+        updLoginVisible, setLoginVisible, updPhoneVisible, setPhoneVisible, updMailVisible, setMailVisible
+    }
+    const [updBirthdayVisible, setBirthdayVisible] = useState(false)
+    const [updGenderVisible, setGenderVisible] = useState(false)
+    const [updAddressVisible, setAddressVisible] = useState(false)
+    const [updPlaceOfWorkVisible, setPlaceOfWorkVisible] = useState(false)
+    const UserUpdData = {
+        updBirthdayVisible, setBirthdayVisible, updGenderVisible, setGenderVisible, updAddressVisible, setAddressVisible, updPlaceOfWorkVisible, setPlaceOfWorkVisible
+    }
+
     const {userinfo} = useContext(Context)
     useEffect(()=>{
         fetchGetinfo().then(data => {
-            console.log(data)
             userinfo.setUserinfo(data)
         })
-    },[userinfo.userinfo])
+    },[updLoginVisible, updPhoneVisible, updMailVisible, updBirthdayVisible, updGenderVisible, updAddressVisible, updPlaceOfWorkVisible])
     const user = userinfo.userinfo;
     return (
         <Container className="mb-5">
@@ -22,10 +35,10 @@ const PatientOffice = observer(() => {
                 <tbody>
                 <tr>
                     <th scope="row" className="w-50">
-                        <UserInfoForm user={userinfo.userinfo}></UserInfoForm>
+                        <UserInfoForm user={userinfo.userinfo} user_data={UserUpdData}></UserInfoForm>
                     </th>
                     <td className="w-50">
-                        <UserAuthInfoForm user ={userinfo.userinfo}></UserAuthInfoForm>
+                        <UserAuthInfoForm user ={userinfo.userinfo} auth_data={AuthUpdData} ></UserAuthInfoForm>
                     </td>
                 </tr>
                 </tbody>

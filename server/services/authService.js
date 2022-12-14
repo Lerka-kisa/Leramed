@@ -2,6 +2,8 @@ const model = require("../models/models");
 const ApiError = require("../APIerror");
 const Sequelize = require("sequelize");
 
+const tokenService = require('../services/tokenService')
+
 class AuthService {
     async registrationPatient(login, hashPassword, mail, phone){
         const res = await model.Authorization_info.create({
@@ -46,7 +48,19 @@ class AuthService {
         }
         return res
     }
+    async refresh(refreshToken){
+        if (!refreshToken)
+            throw ApiError.UnauthorizedError()
+        const userData = tokenService.validateRefreshToken(refreshToken)
 
+
+        const user = await User.findByPk(userData.id)
+        const userDto = new UserDto(user)
+        const tokens = tokenService.generateTokens({...userDto})
+        await tokenService.saveToken(userDto.id, tokens.refreshToken)
+
+        return {...tokens}
+    }
 }
 
 module.exports = new AuthService()

@@ -19,7 +19,7 @@ class Gender extends Model{}
 class Patients extends Model{}
 
 //Registry_info models
-class Types_of_appointments extends Model{}
+//class Types_of_appointments extends Model{}
 class Types_of_shifts extends Model{}
 class House_calls extends Model{}
 class Timetable extends Model{}
@@ -282,13 +282,13 @@ House_calls.belongsTo(Patients, {foreignKey: 'id_patient'});
 Medcards_records.hasMany(House_calls, {foreignKey: 'id_record'});
 House_calls.belongsTo(Medcards_records, {foreignKey: 'id_record'});
 
-Types_of_appointments.init(
-    {
-        id:     {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
-        name:   {type: DataTypes.STRING, allowNull:false}
-    },
-    {sequelize, modelName:'Types_of_appointments', tableName:'Types_of_appointments', timestamps:false}
-);
+// Types_of_appointments.init(
+//     {
+//         id:     {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
+//         name:   {type: DataTypes.STRING, allowNull:false}
+//     },
+//     {sequelize, modelName:'Types_of_appointments', tableName:'Types_of_appointments', timestamps:false}
+// );
 
 Appointments.init(
     {
@@ -304,8 +304,8 @@ Appointments.init(
     {sequelize, modelName:'Appointments', tableName:'Appointments', timestamps:false}
 )
 
-Types_of_appointments.hasMany(Appointments, {foreignKey: 'id_type_of_appointment'});
-Appointments.belongsTo(Types_of_appointments, {foreignKey: 'id_type_of_appointment'});
+// Types_of_appointments.hasMany(Appointments, {foreignKey: 'id_type_of_appointment'});
+// Appointments.belongsTo(Types_of_appointments, {foreignKey: 'id_type_of_appointment'});
 
 Timetable.hasMany(Appointments, {foreignKey: 'id_shift'});
 Appointments.belongsTo(Timetable, {foreignKey: 'id_shift'});
@@ -322,5 +322,5 @@ Appointments.belongsTo(Medcards_records, {foreignKey: 'id_record'});
 module.exports = {
     Types_of_analysis, Card_status, Medical_cards, Analysis_results, Medcards_records, Analysis_norms,
     Norms_scores, Authorization_info, Doctors, Sectors, Addresses, Age_group, Gender, Patients,
-    Appointments, Timetable, House_calls, Types_of_shifts, Types_of_appointments
+    Appointments, Timetable, House_calls, Types_of_shifts
 };

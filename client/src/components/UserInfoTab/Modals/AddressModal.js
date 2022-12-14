@@ -10,6 +10,7 @@ const AddressModal = ({show, onHide}) => {
     const updAddressL = () => {
         //console.log(address)
         updAddress(address).then(data => onHide());
+        setAddress('')
         //updateAddress(name)
         //createDevice(formData).then(data => onHide())
     }
