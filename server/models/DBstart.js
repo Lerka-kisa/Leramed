@@ -46,9 +46,9 @@ sequelize.authenticate()
         createAutorizationInfo("User3", "12345", "mail6", "phone6", "PATIENT")
 
         //14.Types_of_shifts
-        createTypeOfShifts("1 смена (8-12)","08:00", "12:00" );
-        createTypeOfShifts("2 смена (12-16)","12:00", "16:00" );
-        createTypeOfShifts("3 смена (16-20)","16:00", "20:00" );
+        createTypeOfShifts("1 смена (8-12)","05:00", "9:00" );
+        createTypeOfShifts("2 смена (12-16)","09:00", "13:00" );
+        createTypeOfShifts("3 смена (16-20)","13:00", "17:00" );
 
         // //18.Types_of_appointments
         // createTypeOfAppointment("первичный");
@@ -143,8 +143,8 @@ sequelize.authenticate()
         // createAddress("3", "Гомель","50 лет СССР", "123")
 
         //15. Timetable
-        createTimetable("2", "2", "2022-12-09")
-        createTimetable("3", "1", "2022-01-09")
+        createTimetable("2", "2", "2022-12-29")
+        createTimetable("3", "1", "2022-01-19")
         createTimetable("2", "1", "2022-12-09")
     })
     .then(() => {
@@ -155,13 +155,13 @@ sequelize.authenticate()
     })
     .then(() => {
         //17. House_calls
-        createHouseCalls("1", "1")
-        createHouseCalls("2", "3")
-        createHouseCalls("2", "4")
-        createHouseCalls("1", "5")
+        createHouseCalls("2022-12-13", "1", "Высокая температура")
+        createHouseCalls("2022-12-14", "2", "Тошнит")
+        createHouseCalls("2022-12-14", "2", "Не может встать")
+        createHouseCalls("2022-12-11", "1", "Ничего не видит")
 
         //19.Appointments
-        createAppointments("1","1"/*,"2"*/,"2","1", "12:15")
-        createAppointments("2","1"/*,"3"*/,"6","3", "16:15")
+        createAppointments("1","1"/*,"2","2"*/,"1", "12:15")
+        createAppointments("2","1"/*,"3","6"*/,"3", "16:15")
     })
     .catch(err => {console.log('Error!!!!DB is not connect(((:',err.message);});

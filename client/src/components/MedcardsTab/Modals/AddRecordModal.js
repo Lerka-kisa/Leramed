@@ -1,10 +1,10 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Modal from "react-bootstrap/Modal";
 import {Button, Form} from "react-bootstrap";
 import {Table} from "@mui/material";
 import {addRecord} from "../../../http/medcardsAPI";
 
-const AddRecordModal = ({show, onHide, id_medcard, records}) => {
+const AddRecordModal = ({show, onHide, id_medcard}) => {
     let today  = new Date().toISOString().split('T')[0]
     const [date, setDate] = useState('')
     const [record, setRecord] = useState('')
@@ -77,9 +77,12 @@ const AddRecordModal = ({show, onHide, id_medcard, records}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Отмена</Button>
-                <Button variant="primary" onClick={AddRecordL}>Сохранить</Button>
-            </Modal.Footer>
-
+                {(date&&record&&recommendation)
+                    ?
+                    <Button variant="primary" onClick={AddRecordL}>Сохранить</Button>
+                    :
+                    <></>
+                }</Modal.Footer>
         </Modal>
     );
 };

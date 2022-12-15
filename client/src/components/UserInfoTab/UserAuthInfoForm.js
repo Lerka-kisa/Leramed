@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {observer} from "mobx-react-lite";
 import LoginModal from "./Modals/LoginModal";
 import PhoneModal from "./Modals/PhoneModal";
@@ -9,17 +9,16 @@ import {Table} from "@mui/material";
 const UserAuthInfoForm = observer(({user, auth_data}) => {
     return (
         <>
-            <h1 className="display-5">Данные для авторизации</h1>
+            <h1 className="h1"><u>Данные для авторизации</u></h1>
 
             <Table className="table" >
                 <tbody>
                 <tr>
                     <th scope="row" className="w-50">
-                        <label htmlFor="exampleInputLogin" className="display-6 form-label">login:</label>
+                        <label htmlFor="exampleInputLogin" className="h2 form-label">login:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.login}</label>
-                        {/*<input type="text" className="form-control mt-2" id="exampleInputLogin" value={user.login}/>*/}
+                        <label className="h2 fw-normal form-label">{user.login}</label>
                     </td>
                     <td>
                         <Button
@@ -30,11 +29,10 @@ const UserAuthInfoForm = observer(({user, auth_data}) => {
                 </tr>
                 <tr>
                     <th scope="row">
-                        <label htmlFor="exampleInputPhone" className="display-6 form-label">телефон:</label>
+                        <label htmlFor="exampleInputPhone" className="h2 form-label">телефон:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.phone}</label>
-                        {/*<input type="text" className="form-control mt-2" id="exampleInputPhone" value={user.phone}/>*/}
+                        <label className="h2 fw-normal form-label">{user.phone}</label>
                     </td>
                     <td>
                         <Button
@@ -45,11 +43,10 @@ const UserAuthInfoForm = observer(({user, auth_data}) => {
                 </tr>
                 <tr>
                     <th scope="row">
-                        <label htmlFor="exampleInputMail" className="display-6 form-label">эл. почта:</label>
+                        <label htmlFor="exampleInputMail" className="h2 form-label">эл. почта:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.mail}</label>
-                        {/*<input type="text" className="form-control mt-2" id="exampleInputMail" value={user.mail}/>*/}
+                        <label className="h2 fw-normal form-label">{user.mail}</label>
                     </td>
                     <td>
                         <Button

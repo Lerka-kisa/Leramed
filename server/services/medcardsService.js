@@ -18,6 +18,16 @@ class MedcardsService {
         if(!res) throw ApiError.BadRequest()
         return res
     }
+    async getPatientByMedcard(id_medcard){
+        const res = await model.Medical_cards.findByPk(id_medcard,{
+            include:[{
+                model: model.Patients,
+                required: true
+            }]
+        })
+        if(!res) throw ApiError.BadRequest()
+        return res
+    }
 
     async getOneRecord(id){
         const res = await model.Medcards_records.findByPk(id)

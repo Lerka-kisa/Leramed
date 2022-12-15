@@ -1,18 +1,13 @@
 import React, {useState} from 'react';
-//import {Modals} from "@mui/material";
 import Modal from "react-bootstrap/Modal";
 import {Button, Form} from "react-bootstrap";
-import {updAddress, updBirthday} from "../../../http/userinfoAPI";
+import {updAddress} from "../../../http/userinfoAPI";
 
 const AddressModal = ({show, onHide}) => {
-
     const [address, setAddress] = useState('')
     const updAddressL = () => {
-        //console.log(address)
         updAddress(address).then(data => onHide());
         setAddress('')
-        //updateAddress(name)
-        //createDevice(formData).then(data => onHide())
     }
     return (
         <Modal
@@ -36,7 +31,12 @@ const AddressModal = ({show, onHide}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Отмена</Button>
-                <Button variant="primary" onClick={updAddressL}>Сохранить изменения</Button>
+                {(address)
+                    ?
+                    <Button variant="primary" onClick={updAddressL}>Сохранить изменения</Button>
+                    :
+                    <></>
+                }
             </Modal.Footer>
         </Modal>
     );

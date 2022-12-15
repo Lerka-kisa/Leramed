@@ -2,7 +2,6 @@ import React, {useContext, useEffect, useState} from 'react';
 import {Form, InputGroup} from "react-bootstrap";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
-import {Context} from "../index";
 import {fetchGetPatients} from "../http/doctorsAPI";
 
 const SearchPatientsForm = ({doctors}) => {

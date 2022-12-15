@@ -30,7 +30,7 @@ const PatientOffice = observer(() => {
     const user = userinfo.userinfo;
     return (
         <Container className="mb-5">
-            <h1 class="display-1 mt-5 mb-4">{user.last_name} {user.first_name} {user.middle_name}</h1>
+            <h1 class="display-1 mt-5 mb-4"><strong>{user.last_name} {user.first_name} {user.middle_name}</strong></h1>
             <table className="table" >
                 <tbody>
                 <tr>

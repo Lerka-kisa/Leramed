@@ -3,7 +3,6 @@ import Modal from "react-bootstrap/Modal";
 import {Button, Form} from "react-bootstrap";
 import {Table} from "@mui/material";
 import {Context} from "../../../index";
-import {addRecord} from "../../../http/medcardsAPI";
 import {addResult, fetchTypes} from "../../../http/analysisAPI";
 
 const AddAnalysisResultModal = ({show, onHide, id_medcard}) => {
@@ -25,10 +24,7 @@ const AddAnalysisResultModal = ({show, onHide, id_medcard}) => {
     }
     return (
         <Modal
-            show={show}
-            onHide={onHide}
-            size="lg"
-            centered
+            show={show} onHide={onHide} size="lg" centered
         >
             <Modal.Header closeButton>
                 <Modal.Title>Результаты анализа</Modal.Title>
@@ -97,7 +93,12 @@ const AddAnalysisResultModal = ({show, onHide, id_medcard}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Отмена</Button>
-                <Button variant="primary" onClick={addResultL}>Сохранить</Button>
+                {(date&&analysis_type&&result&&recommendation)
+                    ?
+                    <Button variant="primary" onClick={addResultL}>Сохранить</Button>
+                    :
+                    <></>
+                }
             </Modal.Footer>
 
         </Modal>

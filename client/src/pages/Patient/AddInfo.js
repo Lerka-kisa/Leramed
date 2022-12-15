@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
-import {Button, Container, FloatingLabel, Form, FormSelect, Row} from "react-bootstrap";
-import {NavLink, useLocation, useNavigate} from "react-router-dom";
+import {Button, Container, FloatingLabel, Form} from "react-bootstrap";
+import {useNavigate} from "react-router-dom";
 import {Context} from "../../index";
 import {fetchGenders} from "../../http/analysisAPI";
 import {observer} from "mobx-react-lite";
@@ -10,7 +10,6 @@ import {PATIENT_INFO_ROUTE} from "../../utils/consts";
 const AddInfo = observer(() => {
     const {auth} = useContext(Context)
     const {analysis} = useContext(Context)
-    const location = useLocation()
     const navigate = useNavigate()
 
     const [last_name, setLastName] = useState('')
@@ -147,7 +146,12 @@ const AddInfo = observer(() => {
                     </FloatingLabel>
                 </div>
             </Form>
-            <Button variant="primary" className="mt-3" onClick={click}>Сохранить</Button>
+            {(last_name&&first_name&&middle_name&&birthday&&gender&&address&&place_of_work)
+                ?
+                <Button variant="primary" className="mt-3" onClick={click}>Сохранить</Button>
+                :
+                <></>
+            }
         </Container>
     );
 });

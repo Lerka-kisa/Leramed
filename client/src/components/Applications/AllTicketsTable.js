@@ -2,37 +2,30 @@ import React, {useContext, useEffect, useState} from 'react';
 import {Context} from "../../index";
 import {
     deleteApplication,
-    fetchGetCountEmptyTickets,
-    fetchGetCountTickets,
     fetchGetTickets,
     fetchGetTicketsWithData,
 } from "../../http/timetableAPI";
 import {Button, Container} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import Table from "react-bootstrap/Table";
-import {cardClasses} from "@mui/material";
-const AllTicketsTable = observer(({id}) => {
+const AllTicketsTable = observer(({id,setIdApp,setAddPatientVisible, addPatientVisible,
+                                      setPatient, updPatientVisible, setUpdPatientVisible
+                                      ,setAddRecordVisible}) => {
+    const {auth} = useContext(Context)
     const [Update,setUpdate] = useState(false)
-    //console.log("ooooooo"+ id)
-    // let today  = new Date().toISOString().split('T')[0]
-    // const {doctors} = useContext(Context)
     const {timetable} = useContext(Context)
     useEffect(()=>{
         fetchGetTickets(id).then(data => timetable.setAllTickets(data))
         fetchGetTicketsWithData(id).then(data => timetable.setAllTicketsWD(data))
         setUpdate(false)
-        // fetchGetCountTickets(id).then(data => timetable.setCountTickets(data))
-        //     .catch(e => console.log("говно"))
-        // fetchGetCountEmptyTickets(id).then(data => timetable.setCountEmptyTickets(data))
-        //     .catch(e => console.log("говно"))
-    },[Update])
+    },[Update,addPatientVisible,updPatientVisible])
 
     const deleteApplicationL = (id) => {
         deleteApplication(id).then(data => setUpdate(true));
     }
 
     const ConverterTime = (time) => {
-        const d = new Date(time) // Parses a ISO 8601 Date
+        const d = new Date(time)
         if(d.getUTCMinutes()<10)
             return d.getUTCHours() + ':0' + d.getUTCMinutes()
         else
@@ -69,6 +62,17 @@ const AllTicketsTable = observer(({id}) => {
         )
         return card_status
     }
+    const FindPatient = (id) => {
+        let patient = {}
+        timetable.all_ticketsWD.map(tick =>{
+                if(tick.id === id){
+                    patient = tick.Patient
+                    patient.card_status = tick.Patient.Medical_card.card_status
+                }
+            }
+        )
+        return patient
+    }
     return (
         <>
             <Table striped bordered hover size="sm">
@@ -94,12 +98,20 @@ const AllTicketsTable = observer(({id}) => {
                                 <td>{FindCard(tick.id)}</td>
                                 <td>{FindCardStatus(tick.id)}</td>
                                 <td>
-                                    <Button>
-                                        <i className="fa fa-pencil-square-o align-content-center"></i>
+                                    <Button onClick={()=>{setPatient(FindPatient(tick.id));setIdApp(tick.id); setUpdPatientVisible(true)}}>
+                                        <i className="fa fa-cogs align-content-center"></i>
                                     </Button>
                                     <Button onClick={() => deleteApplicationL(tick.id)}>
                                         <i className="fa fa-trash-o align-content-center"></i>
                                     </Button>
+                                    {(auth.role==="DOCTOR")
+                                        ?
+                                        <Button onClick={() => {setPatient(FindPatient(tick.id)); setAddRecordVisible(true)}}>
+                                            <i className="fa fa-pencil-square-o align-content-center"></i>
+                                        </Button>
+                                        :
+                                        <></>
+                                    }
                                 </td>
                             </>
                             :
@@ -108,7 +120,7 @@ const AllTicketsTable = observer(({id}) => {
                                 <td></td>
                                 <td></td>
                                 <td>
-                                    <Button>
+                                    <Button onClick={()=>{setAddPatientVisible(true);setIdApp(tick.id)}}>
                                         <i className="fa fa-plus-square-o align-content-center"></i>
                                     </Button>
                                 </td>

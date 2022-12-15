@@ -1,10 +1,10 @@
 import React, {useContext} from "react";
-import {Nav} from "react-bootstrap";
+import {Button, Nav} from "react-bootstrap";
 import {
     LOGIN_ROUTE,
     PATIENT_ANALYSIS_ROUTE,
     PATIENT_HOUSECALL_ROUTE, PATIENT_INFO_ROUTE,
-    PATIENT_MEDCARDS_ROUTE,
+    PATIENT_MEDCARDS_ROUTE, PATIENT_MY_TICKET_ROUTE,
     PATIENT_TICKET_ROUTE
 } from "../../utils/consts";
 import {Context} from "../../index";
@@ -25,14 +25,15 @@ const PatientMenu = () => {
     return (
         <>
             <Nav className="mx-auto" style={{color: "white"}}>
-                <Nav.Link href= {PATIENT_TICKET_ROUTE} >Талоны</Nav.Link>
-                <Nav.Link href= {PATIENT_HOUSECALL_ROUTE} >Вызов на дом</Nav.Link>
-                <Nav.Link href= {PATIENT_ANALYSIS_ROUTE} >Анализы</Nav.Link>
-                <Nav.Link href= {PATIENT_MEDCARDS_ROUTE} >Медицинская карта</Nav.Link>
+                <Button className="me-2 mx-2" variant={"outline-light"} href= {PATIENT_TICKET_ROUTE} >Талоны</Button>
+                <Button className="me-2 mx-2" variant={"outline-light"} href= {PATIENT_HOUSECALL_ROUTE} >Вызов на дом</Button>
+                <Button className="me-2 mx-2" variant={"outline-light"} href= {PATIENT_ANALYSIS_ROUTE} >Анализы</Button>
+                <Button className="me-2 mx-2" variant={"outline-light"} href= {PATIENT_MEDCARDS_ROUTE} >Медицинская карта</Button>
             </Nav>
             <Nav className="mx-auto" style={{color: "white"}}>
-                <Nav.Link href= {PATIENT_INFO_ROUTE} >Личный кабинет</Nav.Link>
-                <Nav.Link onClick={()=> logout()}>Выйти</Nav.Link>
+                <Button className="me-2 mx-2" variant={"outline-light"} href= {PATIENT_INFO_ROUTE} >Личный кабинет</Button>
+                <Button className="me-2 mx-2" variant={"outline-light"} href= {PATIENT_MY_TICKET_ROUTE} >Заказанные талоны</Button>
+                <Button className="me-2 mx-2" variant={"outline-danger"} onClick={()=> logout()}>Выйти</Button>
             </Nav>
         </>)
 };

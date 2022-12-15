@@ -6,7 +6,6 @@ import Main from "../pages/Main";
 
 const AppRouter = () => {
     const {auth} = useContext(Context)
-    //console.log(auth)
 
     return (
         <Routes>

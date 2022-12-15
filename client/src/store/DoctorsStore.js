@@ -15,7 +15,6 @@ export default class DoctorsStore{
 
     setDoctor(doc){ this._doctor = doc }
     setPatients(pat){ this._patients = pat }
-    setSearchTypes(type){ this._searchtypes = type }
 
     get doctor(){ return this._doctor }
     get patients(){ return this._patients }

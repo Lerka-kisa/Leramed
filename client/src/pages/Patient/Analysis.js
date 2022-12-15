@@ -14,11 +14,9 @@ const Analysis = observer(() => {
         fetchGetinfo().then(data => {
             userinfo.setUserinfo(data)
         })
-    },[/*userinfo.userinfo*/])
-    const user = userinfo.userinfo;
+    },[])
     useEffect(()=>{
         fetchGetAnalysis().then(data => {
-            //console.log(data)
             analysis.setAnalysis(data)
         })
     },[])
@@ -27,10 +25,6 @@ const Analysis = observer(() => {
         <Container>
             <h1 className="display-5 mt-5 mb-4">Для более точных рекомендаций придите на приём</h1>
             <AnalysisTable analysis={analysis.analysis} className="mt-3" auth ={auth}/>
-            {/*<MedicalRecordsTable records={records.record} className="mt-3" auth ={auth}/>*/}
-
-
-
         </Container>
     );
 });

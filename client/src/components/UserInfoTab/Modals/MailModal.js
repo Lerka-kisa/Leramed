@@ -32,7 +32,12 @@ const MailModal =  ({show, onHide}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Отмена</Button>
-                <Button variant="primary" onClick={updMailL}>Сохранить изменения</Button>
+                {(mail)
+                    ?
+                    <Button variant="primary" onClick={updMailL}>Сохранить изменения</Button>
+                    :
+                    <></>
+                }
             </Modal.Footer>
         </Modal>
     );

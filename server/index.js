@@ -27,7 +27,7 @@ app.use(cookieParser("cookie_key"));
 const {sequelize} = require('./DB')
 const model = require('./models/models');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3030;
 
 const router = require("./routes/router");
 app.use('/api', router)

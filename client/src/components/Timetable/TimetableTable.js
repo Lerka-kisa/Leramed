@@ -1,7 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Table from 'react-bootstrap/Table';
 import {observer} from "mobx-react-lite";
-const TimetableTable = observer(({timetables, selector}) => {
+import {useNavigate} from "react-router-dom";
+import {ADMIN_TIMETABLE_ROUTE, DOCTOR_TIMETABLE_ROUTE} from "../../utils/consts";
+import {Context} from "../../index";
+const TimetableTable = observer(({timetables}) => {
+    const {auth} = useContext(Context)
+    const navigate = useNavigate()
     return (
         <>
             <Table striped bordered hover size="sm">
@@ -9,19 +14,33 @@ const TimetableTable = observer(({timetables, selector}) => {
                 <tr>
                     <th>Дата приёма</th>
                     <th>Смена</th>
-                    <th>Врач</th>
-                    <th>Специализация</th>
-                </tr>
+                    {(auth.role==="ADMIN")
+                        ?
+                        <>
+                            <th>Врач</th>
+                            <th>Специализация</th>
+                        </>
+                        :
+                        <></>
+                    }</tr>
                 </thead>
                 <tbody>
                 {timetables.shifts.map(shift =>
                     <>
-                        <tr onClick={() => {selector(shift.id)}}>
-                            <td>{shift.date}</td>
-                            <td>{shift.Types_of_shift.period_name}</td>
-                            <td>{shift.Doctor.last_name} {shift.Doctor.first_name} {shift.Doctor.middle_name} </td>
-                            <td>{shift.Doctor.specialization}</td>
-                        </tr>
+                        {(auth.role === 'ADMIN')
+                            ?
+                            <tr onClick={() => navigate(ADMIN_TIMETABLE_ROUTE + "/" + shift.id)}>
+                                <td>{shift.date}</td>
+                                <td>{shift.Types_of_shift.period_name}</td>
+                                <td>{shift.Doctor.last_name} {shift.Doctor.first_name} {shift.Doctor.middle_name} </td>
+                                <td>{shift.Doctor.specialization}</td>
+                            </tr>
+                            :
+                            <tr onClick={() => navigate(DOCTOR_TIMETABLE_ROUTE + "/" + shift.id)}>
+                                <td>{shift.date}</td>
+                                <td>{shift.Types_of_shift.period_name}</td>
+                            </tr>
+                        }
                     </>
                 )}
                 </tbody>

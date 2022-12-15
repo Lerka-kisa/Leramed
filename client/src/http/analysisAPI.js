@@ -1,7 +1,7 @@
 import {$authHost, $host} from "./index";
 
 export const fetchTypes = async () => {
-    const {data} = await $authHost.get("api/analysis/getTypeOfAnalysis")
+    const {data} = await $authHost.get("api/analysis/getType")
     return data;
 }
 
@@ -23,11 +23,12 @@ export const fetchAnalysisNorms = async (typeId, genderId, agegroupId) => {
 }
 
 export const fetchGetAnalysis = async () => {
-    const {data} = await $authHost.get("api/analysis/getanalysis")
+    const {data} = await $authHost.get("api/analysis/all")
     return convertAnalysis(data)
 }
+
 export const fetchGetAnalysisId = async (id) => {
-    const {data} = await $authHost.get("api/analysis/getanalysisid", {params:{id}})
+    const {data} = await $authHost.get("api/analysis/byId", {params:{id}})
     return convertAnalysis(data)
 }
 

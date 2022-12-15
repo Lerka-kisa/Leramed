@@ -25,7 +25,13 @@ module.exports = {
         if (!userData)
             return next(ApiError.UnauthorizedError())
 
-        const timetable = await TimetableService.getShifts()
+        let timetable = {}
+        if(userData.role === 'ADMIN'){
+            timetable = await TimetableService.getShifts()
+        }
+        if(userData.role === 'DOCTOR'){
+            timetable = await TimetableService.getShiftsForDoctor(userData.id_acc)
+        }
         if(!timetable) {
             return next(ApiError.internal('Что-то пошло не так'))
         }
@@ -42,6 +48,22 @@ module.exports = {
 
         let {id}  = req.query;
         const timetable = await TimetableService.getTickets(id)
+        if(!timetable) {
+            return next(ApiError.internal('Что-то пошло не так'))
+        }
+
+        return res.status(200).json(timetable)
+    },
+    getPatientsTickets: async (req, res, next) => {
+        const token = req.headers.authorization.split(' ')[1]
+        if(!token)
+            return next(ApiError.UnauthorizedError())
+        const userData = validateAccessToken(token)
+        if (!userData)
+            return next(ApiError.UnauthorizedError())
+
+        const id = userData.id_acc;
+        const timetable = await TimetableService.getPatientsTickets(id)
         if(!timetable) {
             return next(ApiError.internal('Что-то пошло не так'))
         }
@@ -88,8 +110,8 @@ module.exports = {
         if (!userData)
             return next(ApiError.UnauthorizedError())
 
-        let {id}  = req.query;
-        const timetable = await TimetableService.getEmptyTickets(id)
+        let {id_doctor}  = req.query;
+        const timetable = await TimetableService.getEmptyTickets(id_doctor)
         if(!timetable) {
             return next(ApiError.internal('Что-то пошло не так'))
         }
@@ -162,6 +184,40 @@ module.exports = {
 
         let {id}  = req.query;
         const data = await TimetableService.delApp(id)
+        if(!data) {
+            return next(ApiError.internal('Что-то пошло не так'))
+        }
+
+        return res.status(200).json(data)
+    },
+    setPatientInApp: async (req, res, next) => {
+        const token = req.headers.authorization.split(' ')[1]
+        if(!token)
+            return next(ApiError.UnauthorizedError())
+        const userData = validateAccessToken(token)
+        if (!userData)
+            return next(ApiError.UnauthorizedError())
+
+        const data = await TimetableService.setPatientInApp(req.body.id,req.body.id_patient)
+        if(!data) {
+            return next(ApiError.internal('Что-то пошло не так'))
+        }
+
+        return res.status(200).json(data)
+    },
+    getCardStatus: async (req, res, next) => {
+        const list = await TimetableService.getCardStatus()
+        return res.json(list)
+    },
+    updStatusCard: async (req, res, next) => {
+        const token = req.headers.authorization.split(' ')[1]
+        if(!token)
+            return next(ApiError.UnauthorizedError())
+        const userData = validateAccessToken(token)
+        if (!userData)
+            return next(ApiError.UnauthorizedError())
+
+        const data = await TimetableService.updStatusCard(req.body.id_medcard,req.body.new_status)
         if(!data) {
             return next(ApiError.internal('Что-то пошло не так'))
         }

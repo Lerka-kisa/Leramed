@@ -32,7 +32,12 @@ const PhoneModal =  ({show, onHide}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Отмена</Button>
-                <Button variant="primary" onClick={updPhoneL}>Сохранить изменения</Button>
+                {(phone)
+                    ?
+                    <Button variant="primary" onClick={updPhoneL}>Сохранить изменения</Button>
+                    :
+                    <></>
+                }
             </Modal.Footer>
         </Modal>
     );

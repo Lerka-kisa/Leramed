@@ -6,23 +6,19 @@ export default class AuthStore {
         makeAutoObservable(this)
     }
 
-    setIsAuth(bool){ this._isAuth = bool }
-    setRole(role){ this._role = role }
-    setUser(user){ this._user = user }
-
-    get isAuth(){ return this._isAuth }
     get role(){ return this._role }
-    get user(){ return this._user }
+    get id(){ return this._userId }
+    get id_acc(){ return this._id_acc }
 
     check = async () => {
         if (!localStorage.getItem('access_token')) {
-            this._isAuth = false
             this._role = "GUEST"
             this._userId = null
+            this._id_acc = null
         } else {
-            this._isAuth = true
             this._role = localStorage.getItem('user_role')
             this._userId = localStorage.getItem('user_id')
+            this._id_acc = localStorage.getItem('id_acc')
         }
     }
 }

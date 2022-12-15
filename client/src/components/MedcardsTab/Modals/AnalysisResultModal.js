@@ -2,9 +2,8 @@ import React, {useContext} from 'react';
 import Modal from "react-bootstrap/Modal";
 import {Button} from "react-bootstrap";
 import {Table} from "@mui/material";
-import {Context} from "../../../index";
 
-const AnalysisResultModal = ({show, onHide, role, analysis}) => {
+const AnalysisResultModal = ({show, onHide, analysis}) => {
 
     return (
         <Modal
@@ -66,17 +65,6 @@ const AnalysisResultModal = ({show, onHide, role, analysis}) => {
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Закрыть</Button>
             </Modal.Footer>
-            {/*{(role === "PATIENT")*/}
-            {/*    ?*/}
-            {/*    <Modal.Footer>*/}
-            {/*        <Button variant="secondary" onClick={onHide}>Закрыть</Button>*/}
-            {/*    </Modal.Footer>*/}
-            {/*    :*/}
-            {/*    <Modal.Footer>*/}
-            {/*        <Button variant="secondary" onClick={onHide}>Отмена</Button>*/}
-            {/*        <Button variant="primary" onClick={onHide}>Сохранить изменения</Button>*/}
-            {/*    </Modal.Footer>*/}
-            {/*}*/}
         </Modal>
     );
 };

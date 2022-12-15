@@ -142,6 +142,7 @@ exports.createSectors = (id_doctor) => {
 // }
 
 exports.createTypeOfShifts = (type_of_shift, start, end) => {
+    //const
     model.Types_of_shifts.create({period_name: type_of_shift, beginning_of_period: start, end_of_period: end})
         .then(() =>  console.log("ok"))
         .catch(err => {
@@ -181,8 +182,8 @@ exports.createPatient = (id_auth, id_medcard, id_agegroup, first_name, last_name
         })
 }
 
-exports.createHouseCalls = (id_patient, id_record) => {
-    model.House_calls.create({id_patient:id_patient, id_record:id_record})
+exports.createHouseCalls = (date, id_patient, remark) => {
+    model.House_calls.create({date:date, id_patient:id_patient, remark:remark})
         .then(() =>  console.log("ok"))
         .catch(err => {
             console.log("not ok")
@@ -197,8 +198,9 @@ exports.createHouseCalls = (id_patient, id_record) => {
 //         })
 // }
 
-exports.createAppointments = (id_shift, id_patient, id_record, talon_number, time) => {
-    model.Appointments.create({id_shift:id_shift, id_patient:id_patient, id_record:id_record, talon_number:talon_number, time:time})
+exports.createAppointments = (id_shift, id_patient, talon_number, time) => {
+    //const timeS = new Date(time).toLocaleTimeString()
+    model.Appointments.create({id_shift:id_shift, id_patient:id_patient, talon_number:talon_number, time:time})
         .then(() =>  console.log("ok"))
         .catch(err => {
             console.log("not ok")

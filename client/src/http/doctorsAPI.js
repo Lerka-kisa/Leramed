@@ -17,8 +17,6 @@ export const fetchGetPatients = async (type, search, searchName, searchSurname, 
         patients[i].card_status = data[i].Medical_card.Card_status.status
         patients[i].id = data[i].id
         patients[i].id_medcard = data[i].id_medcard
-        // patients[i].phone = data[i].Authorization_info.phone
-
     }
     return patients;
 }

@@ -6,7 +6,6 @@ class UserinfoService {
     async getUserinfo(id){
         const res = await model.Patients.findByPk(id,{
             include:[
-                //{ model: model.Addresses, required: true },
                 { model: model.Authorization_info, required: true },
                 { model: model.Medical_cards, required: true,
                     include:[{ model: model.Card_status, required: true }]
@@ -110,7 +109,6 @@ class UserinfoService {
         if(!res) throw ApiError.BadRequest()
         return res
     }
-
 }
 
 module.exports = new UserinfoService()

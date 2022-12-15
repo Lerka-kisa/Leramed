@@ -6,8 +6,8 @@ const GuestMenu = () => {
     return (
         <>
             <Nav className="ml-auto" style={{color: "white"}}>
-                <Button variant={"outline-light"} href= {LOGIN_ROUTE} >Войти</Button>
-                <Button variant={"outline-light"} href= {REGISTRATION_ROUTE} >Зарегистрироваться</Button>
+                <Button className="me-2 mx-2" variant={"outline-warning"} href= {LOGIN_ROUTE} >Войти</Button>
+                <Button className="me-2 mx-2" variant={"outline-success"} href= {REGISTRATION_ROUTE} >Зарегистрироваться</Button>
             </Nav>
         </>)
     //onClick={()=> user.setRole(1)}

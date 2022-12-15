@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import {Button, Card, Container, Form, Row} from "react-bootstrap";
+import {Button, Card, Container, Form, FormLabel, Row} from "react-bootstrap";
 import {NavLink, useLocation,useNavigate} from "react-router-dom";
 import {CLINIK_ROUTE, LOGIN_ROUTE, PATIENT_ADDINFO_ROUTE, REGISTRATION_ROUTE} from "../utils/consts";
 import {registration, login} from "../http/authAPI";
@@ -31,7 +31,7 @@ const Auth = observer(() => {
                     navigate(PATIENT_ADDINFO_ROUTE)
                 }
                 else {
-                    alert("Debil, passwords raznie")
+                    alert("Glupiy chto li, passwords raznie")
                 }
             }
         } catch (e) {
@@ -59,7 +59,7 @@ const Auth = observer(() => {
                                 placeholder = "Введите ваш пароль..."
                                 value={password}
                                 onChange={e => setPassword(e.target.value)}
-                                // type="password"
+                                type="password"
                             />
                         </>
                         : <>
@@ -70,12 +70,14 @@ const Auth = observer(() => {
                                 onChange={e => setLogin(e.target.value)}
                             />
                             <Form.Control
+                                type="mail"
                                 className = "mt-3"
                                 placeholder = "Введите ваш email..."
                                 value={mail}
                                 onChange={e => setMail(e.target.value)}
                             />
                             <Form.Control
+                                type="phone"
                                 className = "mt-3"
                                 placeholder = "Введите ваш телефон..."
                                 value={phone}
@@ -86,18 +88,17 @@ const Auth = observer(() => {
                                 placeholder = "Введите ваш пароль..."
                                 value={password}
                                 onChange={e => setPassword(e.target.value)}
-                                // type="password"
+                                type="password"
                             />
                             <Form.Control
                                 className = "mt-3"
                                 placeholder = "Повторите пароль..."
                                 value={password2}
                                 onChange={e => setPassword2(e.target.value)}
-                                // type="password"
+                                type="password"
                             />
                         </>
                     }
-
                     <Row className="d-flex justify-content-between mt-3 ps-5 pe-5">
                         <Button
                             variant={"success"}

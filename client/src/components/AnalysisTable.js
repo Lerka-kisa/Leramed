@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Table from 'react-bootstrap/Table';
-import RecordModal from "./MedcardsTab/Modals/RecordModal";
 import {toJS} from "mobx";
 import AnalysisResultModal from "./MedcardsTab/Modals/AnalysisResultModal";
 const AnalysisTable = ({analysis, auth}) => {
@@ -44,7 +43,6 @@ const AnalysisTable = ({analysis, auth}) => {
                 analysis = {obj}
                 onHide={() => setResultVisible(false)}
             />
-
         </>
     );
 };

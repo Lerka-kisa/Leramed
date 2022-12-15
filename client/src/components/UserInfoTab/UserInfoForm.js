@@ -1,30 +1,24 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React from 'react';
 import {observer} from "mobx-react-lite";
-import {Context} from "../../index";
-import {Button, Form} from "react-bootstrap";
+import {Button} from "react-bootstrap";
 import BirthdayModal from "./Modals/BirthdayModal";
 import GenderModal from "./Modals/GenderModal";
 import AddressModal from "./Modals/AddressModal";
 import PlaceOfWorkModal from "./Modals/PlaceOfWorkModal";
 
 const UserInfoForm = observer(({user, user_data}) => {
-    const {analysis} = useContext(Context);
-    // const [updBirthdayVisible, setBirthdayVisible] = useState(false)
-    // const [updGenderVisible, setGenderVisible] = useState(false)
-    // const [updAddressVisible, setAddressVisible] = useState(false)
-    // const [updPlaceOfWorkVisible, setPlaceOfWorkVisible] = useState(false)
     return (
         <>
-            <h1 className="display-5 mb-3">Персональные данные</h1>
+            <h1 className="h1 mb-3"><u>Персональные данные</u></h1>
 
             <table className="table" >
                 <tbody>
                 <tr>
                     <th scope="row" >
-                        <label htmlFor="birthday" className="display-6 form-label">дата рождения:</label>
+                        <label htmlFor="birthday" className="h2 form-label">дата рождения:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.birthday}</label>
+                        <label className="h2 fw-normal form-label">{user.birthday}</label>
                     </td>
                     <td>
                         <Button
@@ -35,10 +29,10 @@ const UserInfoForm = observer(({user, user_data}) => {
                 </tr>
                 <tr>
                     <th scope="row" className="w-50">
-                        <label htmlFor="exampleInputGender" className="display-6 form-label">пол:</label>
+                        <label htmlFor="exampleInputGender" className="h2 form-label">пол:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.gender}</label>
+                        <label className="h2 fw-normal form-label">{user.gender}</label>
                     </td>
                     <td>
                         <Button
@@ -49,10 +43,10 @@ const UserInfoForm = observer(({user, user_data}) => {
                 </tr>
                 <tr>
                     <th scope="row" className="w-50">
-                        <label htmlFor="exampleInputAddress" className="display-6 form-label float-start">адрес:</label>
+                        <label htmlFor="exampleInputAddress" className="h2 form-label float-start">адрес:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.address}</label>
+                        <label className="h2 fw-normal form-label">{user.address}</label>
                     </td>
                     <td>
                         <Button
@@ -63,11 +57,10 @@ const UserInfoForm = observer(({user, user_data}) => {
                 </tr>
                 <tr>
                     <th scope="row">
-                        <label htmlFor="exampleInputWork" className="display-6 form-label">место учёбы/работы:</label>
+                        <label htmlFor="exampleInputWork" className="h2 form-label">место учёбы/работы:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.place_of_work}</label>
-                        {/*<label className="form-control mt-2" id="exampleInputWork"  >{user.place_of_work}</label>*/}
+                        <label className="h2 fw-normal form-label">{user.place_of_work}</label>
                     </td>
                     <td>
                         <Button
@@ -78,18 +71,18 @@ const UserInfoForm = observer(({user, user_data}) => {
                 </tr>
                 <tr>
                     <th scope="row">
-                        <label className="display-6 form-label">медицинская карта:</label>
+                        <label className="h2 form-label">медицинская карта:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.card_number}</label>
+                        <label className="h2 fw-normal form-label">{user.card_number}</label>
                     </td>
                 </tr>
                 <tr>
                     <th scope="row">
-                        <label className="display-6 form-label">находится:</label>
+                        <label className="h2 form-label">находится:</label>
                     </th>
                     <td>
-                        <label className="display-6 form-label">{user.card_status}</label>
+                        <label className="h2 fw-normal form-label">{user.card_status}</label>
                     </td>
                 </tr>
                 </tbody>

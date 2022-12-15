@@ -2,7 +2,6 @@ import React from 'react';
 import {Card, Col} from "react-bootstrap";
 
 const AnalysisNormItem = ({analysisnorm}) => {
-    //const history = useHistory()
     return (
         <Col md={4} className={"mt-3"}>
             <Card border={"active"} >

@@ -1,10 +1,9 @@
 import React, {useContext, useEffect, useState} from 'react';
 import Modal from "react-bootstrap/Modal";
-import {Button, Dropdown, Form} from "react-bootstrap";
+import {Button, Form} from "react-bootstrap";
 import {Context} from "../../../index";
 import {fetchGenders} from "../../../http/analysisAPI";
-import {MenuItem, Select} from "@mui/material";
-import {updBirthday, updGender} from "../../../http/userinfoAPI";
+import {updGender} from "../../../http/userinfoAPI";
 
 const GenderModal = ({show, onHide}) => {
     const {analysis} = useContext(Context);
@@ -14,11 +13,8 @@ const GenderModal = ({show, onHide}) => {
     })
     const [gender, setGender] = useState('')
     const updGenderL = () => {
-        //console.log(gender)
         updGender(gender).then(data => onHide());
         setGender('')
-        //updateAddress(name)
-        //createDevice(formData).then(data => onHide())
     }
     return (
         <Modal
@@ -44,7 +40,12 @@ const GenderModal = ({show, onHide}) => {
                 <Button variant="secondary" onClick={onHide}>
                     Отмена
                 </Button>
-                <Button variant="primary" onClick={updGenderL}>Сохранить изменения</Button>
+                {(gender)
+                    ?
+                    <Button variant="primary" onClick={updGenderL}>Сохранить изменения</Button>
+                    :
+                    <></>
+                }
             </Modal.Footer>
         </Modal>
     );

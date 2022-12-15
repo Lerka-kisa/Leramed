@@ -16989,7 +16989,7 @@
 1349579846|||2|execute|D
 1365579903|||0|execute|G
 1365579903|||2|execute|D</Grants>
-      <IntrospectionTimestamp>2022-12-14.08:06:25.590</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2022-12-15.08:02:11.503</IntrospectionTimestamp>
       <ObjectId>1</ObjectId>
       <PermissionsCheckSum>16228498497</PermissionsCheckSum>
     </schema>
@@ -17080,89 +17080,89 @@ int</ExtendedProperties>
       <SourceTextLength>1463</SourceTextLength>
     </routine>
     <table id="5602" parent="5591" name="Age_group">
-      <CreatedTimestamp>2022-12-14.07:55:42.620</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
-      <ObjectId>964914509</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.393</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
+      <ObjectId>1770489386</ObjectId>
     </table>
     <table id="5603" parent="5591" name="Analysis_norms">
-      <CreatedTimestamp>2022-12-14.07:55:42.667</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
-      <ObjectId>1060914851</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.437</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.457</ModifiedTimestamp>
+      <ObjectId>1866489728</ObjectId>
     </table>
     <table id="5604" parent="5591" name="Analysis_results">
-      <CreatedTimestamp>2022-12-14.07:55:42.683</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
-      <ObjectId>1140915136</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.453</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.453</ModifiedTimestamp>
+      <ObjectId>1946490013</ObjectId>
     </table>
     <table id="5605" parent="5591" name="Appointments">
-      <CreatedTimestamp>2022-12-14.07:55:42.817</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.817</ModifiedTimestamp>
-      <ObjectId>1684917074</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.600</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.600</ModifiedTimestamp>
+      <ObjectId>327008246</ObjectId>
     </table>
     <table id="5606" parent="5591" name="Authorization_info">
-      <CreatedTimestamp>2022-12-14.07:55:42.710</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
-      <ObjectId>1284915649</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.497</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
+      <ObjectId>2090490526</ObjectId>
     </table>
     <table id="5607" parent="5591" name="Card_status">
-      <CreatedTimestamp>2022-12-14.07:55:42.520</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.587</ModifiedTimestamp>
-      <ObjectId>852914110</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.297</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.360</ModifiedTimestamp>
+      <ObjectId>1658488987</ObjectId>
     </table>
     <table id="5608" parent="5591" name="Doctors">
-      <CreatedTimestamp>2022-12-14.07:55:42.727</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.773</ModifiedTimestamp>
-      <ObjectId>1316915763</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.510</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.557</ModifiedTimestamp>
+      <ObjectId>2122490640</ObjectId>
     </table>
     <table id="5609" parent="5591" name="Gender">
-      <CreatedTimestamp>2022-12-14.07:55:42.637</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
-      <ObjectId>996914623</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.410</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
+      <ObjectId>1802489500</ObjectId>
     </table>
     <table id="5610" parent="5591" name="House_calls">
-      <CreatedTimestamp>2022-12-14.07:55:42.803</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.803</ModifiedTimestamp>
-      <ObjectId>1620916846</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.587</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.587</ModifiedTimestamp>
+      <ObjectId>279008075</ObjectId>
     </table>
     <table id="5611" parent="5591" name="Medcards_records">
-      <CreatedTimestamp>2022-12-14.07:55:42.697</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.817</ModifiedTimestamp>
-      <ObjectId>1236915478</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.480</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.480</ModifiedTimestamp>
+      <ObjectId>2042490355</ObjectId>
     </table>
     <table id="5612" parent="5591" name="Medical_cards">
-      <CreatedTimestamp>2022-12-14.07:55:42.587</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
-      <ObjectId>884914224</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.360</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
+      <ObjectId>1690489101</ObjectId>
     </table>
     <table id="5613" parent="5591" name="Norms_scores">
-      <CreatedTimestamp>2022-12-14.07:55:42.650</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
-      <ObjectId>1028914737</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.423</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.457</ModifiedTimestamp>
+      <ObjectId>1834489614</ObjectId>
     </table>
     <table id="5614" parent="5591" name="Patients">
-      <CreatedTimestamp>2022-12-14.07:55:42.787</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.817</ModifiedTimestamp>
-      <ObjectId>1508916447</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.570</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.603</ModifiedTimestamp>
+      <ObjectId>167007676</ObjectId>
     </table>
     <table id="5615" parent="5591" name="Sectors">
-      <CreatedTimestamp>2022-12-14.07:55:42.740</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
-      <ObjectId>1364915934</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.527</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
+      <ObjectId>23007163</ObjectId>
     </table>
     <table id="5616" parent="5591" name="Timetable">
-      <CreatedTimestamp>2022-12-14.07:55:42.770</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.817</ModifiedTimestamp>
-      <ObjectId>1444916219</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.553</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.603</ModifiedTimestamp>
+      <ObjectId>103007448</ObjectId>
     </table>
     <table id="5617" parent="5591" name="Types_of_analysis">
-      <CreatedTimestamp>2022-12-14.07:55:42.603</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
-      <ObjectId>932914395</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.377</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.457</ModifiedTimestamp>
+      <ObjectId>1738489272</ObjectId>
     </table>
     <table id="5618" parent="5591" name="Types_of_shifts">
-      <CreatedTimestamp>2022-12-14.07:55:42.757</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.773</ModifiedTimestamp>
-      <ObjectId>1412916105</ObjectId>
+      <CreatedTimestamp>2022-12-15.08:02:03.540</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.557</ModifiedTimestamp>
+      <ObjectId>71007334</ObjectId>
     </table>
     <argument id="5619" parent="5594">
       <ArgumentDirection>R</ArgumentDirection>
@@ -17257,20 +17257,20 @@ int</ExtendedProperties>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="5641" parent="5602" name="PK__Age_grou__3213E83FA81B4D47">
+    <index id="5641" parent="5602" name="PK__Age_grou__3213E83F6F8E7419">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5642" parent="5602" name="PK__Age_grou__3213E83FA81B4D47">
-      <CreatedTimestamp>2022-12-14.07:55:42.620</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.620</ModifiedTimestamp>
+    <key id="5642" parent="5602" name="PK__Age_grou__3213E83F6F8E7419">
+      <CreatedTimestamp>2022-12-15.08:02:03.397</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.397</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>980914566</ObjectId>
+      <ObjectId>1786489443</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Age_grou__3213E83FA81B4D47</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Age_grou__3213E83F6F8E7419</UnderlyingIndexName>
     </key>
     <column id="5643" parent="5603" name="id">
       <DataType>int|0s</DataType>
@@ -17305,53 +17305,53 @@ int</ExtendedProperties>
       <DataType>int|0s</DataType>
       <Position>7</Position>
     </column>
-    <foreign-key id="5650" parent="5603" name="FK__Analysis___id_an__41248F15">
+    <foreign-key id="5650" parent="5603" name="FK__Analysis___id_an__7128A7F2">
       <ColNames>id_analysis_type</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.667</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.667</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.440</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.440</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1092914965</ObjectId>
+      <ObjectId>1898489842</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>932914395</RefTableId>
+      <RefTableId>1738489272</RefTableId>
       <RefTableName>Types_of_analysis</RefTableName>
     </foreign-key>
-    <foreign-key id="5651" parent="5603" name="FK__Analysis___id_ag__4218B34E">
+    <foreign-key id="5651" parent="5603" name="FK__Analysis___id_ag__721CCC2B">
       <ColNames>id_agegroup</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.667</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.667</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.440</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.440</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1108915022</ObjectId>
+      <ObjectId>1914489899</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>964914509</RefTableId>
+      <RefTableId>1770489386</RefTableId>
       <RefTableName>Age_group</RefTableName>
     </foreign-key>
-    <foreign-key id="5652" parent="5603" name="FK__Analysis___id_ge__430CD787">
+    <foreign-key id="5652" parent="5603" name="FK__Analysis___id_ge__7310F064">
       <ColNames>id_gender</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.670</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.670</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.440</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.440</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1124915079</ObjectId>
+      <ObjectId>1930489956</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>996914623</RefTableId>
+      <RefTableId>1802489500</RefTableId>
       <RefTableName>Gender</RefTableName>
     </foreign-key>
-    <index id="5653" parent="5603" name="PK__Analysis__3213E83FAB6760CC">
+    <index id="5653" parent="5603" name="PK__Analysis__3213E83FC3AEE117">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5654" parent="5603" name="PK__Analysis__3213E83FAB6760CC">
-      <CreatedTimestamp>2022-12-14.07:55:42.667</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.667</ModifiedTimestamp>
+    <key id="5654" parent="5603" name="PK__Analysis__3213E83FC3AEE117">
+      <CreatedTimestamp>2022-12-15.08:02:03.440</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.440</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1076914908</ObjectId>
+      <ObjectId>1882489785</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Analysis__3213E83FAB6760CC</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Analysis__3213E83FC3AEE117</UnderlyingIndexName>
     </key>
     <column id="5655" parent="5604" name="id">
       <DataType>int|0s</DataType>
@@ -17388,64 +17388,64 @@ int</ExtendedProperties>
       <DataType>int|0s</DataType>
       <Position>8</Position>
     </column>
-    <foreign-key id="5663" parent="5604" name="FK__Analysis___id_no__45E94432">
+    <foreign-key id="5663" parent="5604" name="FK__Analysis___id_no__75ED5D0F">
       <ColNames>id_norm</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.683</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.457</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.457</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1172915250</ObjectId>
+      <ObjectId>1978490127</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1060914851</RefTableId>
+      <RefTableId>1866489728</RefTableId>
       <RefTableName>Analysis_norms</RefTableName>
     </foreign-key>
-    <foreign-key id="5664" parent="5604" name="FK__Analysis___id_me__46DD686B">
+    <foreign-key id="5664" parent="5604" name="FK__Analysis___id_me__76E18148">
       <ColNames>id_medcard</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.683</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.457</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.457</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1188915307</ObjectId>
+      <ObjectId>1994490184</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>884914224</RefTableId>
+      <RefTableId>1690489101</RefTableId>
       <RefTableName>Medical_cards</RefTableName>
     </foreign-key>
-    <foreign-key id="5665" parent="5604" name="FK__Analysis___id_an__47D18CA4">
+    <foreign-key id="5665" parent="5604" name="FK__Analysis___id_an__77D5A581">
       <ColNames>id_analysis_type</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.683</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.457</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.457</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1204915364</ObjectId>
+      <ObjectId>2010490241</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>932914395</RefTableId>
+      <RefTableId>1738489272</RefTableId>
       <RefTableName>Types_of_analysis</RefTableName>
     </foreign-key>
-    <foreign-key id="5666" parent="5604" name="FK__Analysis___id_no__48C5B0DD">
+    <foreign-key id="5666" parent="5604" name="FK__Analysis___id_no__78C9C9BA">
       <ColNames>id_norm_score</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.683</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.457</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.457</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1220915421</ObjectId>
+      <ObjectId>2026490298</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1028914737</RefTableId>
+      <RefTableId>1834489614</RefTableId>
       <RefTableName>Norms_scores</RefTableName>
     </foreign-key>
-    <index id="5667" parent="5604" name="PK__Analysis__3213E83FECFE692E">
+    <index id="5667" parent="5604" name="PK__Analysis__3213E83F76574FD3">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5668" parent="5604" name="PK__Analysis__3213E83FECFE692E">
-      <CreatedTimestamp>2022-12-14.07:55:42.683</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.683</ModifiedTimestamp>
+    <key id="5668" parent="5604" name="PK__Analysis__3213E83F76574FD3">
+      <CreatedTimestamp>2022-12-15.08:02:03.457</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.457</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1156915193</ObjectId>
+      <ObjectId>1962490070</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Analysis__3213E83FECFE692E</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Analysis__3213E83F76574FD3</UnderlyingIndexName>
     </key>
     <column id="5669" parent="5605" name="id">
       <DataType>int|0s</DataType>
@@ -17471,647 +17471,627 @@ int</ExtendedProperties>
       <DataType>int|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="5674" parent="5605" name="id_record">
-      <DataType>int|0s</DataType>
-      <Position>6</Position>
-    </column>
-    <foreign-key id="5675" parent="5605" name="FK__Appointme__id_sh__665613C4">
+    <foreign-key id="5674" parent="5605" name="FK__Appointme__id_sh__15660868">
       <ColNames>id_shift</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.817</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.817</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.603</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.603</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1716917188</ObjectId>
+      <ObjectId>359008360</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1444916219</RefTableId>
+      <RefTableId>103007448</RefTableId>
       <RefTableName>Timetable</RefTableName>
     </foreign-key>
-    <foreign-key id="5676" parent="5605" name="FK__Appointme__id_pa__674A37FD">
+    <foreign-key id="5675" parent="5605" name="FK__Appointme__id_pa__165A2CA1">
       <ColNames>id_patient</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.817</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.817</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.603</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.603</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1732917245</ObjectId>
+      <ObjectId>375008417</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1508916447</RefTableId>
+      <RefTableId>167007676</RefTableId>
       <RefTableName>Patients</RefTableName>
     </foreign-key>
-    <foreign-key id="5677" parent="5605" name="FK__Appointme__id_re__683E5C36">
-      <ColNames>id_record</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.817</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.817</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1748917302</ObjectId>
-      <OnDelete>set-null</OnDelete>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1236915478</RefTableId>
-      <RefTableName>Medcards_records</RefTableName>
-    </foreign-key>
-    <index id="5678" parent="5605" name="PK__Appointm__3213E83F3FEFD86D">
+    <index id="5676" parent="5605" name="PK__Appointm__3213E83F517EB38D">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5679" parent="5605" name="PK__Appointm__3213E83F3FEFD86D">
-      <CreatedTimestamp>2022-12-14.07:55:42.817</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.817</ModifiedTimestamp>
+    <key id="5677" parent="5605" name="PK__Appointm__3213E83F517EB38D">
+      <CreatedTimestamp>2022-12-15.08:02:03.603</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.603</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1700917131</ObjectId>
+      <ObjectId>343008303</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Appointm__3213E83F3FEFD86D</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Appointm__3213E83F517EB38D</UnderlyingIndexName>
     </key>
-    <column id="5680" parent="5606" name="id">
+    <column id="5678" parent="5606" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(7)</SequenceIdentity>
     </column>
-    <column id="5681" parent="5606" name="login">
+    <column id="5679" parent="5606" name="login">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5682" parent="5606" name="password">
+    <column id="5680" parent="5606" name="password">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5683" parent="5606" name="mail">
+    <column id="5681" parent="5606" name="mail">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="5684" parent="5606" name="phone">
+    <column id="5682" parent="5606" name="phone">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="5685" parent="5606" name="role">
+    <column id="5683" parent="5606" name="role">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="5686" parent="5606" name="PK__Authoriz__3213E83F756368C6">
+    <index id="5684" parent="5606" name="PK__Authoriz__3213E83F360A9C7B">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5687" parent="5606" name="PK__Authoriz__3213E83F756368C6">
-      <CreatedTimestamp>2022-12-14.07:55:42.713</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.713</ModifiedTimestamp>
+    <key id="5685" parent="5606" name="PK__Authoriz__3213E83F360A9C7B">
+      <CreatedTimestamp>2022-12-15.08:02:03.497</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.497</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1300915706</ObjectId>
+      <ObjectId>2106490583</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Authoriz__3213E83F756368C6</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Authoriz__3213E83F360A9C7B</UnderlyingIndexName>
     </key>
-    <column id="5688" parent="5607" name="id">
+    <column id="5686" parent="5607" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(4)</SequenceIdentity>
     </column>
-    <column id="5689" parent="5607" name="status">
+    <column id="5687" parent="5607" name="status">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="5690" parent="5607" name="PK__Card_sta__3213E83F31E9CDBE">
+    <index id="5688" parent="5607" name="PK__Card_sta__3213E83F2E2A02F7">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5691" parent="5607" name="PK__Card_sta__3213E83F31E9CDBE">
-      <CreatedTimestamp>2022-12-14.07:55:42.520</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.520</ModifiedTimestamp>
+    <key id="5689" parent="5607" name="PK__Card_sta__3213E83F2E2A02F7">
+      <CreatedTimestamp>2022-12-15.08:02:03.297</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.297</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>868914167</ObjectId>
+      <ObjectId>1674489044</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Card_sta__3213E83F31E9CDBE</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Card_sta__3213E83F2E2A02F7</UnderlyingIndexName>
     </key>
-    <column id="5692" parent="5608" name="id">
+    <column id="5690" parent="5608" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(3)</SequenceIdentity>
     </column>
-    <column id="5693" parent="5608" name="first_name">
+    <column id="5691" parent="5608" name="first_name">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="5694" parent="5608" name="last_name">
+    <column id="5692" parent="5608" name="last_name">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="5695" parent="5608" name="middle_name">
+    <column id="5693" parent="5608" name="middle_name">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="5696" parent="5608" name="specialization">
+    <column id="5694" parent="5608" name="specialization">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="5697" parent="5608" name="id_auth">
+    <column id="5695" parent="5608" name="id_auth">
       <DataType>int|0s</DataType>
       <Position>6</Position>
     </column>
-    <foreign-key id="5698" parent="5608" name="FK__Doctors__id_auth__5066D2A5">
+    <foreign-key id="5696" parent="5608" name="FK__Doctors__id_auth__006AEB82">
       <ColNames>id_auth</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.727</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.727</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.510</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.510</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1348915877</ObjectId>
+      <ObjectId>7007106</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1284915649</RefTableId>
+      <RefTableId>2090490526</RefTableId>
       <RefTableName>Authorization_info</RefTableName>
     </foreign-key>
-    <index id="5699" parent="5608" name="PK__Doctors__3213E83FDBBC3A6C">
+    <index id="5697" parent="5608" name="PK__Doctors__3213E83FD6476E30">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5700" parent="5608" name="PK__Doctors__3213E83FDBBC3A6C">
-      <CreatedTimestamp>2022-12-14.07:55:42.727</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.727</ModifiedTimestamp>
+    <key id="5698" parent="5608" name="PK__Doctors__3213E83FD6476E30">
+      <CreatedTimestamp>2022-12-15.08:02:03.510</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.510</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1332915820</ObjectId>
+      <ObjectId>2138490697</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Doctors__3213E83FDBBC3A6C</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Doctors__3213E83FD6476E30</UnderlyingIndexName>
     </key>
-    <column id="5701" parent="5609" name="id">
+    <column id="5699" parent="5609" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(4)</SequenceIdentity>
     </column>
-    <column id="5702" parent="5609" name="gender">
+    <column id="5700" parent="5609" name="gender">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="5703" parent="5609" name="PK__Gender__3213E83F56C4F20E">
+    <index id="5701" parent="5609" name="PK__Gender__3213E83F747F0C4B">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5704" parent="5609" name="PK__Gender__3213E83F56C4F20E">
-      <CreatedTimestamp>2022-12-14.07:55:42.637</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.637</ModifiedTimestamp>
+    <key id="5702" parent="5609" name="PK__Gender__3213E83F747F0C4B">
+      <CreatedTimestamp>2022-12-15.08:02:03.410</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.410</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1012914680</ObjectId>
+      <ObjectId>1818489557</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Gender__3213E83F56C4F20E</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Gender__3213E83F747F0C4B</UnderlyingIndexName>
     </key>
-    <column id="5705" parent="5610" name="id">
+    <column id="5703" parent="5610" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(5)</SequenceIdentity>
     </column>
-    <column id="5706" parent="5610" name="id_patient">
-      <DataType>int|0s</DataType>
+    <column id="5704" parent="5610" name="remark">
+      <DataType>nvarchar(255 char)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5707" parent="5610" name="id_record">
-      <DataType>int|0s</DataType>
+    <column id="5705" parent="5610" name="date">
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="5708" parent="5610" name="FK__House_cal__id_pa__628582E0">
+    <column id="5706" parent="5610" name="id_patient">
+      <DataType>int|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="5707" parent="5610" name="FK__House_cal__id_pa__12899BBD">
       <ColNames>id_patient</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.803</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.803</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.590</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.590</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1652916960</ObjectId>
+      <ObjectId>311008189</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1508916447</RefTableId>
+      <RefTableId>167007676</RefTableId>
       <RefTableName>Patients</RefTableName>
     </foreign-key>
-    <foreign-key id="5709" parent="5610" name="FK__House_cal__id_re__6379A719">
-      <ColNames>id_record</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.803</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.803</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1668917017</ObjectId>
-      <OnDelete>set-null</OnDelete>
-      <RefColNames>id</RefColNames>
-      <RefTableId>1236915478</RefTableId>
-      <RefTableName>Medcards_records</RefTableName>
-    </foreign-key>
-    <index id="5710" parent="5610" name="PK__House_ca__3213E83F3520AF15">
+    <index id="5708" parent="5610" name="PK__House_ca__3213E83F1A038C01">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5711" parent="5610" name="PK__House_ca__3213E83F3520AF15">
-      <CreatedTimestamp>2022-12-14.07:55:42.803</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.803</ModifiedTimestamp>
+    <key id="5709" parent="5610" name="PK__House_ca__3213E83F1A038C01">
+      <CreatedTimestamp>2022-12-15.08:02:03.590</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.590</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1636916903</ObjectId>
+      <ObjectId>295008132</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__House_ca__3213E83F3520AF15</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__House_ca__3213E83F1A038C01</UnderlyingIndexName>
     </key>
-    <column id="5712" parent="5611" name="id">
+    <column id="5710" parent="5611" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(7)</SequenceIdentity>
     </column>
-    <column id="5713" parent="5611" name="date">
+    <column id="5711" parent="5611" name="date">
       <DataType>date|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="5714" parent="5611" name="record">
+    <column id="5712" parent="5611" name="record">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="5715" parent="5611" name="recommendation">
+    <column id="5713" parent="5611" name="recommendation">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="5716" parent="5611" name="id_medcard">
+    <column id="5714" parent="5611" name="id_medcard">
       <DataType>int|0s</DataType>
       <Position>5</Position>
     </column>
-    <foreign-key id="5717" parent="5611" name="FK__Medcards___id_me__4BA21D88">
+    <foreign-key id="5715" parent="5611" name="FK__Medcards___id_me__7BA63665">
       <ColNames>id_medcard</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.700</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.700</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.480</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.480</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1268915592</ObjectId>
+      <ObjectId>2074490469</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>884914224</RefTableId>
+      <RefTableId>1690489101</RefTableId>
       <RefTableName>Medical_cards</RefTableName>
     </foreign-key>
-    <index id="5718" parent="5611" name="PK__Medcards__3213E83FA36E3749">
+    <index id="5716" parent="5611" name="PK__Medcards__3213E83F81B12DD1">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5719" parent="5611" name="PK__Medcards__3213E83FA36E3749">
-      <CreatedTimestamp>2022-12-14.07:55:42.700</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.700</ModifiedTimestamp>
+    <key id="5717" parent="5611" name="PK__Medcards__3213E83F81B12DD1">
+      <CreatedTimestamp>2022-12-15.08:02:03.480</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.480</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1252915535</ObjectId>
+      <ObjectId>2058490412</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Medcards__3213E83FA36E3749</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Medcards__3213E83F81B12DD1</UnderlyingIndexName>
     </key>
-    <column id="5720" parent="5612" name="id">
+    <column id="5718" parent="5612" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(4)</SequenceIdentity>
     </column>
-    <column id="5721" parent="5612" name="card_number">
+    <column id="5719" parent="5612" name="card_number">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5722" parent="5612" name="card_status">
+    <column id="5720" parent="5612" name="card_status">
       <DataType>int|0s</DataType>
       <Position>3</Position>
     </column>
-    <foreign-key id="5723" parent="5612" name="FK__Medical_c__card___36A700A2">
+    <foreign-key id="5721" parent="5612" name="FK__Medical_c__card___66AB197F">
       <ColNames>card_status</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.587</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.587</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.360</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.360</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>916914338</ObjectId>
+      <ObjectId>1722489215</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>852914110</RefTableId>
+      <RefTableId>1658488987</RefTableId>
       <RefTableName>Card_status</RefTableName>
     </foreign-key>
-    <index id="5724" parent="5612" name="PK__Medical___3213E83FD3012300">
+    <index id="5722" parent="5612" name="PK__Medical___3213E83FB2838B1B">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5725" parent="5612" name="PK__Medical___3213E83FD3012300">
-      <CreatedTimestamp>2022-12-14.07:55:42.587</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.587</ModifiedTimestamp>
+    <key id="5723" parent="5612" name="PK__Medical___3213E83FB2838B1B">
+      <CreatedTimestamp>2022-12-15.08:02:03.360</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.360</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>900914281</ObjectId>
+      <ObjectId>1706489158</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Medical___3213E83FD3012300</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Medical___3213E83FB2838B1B</UnderlyingIndexName>
     </key>
-    <column id="5726" parent="5613" name="id">
+    <column id="5724" parent="5613" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(4)</SequenceIdentity>
     </column>
-    <column id="5727" parent="5613" name="norm_score">
+    <column id="5725" parent="5613" name="norm_score">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="5728" parent="5613" name="PK__Norms_sc__3213E83FE85577AB">
+    <index id="5726" parent="5613" name="PK__Norms_sc__3213E83F06958E4B">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5729" parent="5613" name="PK__Norms_sc__3213E83FE85577AB">
-      <CreatedTimestamp>2022-12-14.07:55:42.653</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.653</ModifiedTimestamp>
+    <key id="5727" parent="5613" name="PK__Norms_sc__3213E83F06958E4B">
+      <CreatedTimestamp>2022-12-15.08:02:03.423</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.423</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1044914794</ObjectId>
+      <ObjectId>1850489671</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Norms_sc__3213E83FE85577AB</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Norms_sc__3213E83F06958E4B</UnderlyingIndexName>
     </key>
-    <column id="5730" parent="5614" name="id">
+    <column id="5728" parent="5614" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(4)</SequenceIdentity>
     </column>
-    <column id="5731" parent="5614" name="first_name">
+    <column id="5729" parent="5614" name="first_name">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="5732" parent="5614" name="last_name">
+    <column id="5730" parent="5614" name="last_name">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="5733" parent="5614" name="middle_name">
+    <column id="5731" parent="5614" name="middle_name">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="5734" parent="5614" name="birthday">
+    <column id="5732" parent="5614" name="birthday">
       <DataType>date|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="5735" parent="5614" name="place_of_work">
+    <column id="5733" parent="5614" name="place_of_work">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>6</Position>
     </column>
-    <column id="5736" parent="5614" name="address">
+    <column id="5734" parent="5614" name="address">
       <DataType>nvarchar(255 char)|0s</DataType>
       <Position>7</Position>
     </column>
-    <column id="5737" parent="5614" name="id_auth">
+    <column id="5735" parent="5614" name="id_auth">
       <DataType>int|0s</DataType>
       <Position>8</Position>
     </column>
-    <column id="5738" parent="5614" name="id_medcard">
+    <column id="5736" parent="5614" name="id_medcard">
       <DataType>int|0s</DataType>
       <Position>9</Position>
     </column>
-    <column id="5739" parent="5614" name="id_agegroup">
+    <column id="5737" parent="5614" name="id_agegroup">
       <DataType>int|0s</DataType>
       <Position>10</Position>
     </column>
-    <column id="5740" parent="5614" name="id_gender">
+    <column id="5738" parent="5614" name="id_gender">
       <DataType>int|0s</DataType>
       <Position>11</Position>
     </column>
-    <column id="5741" parent="5614" name="id_sector">
+    <column id="5739" parent="5614" name="id_sector">
       <DataType>int|0s</DataType>
       <Position>12</Position>
     </column>
-    <foreign-key id="5742" parent="5614" name="FK__Patients__id_aut__5BD88551">
+    <foreign-key id="5740" parent="5614" name="FK__Patients__id_aut__0BDC9E2E">
       <ColNames>id_auth</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.787</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.570</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1540916561</ObjectId>
+      <ObjectId>199007790</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1284915649</RefTableId>
+      <RefTableId>2090490526</RefTableId>
       <RefTableName>Authorization_info</RefTableName>
     </foreign-key>
-    <foreign-key id="5743" parent="5614" name="FK__Patients__id_med__5CCCA98A">
+    <foreign-key id="5741" parent="5614" name="FK__Patients__id_med__0CD0C267">
       <ColNames>id_medcard</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.787</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.570</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1556916618</ObjectId>
+      <ObjectId>215007847</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>884914224</RefTableId>
+      <RefTableId>1690489101</RefTableId>
       <RefTableName>Medical_cards</RefTableName>
     </foreign-key>
-    <foreign-key id="5744" parent="5614" name="FK__Patients__id_age__5DC0CDC3">
+    <foreign-key id="5742" parent="5614" name="FK__Patients__id_age__0DC4E6A0">
       <ColNames>id_agegroup</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.787</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.570</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1572916675</ObjectId>
+      <ObjectId>231007904</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>964914509</RefTableId>
+      <RefTableId>1770489386</RefTableId>
       <RefTableName>Age_group</RefTableName>
     </foreign-key>
-    <foreign-key id="5745" parent="5614" name="FK__Patients__id_gen__5EB4F1FC">
+    <foreign-key id="5743" parent="5614" name="FK__Patients__id_gen__0EB90AD9">
       <ColNames>id_gender</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.787</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.570</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1588916732</ObjectId>
+      <ObjectId>247007961</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>996914623</RefTableId>
+      <RefTableId>1802489500</RefTableId>
       <RefTableName>Gender</RefTableName>
     </foreign-key>
-    <foreign-key id="5746" parent="5614" name="FK__Patients__id_sec__5FA91635">
+    <foreign-key id="5744" parent="5614" name="FK__Patients__id_sec__0FAD2F12">
       <ColNames>id_sector</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.787</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.570</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1604916789</ObjectId>
+      <ObjectId>263008018</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1364915934</RefTableId>
+      <RefTableId>23007163</RefTableId>
       <RefTableName>Sectors</RefTableName>
     </foreign-key>
-    <index id="5747" parent="5614" name="PK__Patients__3213E83FD5CB0FD1">
+    <index id="5745" parent="5614" name="PK__Patients__3213E83FB6619EDF">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5748" parent="5614" name="PK__Patients__3213E83FD5CB0FD1">
-      <CreatedTimestamp>2022-12-14.07:55:42.787</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.787</ModifiedTimestamp>
+    <key id="5746" parent="5614" name="PK__Patients__3213E83FB6619EDF">
+      <CreatedTimestamp>2022-12-15.08:02:03.570</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.570</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1524916504</ObjectId>
+      <ObjectId>183007733</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Patients__3213E83FD5CB0FD1</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Patients__3213E83FB6619EDF</UnderlyingIndexName>
     </key>
-    <column id="5749" parent="5615" name="id">
+    <column id="5747" parent="5615" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(5)</SequenceIdentity>
     </column>
-    <column id="5750" parent="5615" name="id_doctor">
+    <column id="5748" parent="5615" name="id_doctor">
       <DataType>int|0s</DataType>
       <Position>2</Position>
     </column>
-    <foreign-key id="5751" parent="5615" name="FK__Sectors__id_doct__53433F50">
+    <foreign-key id="5749" parent="5615" name="FK__Sectors__id_doct__0347582D">
       <ColNames>id_doctor</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.743</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.743</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.527</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.527</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1396916048</ObjectId>
+      <ObjectId>55007277</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1316915763</RefTableId>
+      <RefTableId>2122490640</RefTableId>
       <RefTableName>Doctors</RefTableName>
     </foreign-key>
-    <index id="5752" parent="5615" name="PK__Sectors__3213E83FAD64F020">
+    <index id="5750" parent="5615" name="PK__Sectors__3213E83F1711408C">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5753" parent="5615" name="PK__Sectors__3213E83FAD64F020">
-      <CreatedTimestamp>2022-12-14.07:55:42.743</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.743</ModifiedTimestamp>
+    <key id="5751" parent="5615" name="PK__Sectors__3213E83F1711408C">
+      <CreatedTimestamp>2022-12-15.08:02:03.527</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.527</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1380915991</ObjectId>
+      <ObjectId>39007220</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Sectors__3213E83FAD64F020</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Sectors__3213E83F1711408C</UnderlyingIndexName>
     </key>
-    <column id="5754" parent="5616" name="id">
+    <column id="5752" parent="5616" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(4)</SequenceIdentity>
     </column>
-    <column id="5755" parent="5616" name="date">
+    <column id="5753" parent="5616" name="date">
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5756" parent="5616" name="id_doctor">
+    <column id="5754" parent="5616" name="id_doctor">
       <DataType>int|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="5757" parent="5616" name="id_type_of_shift">
+    <column id="5755" parent="5616" name="id_type_of_shift">
       <DataType>int|0s</DataType>
       <Position>4</Position>
     </column>
-    <foreign-key id="5758" parent="5616" name="FK__Timetable__id_do__5807F46D">
+    <foreign-key id="5756" parent="5616" name="FK__Timetable__id_do__080C0D4A">
       <ColNames>id_doctor</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.773</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.773</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.557</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.557</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1476916333</ObjectId>
+      <ObjectId>135007562</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1316915763</RefTableId>
+      <RefTableId>2122490640</RefTableId>
       <RefTableName>Doctors</RefTableName>
     </foreign-key>
-    <foreign-key id="5759" parent="5616" name="FK__Timetable__id_ty__58FC18A6">
+    <foreign-key id="5757" parent="5616" name="FK__Timetable__id_ty__09003183">
       <ColNames>id_type_of_shift</ColNames>
-      <CreatedTimestamp>2022-12-14.07:55:42.773</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.773</ModifiedTimestamp>
+      <CreatedTimestamp>2022-12-15.08:02:03.557</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.557</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1492916390</ObjectId>
+      <ObjectId>151007619</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableId>1412916105</RefTableId>
+      <RefTableId>71007334</RefTableId>
       <RefTableName>Types_of_shifts</RefTableName>
     </foreign-key>
-    <index id="5760" parent="5616" name="PK__Timetabl__3213E83F3037AC1E">
+    <index id="5758" parent="5616" name="PK__Timetabl__3213E83FA1CD74C7">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5761" parent="5616" name="PK__Timetabl__3213E83F3037AC1E">
-      <CreatedTimestamp>2022-12-14.07:55:42.770</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.770</ModifiedTimestamp>
+    <key id="5759" parent="5616" name="PK__Timetabl__3213E83FA1CD74C7">
+      <CreatedTimestamp>2022-12-15.08:02:03.557</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.557</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1460916276</ObjectId>
+      <ObjectId>119007505</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Timetabl__3213E83F3037AC1E</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Timetabl__3213E83FA1CD74C7</UnderlyingIndexName>
     </key>
-    <column id="5762" parent="5617" name="id">
+    <column id="5760" parent="5617" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(5)</SequenceIdentity>
     </column>
-    <column id="5763" parent="5617" name="name_analysis">
+    <column id="5761" parent="5617" name="name_analysis">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="5764" parent="5617" name="PK__Types_of__3213E83F33B6A0B0">
+    <index id="5762" parent="5617" name="PK__Types_of__3213E83F7BE2E1C9">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5765" parent="5617" name="PK__Types_of__3213E83F33B6A0B0">
-      <CreatedTimestamp>2022-12-14.07:55:42.603</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.603</ModifiedTimestamp>
+    <key id="5763" parent="5617" name="PK__Types_of__3213E83F7BE2E1C9">
+      <CreatedTimestamp>2022-12-15.08:02:03.377</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.377</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>948914452</ObjectId>
+      <ObjectId>1754489329</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Types_of__3213E83F33B6A0B0</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Types_of__3213E83F7BE2E1C9</UnderlyingIndexName>
     </key>
-    <column id="5766" parent="5618" name="id">
+    <column id="5764" parent="5618" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>1(4)</SequenceIdentity>
     </column>
-    <column id="5767" parent="5618" name="period_name">
+    <column id="5765" parent="5618" name="period_name">
       <DataType>nvarchar(255 char)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5768" parent="5618" name="beginning_of_period">
+    <column id="5766" parent="5618" name="beginning_of_period">
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5769" parent="5618" name="end_of_period">
+    <column id="5767" parent="5618" name="end_of_period">
       <DataType>time|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="5770" parent="5618" name="PK__Types_of__3213E83FEF1798C0">
+    <index id="5768" parent="5618" name="PK__Types_of__3213E83FC1AA3C6F">
       <Clustering>1</Clustering>
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5771" parent="5618" name="PK__Types_of__3213E83FEF1798C0">
-      <CreatedTimestamp>2022-12-14.07:55:42.757</CreatedTimestamp>
-      <ModifiedTimestamp>2022-12-14.07:55:42.757</ModifiedTimestamp>
+    <key id="5769" parent="5618" name="PK__Types_of__3213E83FC1AA3C6F">
+      <CreatedTimestamp>2022-12-15.08:02:03.540</CreatedTimestamp>
+      <ModifiedTimestamp>2022-12-15.08:02:03.540</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>1428916162</ObjectId>
+      <ObjectId>87007391</ObjectId>
       <Primary>1</Primary>
-      <UnderlyingIndexName>PK__Types_of__3213E83FEF1798C0</UnderlyingIndexName>
+      <UnderlyingIndexName>PK__Types_of__3213E83FC1AA3C6F</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

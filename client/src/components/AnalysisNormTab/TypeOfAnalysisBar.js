@@ -6,7 +6,6 @@ import {Button} from "react-bootstrap";
 
 const TypeOfAnalysisBar = observer(() => {
     const {analysis} = useContext(Context)
-    //console.log(analysis.types)
     return (
         <ListGroup>
             {analysis.types.map(type =>

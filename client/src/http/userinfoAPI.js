@@ -2,7 +2,6 @@ import {$authHost} from "./index";
 
 export const fetchGetinfo = async () => {
     const {data} = await $authHost.get("api/userinfo/getinfo")
-    //console.log(data.id)
     let user = {id:data.id};
     user.first_name = data.first_name;
     user.last_name = data.last_name;
@@ -26,8 +25,6 @@ export const AddUserinfo = async (last_name, first_name, middle_name, birthday, 
     const {data} = await $authHost.post("api/userinfo/addinfo", {last_name, first_name, middle_name, birthday, id_gender, address, place_of_work, age})
     return data;
 }
-
-// agegroup:"От 3 до 8",
 
 export const updInfo = async (data) => {
     console.log(data)

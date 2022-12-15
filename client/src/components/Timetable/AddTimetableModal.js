@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import {Button, Form} from "react-bootstrap";
 import {Table} from "@mui/material";
 import {Context} from "../../../src/index";
-import {addTimetable, fetchSectors, fetchTypesOfShifts} from "../../http/timetableAPI";
+import {addTimetable, fetchTypesOfShifts} from "../../http/timetableAPI";
 import {fetchDoctors} from "../../http/doctorsAPI";
 
 const AddTimetableModal = ({show, onHide}) => {
@@ -20,20 +20,14 @@ const AddTimetableModal = ({show, onHide}) => {
         fetchDoctors().then(data => doctors.setDoctor(data))
     })
     const addTimetableL = () => {
-        // console.log(date)
-        // console.log(id_type)
-        // console.log(id_doctor)
         addTimetable(date, id_type, id_doctor).then(data => onHide());
-        setDate('')
-        setType('')
-        setDoctor('')
+        setDate(today)
+        setType(1)
+        setDoctor(1)
     }
     return (
         <Modal
-            show={show}
-            onHide={onHide}
-            size="lg"
-            centered
+            show={show} onHide={onHide} size="lg" centered
         >
             <Modal.Header closeButton>
                 <Modal.Title>Создание приёма</Modal.Title>
@@ -87,9 +81,13 @@ const AddTimetableModal = ({show, onHide}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Отмена</Button>
-                <Button variant="primary" onClick={addTimetableL}>Сохранить</Button>
+                {(date&&id_type&&id_doctor)
+                    ?
+                    <Button variant="primary" onClick={addTimetableL}>Сохранить</Button>
+                    :
+                    <></>
+                }
             </Modal.Footer>
-
         </Modal>
     );
 };

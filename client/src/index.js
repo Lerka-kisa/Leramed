@@ -9,6 +9,7 @@ import MedicalRecordStore from "./store/MedicalRecordStore";
 
 import "https://kit.fontawesome.com/6d49599fad.js"
 import TimetableStore from "./store/TimetableStore";
+import HousecallStore from "./store/HousecallStore";
 
 export const Context = createContext(null)
 
@@ -20,7 +21,8 @@ root.render(
         analysis: new AnalysisStore(),
         doctors: new DoctorsStore(),
         records: new MedicalRecordStore(),
-        timetable: new TimetableStore()
+        timetable: new TimetableStore(),
+        housecall: new HousecallStore()
     }}>
         <App />
     </Context.Provider>,

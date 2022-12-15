@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-//import {Modals} from "@mui/material";
 import Modal from "react-bootstrap/Modal";
 import {Button, Form} from "react-bootstrap";
 import {updBirthday} from "../../../http/userinfoAPI";
@@ -36,7 +35,12 @@ const BirthdayModal = ({show, onHide}) => {
                 <Button variant="secondary" onClick={onHide}>
                     Отмена
                 </Button>
-                <Button variant="primary" onClick={updDate}>Сохранить изменения</Button>
+                {(birthday)
+                    ?
+                    <Button variant="primary" onClick={updDate}>Сохранить изменения</Button>
+                    :
+                    <></>
+                }
             </Modal.Footer>
         </Modal>
     );

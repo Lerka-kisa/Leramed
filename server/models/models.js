@@ -269,8 +269,9 @@ Patients.belongsTo(Sectors, {foreignKey: 'id_sector'});
 House_calls.init(
     {
         id:         {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
-        //remark:     {type: DataTypes.STRING, allowNull:false}
-        // id_record
+        remark:     {type: DataTypes.STRING, allowNull:false},
+        date:       {type: DataTypes.DATEONLY, allowNull:false}
+        //// id_record
         // id_patient
     },
     {sequelize, modelName:'House_calls', tableName:'House_calls', timestamps:false}
@@ -279,8 +280,8 @@ House_calls.init(
 Patients.hasMany(House_calls, {foreignKey: 'id_patient'});
 House_calls.belongsTo(Patients, {foreignKey: 'id_patient'});
 
-Medcards_records.hasMany(House_calls, {foreignKey: 'id_record'});
-House_calls.belongsTo(Medcards_records, {foreignKey: 'id_record'});
+// Medcards_records.hasMany(House_calls, {foreignKey: 'id_record'});
+// House_calls.belongsTo(Medcards_records, {foreignKey: 'id_record'});
 
 // Types_of_appointments.init(
 //     {
@@ -296,7 +297,7 @@ Appointments.init(
         id:     {type: DataTypes.INTEGER, allowNull:false, primaryKey: true, autoIncrement: true},
         talon_number: {type: DataTypes.INTEGER, allowNull:false},
         time:   {type: DataTypes.TIME, allowNull:false}
-        // id_record
+        // // id_record
         // id_type_of_appointment
         // id_shift
         // id_patient
@@ -313,8 +314,8 @@ Appointments.belongsTo(Timetable, {foreignKey: 'id_shift'});
 Patients.hasMany(Appointments, {foreignKey: 'id_patient'});
 Appointments.belongsTo(Patients, {foreignKey: 'id_patient'});
 
-Medcards_records.hasMany(Appointments, {foreignKey: 'id_record'});
-Appointments.belongsTo(Medcards_records, {foreignKey: 'id_record'});
+// Medcards_records.hasMany(Appointments, {foreignKey: 'id_record'});
+// Appointments.belongsTo(Medcards_records, {foreignKey: 'id_record'});
 
 
 // sequelize.sync({alter:true});

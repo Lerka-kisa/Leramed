@@ -21,14 +21,11 @@ const MedicalRecordsTable = ({records, auth}) => {
                 </thead>
                 <tbody>
                 {records.map(record =>
-                    <>
-                        <tr onClick={() => getRecord(record)}>
-                            <td>{record.date}</td>
-                            <td>{record.record}</td>
-                            <td>{record.recommendation}</td>
-                        </tr>
-
-                    </>
+                    <tr onClick={() => getRecord(record)}>
+                        <td>{record.date}</td>
+                        <td>{record.record}</td>
+                        <td>{record.recommendation}</td>
+                    </tr>
                 )}
                 </tbody>
             </Table>
@@ -38,7 +35,6 @@ const MedicalRecordsTable = ({records, auth}) => {
                 record = {obj}
                 onHide={() => setRecordVisible(false)}
             />
-
         </>
     );
 };

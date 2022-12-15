@@ -32,7 +32,12 @@ const LoginModal =  ({show, onHide}) => {
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onHide}>Отмена</Button>
-                <Button variant="primary" onClick={updLoginL}>Сохранить изменения</Button>
+                {(login)
+                    ?
+                    <Button variant="primary" onClick={updLoginL}>Сохранить изменения</Button>
+                    :
+                    <></>
+                }
             </Modal.Footer>
         </Modal>
     );

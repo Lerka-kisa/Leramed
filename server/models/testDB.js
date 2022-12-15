@@ -20,8 +20,17 @@ sequelize.authenticate()
     .then(() => {console.log('Hurray!!! You are connected)))');})
     .then(() => {
 
-        model.Appointments.findAll({
-            where:{id_patient:null, id_shift:5}
+        model.House_calls.findAll({
+            include:{
+                model: model.Patients, required: true,
+                include:{
+                    model: model.Sectors, required: true,
+                    include:{
+                        model: model.Doctors, required: true,
+                        where:{id:1}
+                    }
+                }
+            }
         })
         .then(data => {
             console.log(data)
